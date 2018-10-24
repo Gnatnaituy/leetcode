@@ -7,7 +7,7 @@ public class TwiceBiggerThanOthers {
 
 		for (int i = 1; i < nums.length; i++) {
 			if (nums[i] >= secondBig * 2) {
-				biggest = nums[i]
+				biggest = nums[i];
 				biggestIndex = i;
 			} else if (nums[i] > secondBig && nums[i] < secondBig * 2) {
 				secondBig = nums[i];
