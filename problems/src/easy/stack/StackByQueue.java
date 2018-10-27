@@ -1,4 +1,4 @@
-package stack;
+package easy.stack;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -19,7 +19,7 @@ class StackByQueue {
     /** Push element x onto stack. */
     public void push(int x) {
         if (queue1.isEmpty()) {
-            queue1.offer(x);
+            queue2.offer(x);
         } else {
             queue1.offer(x);
         }
@@ -27,7 +27,7 @@ class StackByQueue {
     }
 
     /** Removes the element on top of the stack and returns that element. */
-    public int pop() {
+    private int pop() {
         if (size == 0) {
             return -1;
         }
@@ -44,6 +44,7 @@ class StackByQueue {
             res = queue1.poll();
         }
         size--;
+
         return res;
     }
 
@@ -58,8 +59,8 @@ class StackByQueue {
         } else {
             queue1.offer(top);
         }
-
         size++;
+
         return top;
     }
 
