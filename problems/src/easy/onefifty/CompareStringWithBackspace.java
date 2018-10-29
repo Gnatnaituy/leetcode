@@ -1,10 +1,9 @@
-package easy.stack;
+package easy.onefifty;
 
-import java.util.Stack;
 
 public class CompareStringWithBackspace {
 
-    public static boolean backspaceCompare(String S, String T) {
+    private static boolean backspaceCompare(String S, String T) {
         StringBuilder stackS = new StringBuilder();
         StringBuilder stackT = new StringBuilder();
 
@@ -24,14 +23,12 @@ public class CompareStringWithBackspace {
             }
         }
 
-        System.out.println(stackS);
-        System.out.println(stackT);
         return stackS.toString().equals(stackT.toString());
     }
 
     public static void main(String[] args) {
         String S = "#asdd#asd";
-        String T = "asdd#asd";
+        String T = "add#asd";
         boolean a = backspaceCompare(S, T);
         System.out.println(a);
     }

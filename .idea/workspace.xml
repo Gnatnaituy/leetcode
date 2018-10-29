@@ -23,25 +23,25 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="4" />
-          <entry key="java" value="11" />
+          <entry key="java" value="19" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="4" />
-          <entry key="JAVA" value="11" />
+          <entry key="JAVA" value="19" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5591" />
+          <entry key="java" value="6981" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5591" />
+          <entry key="JAVA" value="6981" />
         </counts>
       </usages-collector>
     </session>
@@ -49,19 +49,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/problems/src/easy/stack/BaseballGame.java">
+        <entry file="file://$PROJECT_DIR$/problems/src/easy/onefifty/BaseballGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="39" column="65" lean-forward="true" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
+            <state relative-caret-position="936">
+              <caret line="39" column="65" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/problems/src/easy/stack/CompareStringWithBackspace.java">
+        <entry file="file://$PROJECT_DIR$/problems/src/easy/onefifty/AahReverseInteger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+            <state relative-caret-position="149">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -79,10 +79,12 @@
     <findStrings>
       <find>pPrevious</find>
       <find>pP</find>
+      <find>stringBuilder</find>
     </findStrings>
     <replaceStrings>
       <replace>pP</replace>
       <replace>pp</replace>
+      <replace>original</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -97,6 +99,14 @@
         <option value="$PROJECT_DIR$/problems/src/easy/stack/NextGreaterElement.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/stack/BaseballGame.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/stack/CompareStringWithBackspace.java" />
+        <option value="$PROJECT_DIR$/problems/src/easystack/CompareStringWithBackspace.java" />
+        <option value="$PROJECT_DIR$/practices/src/one/hundred/million/rices/Counter.java" />
+        <option value="$PROJECT_DIR$/practices/src/one/hundred/million/rices/SerialCount.java" />
+        <option value="$PROJECT_DIR$/practices/src/one/hundred/million/rices/FatherCounter.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/one/hundred/BaseballGame.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/fifty/one/BaseballGame.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/fifty/one/AahReverseInteger.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/onefifty/AahReverseInteger.java" />
       </list>
     </option>
   </component>
@@ -135,7 +145,7 @@
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
               <item name="problems" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="stack" type="462c0819:PsiDirectoryNode" />
+              <item name="onefifty" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -163,7 +173,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CompareStringWithBackspace">
+  <component name="RunManager" selected="Application.AajIsPalindrome">
+    <configuration name="AahReverseInteger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="easy.fifty.one.AahReverseInteger" />
+      <module name="problems" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="easy.fifty.one.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AajIsPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="easy.onefifty.AajIsPalindrome" />
+      <module name="problems" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="easy.onefifty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BaseballGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="easy.stack.BaseballGame" />
       <module name="problems" />
@@ -203,31 +239,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidBrackets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stack.ValidBrackets" />
-      <module name="problems" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="stack.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.ValidBrackets" />
       <item itemvalue="Application.NextGreaterElement" />
       <item itemvalue="Application.BaseballGame" />
       <item itemvalue="Application.CompareStringWithBackspace" />
+      <item itemvalue="Application.AahReverseInteger" />
+      <item itemvalue="Application.AajIsPalindrome" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AajIsPalindrome" />
+        <item itemvalue="Application.AahReverseInteger" />
         <item itemvalue="Application.CompareStringWithBackspace" />
         <item itemvalue="Application.BaseballGame" />
         <item itemvalue="Application.NextGreaterElement" />
-        <item itemvalue="Application.ValidBrackets" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +260,7 @@
     <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1754503" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1754503" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -243,7 +268,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27865168" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27865168" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5719101" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -300,35 +325,35 @@
     <entry file="file://$PROJECT_DIR$/problems/problems.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/stack/QueueByStack.java">
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onefifty/QueueByStack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2064">
           <caret line="88" selection-start-line="88" selection-end-line="88" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/stack/NextGreaterElement.java">
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onefifty/NextGreaterElement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/stack/ValidBrackets.java">
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onefifty/ValidBrackets.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/stack/MinStack.java">
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onefifty/MinStack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/stack/StackByQueue.java">
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onefifty/StackByQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="542">
           <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
@@ -338,17 +363,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/stack/BaseballGame.java">
+    <entry file="file://$PROJECT_DIR$/practices/src/OneHundredMillionRices.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="39" column="65" lean-forward="true" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
+        <state relative-caret-position="24">
+          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/stack/CompareStringWithBackspace.java">
+    <entry file="file://$PROJECT_DIR$/practices/src/one/hundred/million/rices/Counter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        <state relative-caret-position="72">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practices/src/one/hundred/million/rices/SerialCount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practices/src/one/hundred/million/rices/FatherCounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onefifty/CompareStringWithBackspace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/AddTwoNumbers.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/primary_algorithm/GetPivotIndex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onefifty/BaseballGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="39" column="65" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onefifty/AahReverseInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>

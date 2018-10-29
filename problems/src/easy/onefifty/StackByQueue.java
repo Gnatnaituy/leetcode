@@ -1,4 +1,4 @@
-package easy.stack;
+package easy.onefifty;
 
 import java.util.LinkedList;
 import java.util.Queue;
