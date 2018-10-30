@@ -1,6 +1,6 @@
 package easy.onefifty;
 
-public class AajIsPalindrome {
+public class Aaj_IsPalindrome {
 
     public static void main(String[] args) {
         int x = 123211;
