@@ -19,5 +19,7 @@ public class Acb_MergeTwoLists {
                 l2 = l2.next;
             }
         }
+
+        return l1;
     }
 }
