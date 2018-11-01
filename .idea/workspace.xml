@@ -23,27 +23,27 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="4" />
-          <entry key="java" value="29" />
+          <entry key="java" value="31" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="4" />
-          <entry key="JAVA" value="29" />
+          <entry key="JAVA" value="31" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="8" />
-          <entry key="java" value="13270" />
+          <entry key="dummy" value="9" />
+          <entry key="java" value="14195" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="13270" />
-          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="JAVA" value="14195" />
+          <entry key="PLAIN_TEXT" value="9" />
         </counts>
       </usages-collector>
     </session>
@@ -77,11 +77,33 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/problems/src/easy/onefifty/Adf_SearchInsert.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="25" column="21" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="25" selection-end-column="21" />
+            <state relative-caret-position="437">
+              <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/problems/src/easy/onefifty/Adi_CountAndSay.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="59" column="40" lean-forward="true" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
+              <folding>
+                <element signature="e#1821#1822#0" expanded="true" />
+                <element signature="e#1871#1872#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/problems/src/easy/onefifty/MaxSubArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -136,6 +158,8 @@
         <option value="$PROJECT_DIR$/problems/src/easy/onefifty/Ach_RemoveElement.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/onefifty/Aci_ImplementstrStr.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/onefifty/Adf_SearchInsert.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/onefifty/Adi_CountAndSay.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/onefifty/MaxSubArray.java" />
       </list>
     </option>
   </component>
@@ -202,20 +226,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Adf_SearchInsert">
-    <configuration name="Abe_LongestCommonPrefix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="easy.onefifty.Abe_LongestCommonPrefix" />
-      <module name="problems" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="easy.onefifty.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Adi_CountAndSay">
     <configuration name="Acg_RemoveDuplicates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="easy.onefifty.Acg_RemoveDuplicates" />
       <module name="problems" />
@@ -268,20 +279,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Adi_CountAndSay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="easy.onefifty.Adi_CountAndSay" />
+      <module name="problems" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="easy.onefifty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.Abe_LongestCommonPrefix" />
       <item itemvalue="Application.Acg_RemoveDuplicates" />
       <item itemvalue="Application.Ach_RemoveElement" />
       <item itemvalue="Application.Aci_ImplementstrStr" />
       <item itemvalue="Application.Adf_SearchInsert" />
+      <item itemvalue="Application.Adi_CountAndSay" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Adi_CountAndSay" />
         <item itemvalue="Application.Adf_SearchInsert" />
         <item itemvalue="Application.Aci_ImplementstrStr" />
         <item itemvalue="Application.Ach_RemoveElement" />
         <item itemvalue="Application.Acg_RemoveDuplicates" />
-        <item itemvalue="Application.Abe_LongestCommonPrefix" />
       </list>
     </recent_temporary>
   </component>
@@ -289,7 +313,7 @@
     <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1754503" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1754503" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -297,7 +321,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2764045" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2764045" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.33820224" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -336,20 +360,6 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/problems/src/easy/onefifty/Adf_SearchInsert.java</url>
-          <line>28</line>
-          <properties class="easy.onefifty.Adf_SearchInsert" method="main">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/problems/src/easy/onefifty/Adf_SearchInsert.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -513,8 +523,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/problems/src/easy/onefifty/Adf_SearchInsert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="25" column="21" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="25" selection-end-column="21" />
+        <state relative-caret-position="437">
+          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onefifty/Adi_CountAndSay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="59" column="40" lean-forward="true" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
+          <folding>
+            <element signature="e#1821#1822#0" expanded="true" />
+            <element signature="e#1871#1872#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onefifty/MaxSubArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
         </state>
       </provider>
     </entry>
