@@ -1,4 +1,4 @@
-package easy.onefifty;
+package easy.onetwenty;
 
 public class Aaj_IsPalindrome {
 

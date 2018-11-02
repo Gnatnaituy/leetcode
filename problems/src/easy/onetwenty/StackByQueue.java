@@ -1,4 +1,4 @@
-package easy.onefifty;
+package easy.onetwenty;
 
 import java.util.LinkedList;
 import java.util.Queue;
