@@ -12,58 +12,50 @@
     <session id="1107389059">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="3" />
-          <entry key="project.open.time.5" value="3" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="4" />
-          <entry key="java" value="41" />
+          <entry key="java" value="61" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="4" />
-          <entry key="JAVA" value="41" />
+          <entry key="JAVA" value="61" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="9" />
-          <entry key="java" value="16421" />
+          <entry key="dummy" value="37" />
+          <entry key="java" value="21388" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="16421" />
-          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="JAVA" value="21388" />
+          <entry key="PLAIN_TEXT" value="37" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/AddBinary.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/MergeSortedArray.java">
+        <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/MergeTwoSortedLists.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+            <state relative-caret-position="136">
+              <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -123,14 +115,21 @@
         <option value="$PROJECT_DIR$/problems/src/easy/onefifty/Afd_MaxSubArray.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/onetwenty/Afd_MaxSubArray.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/onetwenty/Agg_PlusOne.java" />
-        <option value="$PROJECT_DIR$/problems/src/easy/onetwenty/AddBinary.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/onetwenty/Afi_LengthOfLastWord.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/onetwenty/SqrtOfX.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/onetwenty/MergeSortedArray.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/onetwenty/PlusOne.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/onetwenty/AddBinary.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/onetwenty/ClimbingStairs.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/onetwenty/RemoveDuplicates.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/onetwenty/MergeTwoLists.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/onetwenty/ListNode.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/onetwenty/RemoveDuplicatesFromSortedList.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/onetwenty/MergeTwoSortedLists.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="34" />
     <option name="y" value="582" />
     <option name="width" value="2800" />
@@ -170,8 +169,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -179,7 +178,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -193,9 +192,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SqrtOfX">
-    <configuration name="Adf_SearchInsert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="easy.onetwenty.Adf_SearchInsert" />
+  <component name="RunManager" selected="Application.MergeTwoSortedLists">
+    <configuration name="AddBinary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="easy.onetwenty.AddBinary" />
       <module name="problems" />
       <extension name="coverage">
         <pattern>
@@ -207,8 +206,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Adi_CountAndSay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="easy.onetwenty.Adi_CountAndSay" />
+    <configuration name="ClimbingStairs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="easy.onetwenty.ClimbingStairs" />
       <module name="problems" />
       <extension name="coverage">
         <pattern>
@@ -220,8 +219,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Afi_LengthOfLastWord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="easy.onetwenty.Afi_LengthOfLastWord" />
+    <configuration name="MergeTwoSortedLists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="easy.onetwenty.MergeTwoSortedLists" />
       <module name="problems" />
       <extension name="coverage">
         <pattern>
@@ -233,8 +232,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Agg_PlusOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="easy.onetwenty.Agg_PlusOne" />
+    <configuration name="PlusOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="easy.onetwenty.PlusOne" />
       <module name="problems" />
       <extension name="coverage">
         <pattern>
@@ -246,8 +245,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SqrtOfX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="easy.onetwenty.SqrtOfX" />
+    <configuration name="RemoveDuplicates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="easy.onetwenty.RemoveDuplicates" />
       <module name="problems" />
       <extension name="coverage">
         <pattern>
@@ -260,27 +259,27 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Adf_SearchInsert" />
-      <item itemvalue="Application.Adi_CountAndSay" />
-      <item itemvalue="Application.Afi_LengthOfLastWord" />
       <item itemvalue="Application.Agg_PlusOne" />
-      <item itemvalue="Application.SqrtOfX" />
+      <item itemvalue="Application.AddBinary" />
+      <item itemvalue="Application.ClimbingStairs" />
+      <item itemvalue="Application.RemoveDuplicates" />
+      <item itemvalue="Application.MergeTwoSortedLists" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SqrtOfX" />
+        <item itemvalue="Application.MergeTwoSortedLists" />
+        <item itemvalue="Application.RemoveDuplicates" />
+        <item itemvalue="Application.ClimbingStairs" />
+        <item itemvalue="Application.AddBinary" />
         <item itemvalue="Application.Agg_PlusOne" />
-        <item itemvalue="Application.Afi_LengthOfLastWord" />
-        <item itemvalue="Application.Adi_CountAndSay" />
-        <item itemvalue="Application.Adf_SearchInsert" />
       </list>
     </recent_temporary>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1500" height="1000" extended-state="6" />
+    <frame x="0" y="0" width="1500" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17533334" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -288,14 +287,14 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2764045" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.33820224" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49933332" weight="0.2760736" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.32617587" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="9" visible="true" weight="0.299591" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5006667" side_tool="true" weight="0.2760736" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.299591" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -313,34 +312,34 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/problems/src/easy/onetwenty/Abd_RomanToInteger.java</url>
+          <url>file://$PROJECT_DIR$/problems/src/easy/onetwenty/RomanToInteger.java</url>
           <line>45</line>
-          <properties class="easy.onetwenty.Abd_RomanToInteger" method="main">
+          <properties class="easy.onetwenty.RomanToInteger" method="main">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/problems/src/easy/onetwenty/Acg_RemoveDuplicates.java</url>
+          <url>file://$PROJECT_DIR$/problems/src/easy/onetwenty/RemoveDuplicates.java</url>
           <line>42</line>
-          <properties class="easy.onetwenty.Acg_RemoveDuplicates" method="main">
+          <properties class="easy.onetwenty.RemoveDuplicates" method="main">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/problems/src/easy/onetwenty/SqrtOfX.java</url>
-          <line>9</line>
-          <properties class="easy.onetwenty.SqrtOfX" method="main">
+          <url>file://$PROJECT_DIR$/problems/src/easy/onetwenty/ClimbingStairs.java</url>
+          <line>59</line>
+          <properties class="easy.onetwenty.ClimbingStairs" method="main">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="16" />
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/problems/src/easy/onetwenty/SqrtOfX.java</url>
-          <line>10</line>
+          <url>file://$PROJECT_DIR$/problems/src/easy/onetwenty/MergeTwoSortedLists.java</url>
+          <line>28</line>
           <properties />
-          <option name="timeStamp" value="18" />
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -413,9 +412,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="542">
           <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -423,13 +419,6 @@
     <entry file="file://$PROJECT_DIR$/practices/src/one/hundred/million/rices/Counter.java" />
     <entry file="file://$PROJECT_DIR$/practices/src/one/hundred/million/rices/SerialCount.java" />
     <entry file="file://$PROJECT_DIR$/practices/src/one/hundred/million/rices/FatherCounter.java" />
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/CompareStringWithBackspace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/algorithm/AddTwoNumbers.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -439,77 +428,42 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/problems/src/easy/onefifty/ListNode.java" />
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/BaseballGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="897">
-          <caret line="39" column="65" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/Aah_ReverseInteger.java">
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/ReverseInteger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/Abd_RomanToInteger.java">
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/RomanToInteger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1127">
           <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/Abe_LongestCommonPrefix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/Aaj_IsPalindrome.java">
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/IsPalindrome.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/Acb_MergeTwoLists.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/Acg_RemoveDuplicates.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/Ach_RemoveElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/Aci_ImplementstrStr.java">
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/ImplementstrStr.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/Adf_SearchInsert.java">
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/SearchInsert.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/Adi_CountAndSay.java">
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/CountAndSay.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="59" column="40" lean-forward="true" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
@@ -520,35 +474,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/Afd_MaxSubArray.java">
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/MaxSubArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/Agg_PlusOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/Afi_LengthOfLastWord.java">
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/LengthOfLastWord.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="451">
           <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/SqrtOfX.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding>
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -566,17 +502,102 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/ClimbingStairs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1219">
+          <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+          <folding>
+            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1190#1191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/PlusOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/SqrtOfX.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/AddBinary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state relative-caret-position="1334">
+          <caret line="58" column="26" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/CompareStringWithBackspace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/BaseballGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="39" column="65" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/LongestCommonPrefix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/RemoveElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/RemoveDuplicatesFromSortedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/MergeSortedArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        <state relative-caret-position="460">
+          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/RemoveDuplicates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/ListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#94#95#0" expanded="true" />
+            <element signature="e#117#118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/MergeTwoSortedLists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
         </state>
       </provider>
     </entry>

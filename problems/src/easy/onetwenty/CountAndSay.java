@@ -28,7 +28,7 @@ package easy.onetwenty;
  * Output: "1211"
  */
 
-public class Adi_CountAndSay {
+public class CountAndSay {
 
     private static String countAndSay(int n) {
 

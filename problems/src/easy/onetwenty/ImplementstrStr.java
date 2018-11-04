@@ -1,6 +1,6 @@
 package easy.onetwenty;
 
-public class Aci_ImplementstrStr {
+public class ImplementstrStr {
 
     private static int strStr(String haystack, String needle) {
 

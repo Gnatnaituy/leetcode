@@ -1,6 +1,6 @@
 package easy.onetwenty;
 
-public class Ach_RemoveElement {
+public class RemoveElement {
 
     private static int removeElement(int[] nums, int val) {
         int currentIndex = 0;

@@ -1,6 +1,6 @@
 package easy.onetwenty;
 
-public class Acg_RemoveDuplicates {
+public class RemoveDuplicates {
 
     private static int removeDuplicates(int[] nums) {
 
@@ -41,7 +41,7 @@ public class Acg_RemoveDuplicates {
     }
 
     public static void main(String[] args) {
-        int[] nums = {1,1};
+        int[] nums = {1, 1, 2, 2, 3, 4, 5, 5};
         for (int num : nums) {
             System.out.print(num + " ");
         }

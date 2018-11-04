@@ -2,7 +2,7 @@ package easy.onetwenty;
 
 import java.util.Stack;
 
-public class Aah_ReverseInteger {
+public class ReverseInteger {
 
     private static int reverse(int x) {
 

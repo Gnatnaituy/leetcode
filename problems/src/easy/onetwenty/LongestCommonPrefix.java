@@ -1,6 +1,6 @@
 package easy.onetwenty;
 
-public class Abe_LongestCommonPrefix {
+public class LongestCommonPrefix {
 
     private static String longestCommonPrefix(String[] strs) {
         if (strs.length == 0) {

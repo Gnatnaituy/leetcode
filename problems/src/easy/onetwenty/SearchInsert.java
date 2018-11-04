@@ -1,6 +1,6 @@
 package easy.onetwenty;
 
-public class Adf_SearchInsert {
+public class SearchInsert {
 
     private static int searchInsert(int[] nums, int target) {
 

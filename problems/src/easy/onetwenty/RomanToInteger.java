@@ -1,6 +1,6 @@
 package easy.onetwenty;
 
-public class Abd_RomanToInteger {
+public class RomanToInteger {
 
     private static int romanToInt(String s) {
         int resultInteger = 0;

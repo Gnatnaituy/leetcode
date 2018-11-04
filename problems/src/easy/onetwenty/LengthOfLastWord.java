@@ -11,7 +11,7 @@ package easy.onetwenty;
  * Note: A word is defined as a character sequence consists of non-space characters only.
  */
 
-public class Afi_LengthOfLastWord {
+public class LengthOfLastWord {
 
     private static int lengthOfLastWord(String s) {
 //        int max = 0;

@@ -1,6 +1,6 @@
 package easy.onetwenty;
 
-public class Aaj_IsPalindrome {
+public class IsPalindrome {
 
     public static void main(String[] args) {
         int x = 123211;

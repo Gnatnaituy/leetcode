@@ -24,6 +24,6 @@ package easy.onetwenty;
 public class MergeSortedArray {
 
     private void mergeSortedArray(int[] nums1, int[] nums2, int n) {
-        
+
     }
 }

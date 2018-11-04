@@ -1,6 +1,6 @@
 package easy.onetwenty;
 
-public class Afd_MaxSubArray {
+public class MaxSubArray {
 
     private static int maxSubArray(int[] nums) {
         int maxScore = Integer.MIN_VALUE;
