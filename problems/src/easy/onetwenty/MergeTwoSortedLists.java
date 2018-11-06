@@ -26,19 +26,18 @@ public class MergeTwoSortedLists {
 
     private static ListNode innerMergeTwoLists(ListNode l1, ListNode l2) {
         ListNode cursor = l1;
-        while (l2.next != null) {
-            if (cursor.next != null && l2.val >= cursor.val && l2.val < cursor.next.val) {
+        while (l2 != null && cursor.next != null) {
+            if (l2.val < cursor.next.val) {
                 ListNode temp = new ListNode(l2.val);
                 temp.next = cursor.next;
                 cursor = cursor.next = temp;
                 l2 = l2.next;
-            } else if (cursor.next == null){
-                cursor.next = l2;
             } else {
                 cursor = cursor.next;
             }
         }
-        cursor.next = new ListNode(l2.val);
+        if (l2 != null)
+            cursor.next = l2;
 
         return l1;
     }
@@ -50,10 +49,12 @@ public class MergeTwoSortedLists {
         ListNode node21 = new ListNode(1);
         ListNode node22 = new ListNode(3);
         ListNode node23 = new ListNode(4);
+//        ListNode node24 = new ListNode(5);
         node1.next = node2;
         node2.next = node3;
         node21.next = node22;
         node22.next = node23;
+//        node23.next = node24;
 
         ListNode result = mergeTwoLists(node1, node21);
         while (result != null) {
