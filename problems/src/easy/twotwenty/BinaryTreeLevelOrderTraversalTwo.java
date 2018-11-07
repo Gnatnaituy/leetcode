@@ -3,6 +3,8 @@ package easy.twotwenty;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
+import java.util.Stack;
 
 /**
  * 107 Binary Tree Level Order Traversal II
@@ -27,23 +29,39 @@ import java.util.LinkedList;
 
 public class BinaryTreeLevelOrderTraversalTwo {
 
-    private static ArrayList<ArrayList<Integer>> levelOrderBottom(TreeNode root) {
-        ArrayList<ArrayList<Integer>> result = new ArrayList<>();
-        ArrayList<Integer> level = new ArrayList<>();
+    public static List<List<Integer>> levelOrderBottom(TreeNode root) {
 
-        if (root == null) {
+        List<List<Integer>> result = new ArrayList<>();
+        Stack<List<Integer>> levelStack = new Stack<>();
+        List<Integer> level = new ArrayList<>();
+        LinkedList<TreeNode> current = new LinkedList<>();
+        LinkedList<TreeNode> next = new LinkedList<>();
+
+        if(root == null)
+            return result;
+
+        current.add(root);
+
+        while(!current.isEmpty()){
+            TreeNode node = current.remove();
+
+            if(node.left != null)
+                next.add(node.left);
+            if(node.right != null)
+                next.add(node.right);
+
+            level.add(node.val);
+            if(current.isEmpty()){
+                current = next;
+                next = new LinkedList<>();
+                levelStack.push(level);
+                level = new ArrayList();
+            }
+
         }
-        TreeNode current = null;
-        LinkedList<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
-        while (!queue.isEmpty()) {
-            current = queue.poll();
-            level.add(current.val);
-            if (current.left != null)
-                queue.offer(current.left);
-            if (current.right != null)
-                queue.offer(current.right);
-        }
+
+        while (!levelStack.isEmpty())
+            result.add(levelStack.pop());
 
         return result;
     }

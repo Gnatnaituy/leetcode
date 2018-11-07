@@ -24,26 +24,26 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="4" />
-          <entry key="java" value="69" />
+          <entry key="java" value="76" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="4" />
-          <entry key="JAVA" value="69" />
+          <entry key="JAVA" value="76" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="43" />
-          <entry key="java" value="25991" />
+          <entry key="java" value="27782" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="25991" />
+          <entry key="JAVA" value="27782" />
           <entry key="PLAIN_TEXT" value="43" />
         </counts>
       </usages-collector>
@@ -54,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/SameTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1357">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="920">
+              <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -63,26 +63,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/SymmetricTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
+            <state relative-caret-position="429">
               <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/MaxDepthOfBinaryTree.java">
+        <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/BinaryTreeLevelOrderTraversalTwo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+            <state relative-caret-position="397">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/BalancedBinaryTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="60" column="10" lean-forward="true" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/BinaryTreeLevelOrderTraversalTwo.java">
+        <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/StringToTreeNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="47" column="18" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+            <state relative-caret-position="667">
+              <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,11 +116,16 @@
       <find>pPrevious</find>
       <find>pP</find>
       <find>stringBuilder</find>
+      <find>al</find>
+      <find>nodeValues</find>
+      <find>maxDepth</find>
     </findStrings>
     <replaceStrings>
       <replace>pP</replace>
       <replace>pp</replace>
       <replace>original</replace>
+      <replace>result</replace>
+      <replace>level</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -159,12 +176,15 @@
         <option value="$PROJECT_DIR$/problems/src/easy/twotwenty/TreeNode.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/twotwenty/SameTree.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/twotwenty/SymmetricTree.java" />
-        <option value="$PROJECT_DIR$/problems/src/easy/twotwenty/BinaryTreeLevelOrderTraversalTwo.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/twotwenty/MaxDepthOfBinaryTree.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/twotwenty/ConvertSortedArrayToBST.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/twotwenty/BinaryTreeLevelOrderTraversalTwo.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/twotwenty/BalancedBinaryTree.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/twotwenty/StringToTreeNode.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="x" value="34" />
     <option name="y" value="582" />
     <option name="width" value="2800" />
@@ -235,13 +255,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MergeTwoSortedLists">
-    <configuration name="AddBinary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="easy.onetwenty.AddBinary" />
+  <component name="RunManager" selected="Application.BalancedBinaryTree">
+    <configuration name="BalancedBinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="easy.twotwenty.BalancedBinaryTree" />
       <module name="problems" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="easy.onetwenty.*" />
+          <option name="PATTERN" value="easy.twotwenty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -262,12 +282,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergeTwoSortedLists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="easy.onetwenty.MergeTwoSortedLists" />
+    <configuration name="ConvertSortedArrayToBST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="easy.twotwenty.ConvertSortedArrayToBST" />
       <module name="problems" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="easy.onetwenty.*" />
+          <option name="PATTERN" value="easy.twotwenty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -275,8 +295,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlusOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="easy.onetwenty.PlusOne" />
+    <configuration name="MergeTwoSortedLists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="easy.onetwenty.MergeTwoSortedLists" />
       <module name="problems" />
       <extension name="coverage">
         <pattern>
@@ -302,23 +322,24 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.PlusOne" />
-      <item itemvalue="Application.AddBinary" />
       <item itemvalue="Application.ClimbingStairs" />
       <item itemvalue="Application.RemoveDuplicates" />
       <item itemvalue="Application.MergeTwoSortedLists" />
+      <item itemvalue="Application.ConvertSortedArrayToBST" />
+      <item itemvalue="Application.BalancedBinaryTree" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BalancedBinaryTree" />
+        <item itemvalue="Application.ConvertSortedArrayToBST" />
         <item itemvalue="Application.MergeTwoSortedLists" />
         <item itemvalue="Application.RemoveDuplicates" />
         <item itemvalue="Application.ClimbingStairs" />
-        <item itemvalue="Application.AddBinary" />
       </list>
     </recent_temporary>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1500" height="1000" extended-state="0" />
+    <frame x="0" y="0" width="1500" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18066667" />
@@ -381,14 +402,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/leetcode.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1090" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -643,34 +656,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/SameTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1357">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/primary_algorithm/MyCircularQueue.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/SameTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/SymmetricTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
+        <state relative-caret-position="429">
           <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/ConvertSortedArrayToBST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="845">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14191">
+          <caret line="663" column="4" lean-forward="true" selection-start-line="663" selection-start-column="4" selection-end-line="663" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/MaxDepthOfBinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        <state relative-caret-position="575">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/BinaryTreeLevelOrderTraversalTwo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="47" column="18" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+        <state relative-caret-position="397">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/BalancedBinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="60" column="10" lean-forward="true" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/StringToTreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
