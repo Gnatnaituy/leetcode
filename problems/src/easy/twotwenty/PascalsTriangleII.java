@@ -44,9 +44,8 @@ public class PascalsTriangleII {
         if (time < 2)
             return;
         while (time > 1) {
-            for (int i = indexRow.size() - 1; i > 0; i--) {
+            for (int i = indexRow.size() - 1; i > 0; i--)
                 indexRow.set(i, indexRow.get(i) + indexRow.get(i - 1));
-            }
             indexRow.add(1);
             time--;
         }
