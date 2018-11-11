@@ -27,7 +27,7 @@ import java.util.Stack;
  * ]
  */
 
-public class BinaryTreeLevelOrderTraversalTwo {
+public class BinaryTreeLevelOrderTraversalII {
 
     public static List<List<Integer>> levelOrderBottom(TreeNode root) {
 
