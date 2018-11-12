@@ -17,33 +17,33 @@
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="3" />
           <entry key="project.open.time.5" value="5" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="4" />
-          <entry key="java" value="96" />
+          <entry key="java" value="108" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="4" />
-          <entry key="JAVA" value="96" />
+          <entry key="JAVA" value="108" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="50" />
-          <entry key="java" value="32851" />
+          <entry key="java" value="35039" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="32851" />
+          <entry key="JAVA" value="35039" />
           <entry key="PLAIN_TEXT" value="50" />
         </counts>
       </usages-collector>
@@ -52,52 +52,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/BestTimetoBuyandSellStockII.java">
+        <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/TwoSumII.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="56" column="13" lean-forward="true" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+            <state relative-caret-position="667">
+              <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/ValidPalindrome.java">
+        <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/ExcelSheetColumnTitle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+            <state>
+              <caret column="23" selection-start-column="23" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/SingleNumber.java">
+        <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/MajorityElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="690">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/problems/src/easy/threetwenty/ExcelSheetColumnNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="943">
+              <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/LinkedListCycle.java">
+        <entry file="file://$PROJECT_DIR$/problems/src/easy/threetwenty/FatorialTrailingZeroes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/ListNode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            <state relative-caret-position="627">
+              <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -120,6 +114,7 @@
       <find>nodeValues</find>
       <find>maxDepth</find>
       <find>A</find>
+      <find>nums</find>
     </findStrings>
     <replaceStrings>
       <replace>pP</replace>
@@ -128,17 +123,12 @@
       <replace>result</replace>
       <replace>level</replace>
       <replace>prices</replace>
+      <replace>numbers</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/practices/src/one/hundred/million/rices/Counter.java" />
-        <option value="$PROJECT_DIR$/practices/src/one/hundred/million/rices/SerialCount.java" />
-        <option value="$PROJECT_DIR$/practices/src/one/hundred/million/rices/FatherCounter.java" />
-        <option value="$PROJECT_DIR$/problems/src/easy/one/hundred/BaseballGame.java" />
-        <option value="$PROJECT_DIR$/problems/src/easy/fifty/one/BaseballGame.java" />
-        <option value="$PROJECT_DIR$/problems/src/easy/fifty/one/AahReverseInteger.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/onefifty/AajIsPalindrome.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/onefifty/AahReverseInteger.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/onefifty/AbdRomantoInteger.java" />
@@ -184,6 +174,12 @@
         <option value="$PROJECT_DIR$/problems/src/easy/twotwenty/SingleNumber.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/twotwenty/ListNode.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/twotwenty/LinkedListCycle.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/twotwenty/IntersectionOfTwoLinkedLists.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/twotwenty/TwoSumII.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/twotwenty/ExcelSheetColumnTitle.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/twotwenty/MajorityElement.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/threetwenty/ExcelSheetColumnNumber.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/threetwenty/FatorialTrailingZeroes.java" />
       </list>
     </option>
   </component>
@@ -196,6 +192,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,14 +225,12 @@
               <item name="problems" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="easy" type="462c0819:PsiDirectoryNode" />
-              <item name="twotwenty" type="462c0819:PsiDirectoryNode" />
+              <item name="threetwenty" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -256,7 +252,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SingleNumber">
+  <component name="RunManager" selected="Application.ExcelSheetColumnNumber">
     <configuration name="BalancedBinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="easy.twotwenty.BalancedBinaryTree" />
       <module name="problems" />
@@ -270,12 +266,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConvertSortedArrayToBST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="easy.twotwenty.ConvertSortedArrayToBST" />
+    <configuration name="ExcelSheetColumnNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="easy.threetwenty.ExcelSheetColumnNumber" />
       <module name="problems" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="easy.twotwenty.*" />
+          <option name="PATTERN" value="easy.threetwenty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -323,19 +319,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ConvertSortedArrayToBST" />
       <item itemvalue="Application.BalancedBinaryTree" />
       <item itemvalue="Application.PathSun" />
       <item itemvalue="Application.PascalsTriangle" />
       <item itemvalue="Application.SingleNumber" />
+      <item itemvalue="Application.ExcelSheetColumnNumber" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ExcelSheetColumnNumber" />
         <item itemvalue="Application.SingleNumber" />
         <item itemvalue="Application.PascalsTriangle" />
         <item itemvalue="Application.PathSun" />
         <item itemvalue="Application.BalancedBinaryTree" />
-        <item itemvalue="Application.ConvertSortedArrayToBST" />
       </list>
     </recent_temporary>
   </component>
@@ -351,7 +347,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49933332" visible="true" weight="0.2760736" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49933332" weight="0.2760736" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.43456033" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -403,18 +399,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/practices/src/OneHundredMillionRices.java" />
-    <entry file="file://$PROJECT_DIR$/practices/src/one/hundred/million/rices/Counter.java" />
-    <entry file="file://$PROJECT_DIR$/practices/src/one/hundred/million/rices/SerialCount.java" />
-    <entry file="file://$PROJECT_DIR$/practices/src/one/hundred/million/rices/FatherCounter.java" />
-    <entry file="file://$PROJECT_DIR$/algorithm/AddTwoNumbers.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/primary_algorithm/GetPivotIndex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/problems/src/easy/onefifty/ListNode.java" />
     <entry file="file://$PROJECT_DIR$/problems/src/easy/onetwenty/ReverseInteger.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -605,20 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/SymmetricTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/BalancedBinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="60" column="10" lean-forward="true" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/MaxDepthOfBinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="523">
@@ -644,19 +614,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="422">
           <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/StringToTreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -671,9 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1081">
           <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -681,9 +635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="582">
           <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -691,16 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="894">
           <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/BestTimetoBuyandSellStockII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="56" column="13" lean-forward="true" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -715,36 +656,103 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="514">
           <caret line="32" column="48" lean-forward="true" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/SingleNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="483">
+          <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/ListNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="230">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/BalancedBinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="719">
+          <caret line="80" column="22" selection-start-line="80" selection-start-column="22" selection-end-line="81" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/StringToTreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/SymmetricTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/BestTimetoBuyandSellStockII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="56" column="13" lean-forward="true" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/LinkedListCycle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+        <state relative-caret-position="115">
+          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/TwoSumII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/ExcelSheetColumnTitle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/MajorityElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/twotwenty/IntersectionOfTwoLinkedLists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/threetwenty/ExcelSheetColumnNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="943">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/threetwenty/FatorialTrailingZeroes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
         </state>
       </provider>
     </entry>
