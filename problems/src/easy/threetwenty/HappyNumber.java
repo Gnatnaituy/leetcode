@@ -1,6 +1,5 @@
 package easy.threetwenty;
 
-import java.util.ArrayList;
 
 /**
  * 202 Happy Number
