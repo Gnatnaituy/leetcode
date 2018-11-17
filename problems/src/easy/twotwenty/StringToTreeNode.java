@@ -3,9 +3,9 @@ package easy.twotwenty;
 import java.util.LinkedList;
 import java.util.Queue;
 
-class StringToTreeNode {
+public class StringToTreeNode {
 
-    static TreeNode stringToTreeNode(String input) {
+    public static TreeNode stringToTreeNode(String input) {
         input = input.trim();
         input = input.substring(1, input.length() - 1);
         if (input.length() == 0) {
