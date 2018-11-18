@@ -1,6 +1,8 @@
 package easy.twotwenty;
 
 
+import tools.TreeNode;
+
 import java.util.Arrays;
 
 /**

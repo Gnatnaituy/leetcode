@@ -1,5 +1,7 @@
 package easy.twotwenty;
 
+import tools.ListNode;
+
 import java.util.HashSet;
 import java.util.Set;
 

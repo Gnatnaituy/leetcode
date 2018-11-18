@@ -1,5 +1,7 @@
 package easy.twotwenty;
 
+import tools.TreeNode;
+
 /**
  * 100 Same Tree
  *

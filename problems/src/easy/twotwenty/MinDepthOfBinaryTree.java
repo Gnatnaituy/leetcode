@@ -1,6 +1,8 @@
 package easy.twotwenty;
 
 
+import tools.TreeNode;
+
 /**
  * 111 Minimum Depth of Binary Tree
  *

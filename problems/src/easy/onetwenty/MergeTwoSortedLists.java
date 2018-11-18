@@ -1,6 +1,8 @@
 package easy.onetwenty;
 
 
+import tools.ListNode;
+
 /**
  * 21 Merge Two Sorted Lists
  *

@@ -1,6 +1,6 @@
-package easy.threetwenty;
+package tools;
 
-import easy.twotwenty.ListNode;
+import tools.ListNode;
 
 public class StringToListNode {
 

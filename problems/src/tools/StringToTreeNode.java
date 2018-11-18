@@ -1,4 +1,4 @@
-package easy.twotwenty;
+package tools;
 
 import java.util.LinkedList;
 import java.util.Queue;

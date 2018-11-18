@@ -1,9 +1,6 @@
 package easy.threetwenty;
 
-import easy.twotwenty.ListNode;
-
-import java.util.List;
-import java.util.Stack;
+import tools.ListNode;
 
 /**
  * 206 Reverse Linked List

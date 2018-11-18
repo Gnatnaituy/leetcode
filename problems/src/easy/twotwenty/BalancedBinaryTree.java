@@ -1,7 +1,9 @@
 package easy.twotwenty;
 
 
-import static easy.twotwenty.StringToTreeNode.stringToTreeNode;
+import tools.TreeNode;
+
+import static tools.StringToTreeNode.stringToTreeNode;
 
 /**
  * 110 Balanced Binary Tree

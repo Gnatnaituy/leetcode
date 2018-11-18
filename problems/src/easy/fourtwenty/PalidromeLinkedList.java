@@ -1,6 +1,6 @@
 package easy.fourtwenty;
 
-import easy.twotwenty.ListNode;
+import tools.ListNode;
 
 /**
  * 234 Palindrome Linked List

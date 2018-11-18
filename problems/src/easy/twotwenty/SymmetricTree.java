@@ -1,6 +1,8 @@
 package easy.twotwenty;
 
 
+import tools.TreeNode;
+
 /**
  * 101 Symmetric Tree
  *

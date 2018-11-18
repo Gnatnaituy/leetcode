@@ -1,4 +1,4 @@
-package easy.twotwenty;
+package tools;
 
 public class ListNode {
     public int val;
