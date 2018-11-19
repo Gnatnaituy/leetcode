@@ -18,14 +18,13 @@ package easy.fourtwenty;
 public class AddDigits {
 
     private static int addDigits(int num) {
-        if (num < 10)
-            return num;
 
-        int result = 0;
-        while (num != 0) {
-            result += num % 10;
-            num /= 10;
-        }
-        return addDigits(result);
+//        char[] charsNum = String.valueOf(num).toCharArray();
+//        int result = 0;
+//        for (char aCharsNum : charsNum) result += aCharsNum - '0';
+//        if (result < 10) return result;
+//        else return addDigits(result);
+
+        return ((num - 1) % 9) + 1;
     }
 }
