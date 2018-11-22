@@ -4,27 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * 349 Intersection of Two Arrays
- *
- * Given two arrays, write a function to compute their intersection.
- *
- * Example 1:
- *
- * Input: nums1 = [1,2,2,1], nums2 = [2,2]
- * Output: [2]
- *
- * Example 2:
- *
- * Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4]
- * Output: [9,4]
- * Note:
- *
- * Each element in the result must be unique.
- * The result can be in any order.
- */
-
-public class IntersectionOfTwoArrays {
+public class IntersectionOfTwoArraysII {
 
     private static int[] intersection(int[] nums1, int[] nums2) {
         Arrays.sort(nums1);
@@ -32,7 +12,7 @@ public class IntersectionOfTwoArrays {
         List<Integer> result = new ArrayList<>();
         int i = 0, j = 0;
         while (i < nums1.length && j < nums2.length) {
-            if (nums1[i] == nums2[j] && !result.contains(nums1[i])) {
+            if (nums1[i] == nums2[j]) {
                 result.add(nums1[i]);
                 i++;
                 j++;
