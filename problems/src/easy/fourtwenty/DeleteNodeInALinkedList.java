@@ -3,7 +3,7 @@ package easy.fourtwenty;
 import tools.ListNode;
 
 /**
- * 237 Delete Node in a Linked List
+ * 237 Delete QuadNode in a Linked List
  *
  * Write a function to delete a node (except the tail) in a singly linked list, given only access to that node.
  *

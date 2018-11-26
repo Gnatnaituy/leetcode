@@ -57,7 +57,7 @@ public class BinaryTreeLevelOrderTraversalII {
                 current = next;
                 next = new LinkedList<>();
                 levelStack.push(level);
-                level = new ArrayList();
+                level = new ArrayList<>();
             }
 
         }
