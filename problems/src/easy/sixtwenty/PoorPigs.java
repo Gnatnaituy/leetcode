@@ -18,6 +18,15 @@ package easy.sixtwenty;
 public class PoorPigs {
 
     private static int poorPigs(int buckets, int minutesToDie, int minutesToTest) {
-        return buckets / (minutesToTest / minutesToDie);
+        if (buckets == 1)
+            return 0;
+
+        int base = minutesToTest / minutesToDie + 1;
+        int res;
+        for (int i = 0; ; i++) {
+            res = (int) Math.pow(base, i);
+            if (res >= buckets)
+                return i;
+        }
     }
 }
