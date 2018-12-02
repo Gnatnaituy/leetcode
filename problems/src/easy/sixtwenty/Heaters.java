@@ -1,5 +1,9 @@
 package easy.sixtwenty;
 
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
 /**
  * 475 Heaters
  *
@@ -19,29 +23,24 @@ package easy.sixtwenty;
 public class Heaters {
 
     private static int findRadius(int[] houses, int[] heaters) {
-        if (houses.length == 0 || heaters.length == 0)
-            return 0;
 
-        int middle = 0;
-        for (int i = 0; i < heaters.length - 1; i++)
-            if (heaters[i + 1] - heaters[i] > middle)
-                middle = heaters[i + 1] - heaters[i];
+        Arrays.sort(houses);
+        Arrays.sort(heaters);
+        int startIndex = 0, maxN = 0;
 
-        if (houses[0] <= heaters[0]) {
-            int start = heaters[0] - houses[0];
-            if (houses[houses.length - 1] >= heaters[heaters.length - 1]) {
-                int end = houses[houses.length - 1] - heaters[heaters.length - 1];
-                return Math.max(Math.max(start, end), middle / 2);
-            } else {
-                return Math.max(start, middle / 2);
+        for (int house : houses) {
+            int tempMin = Integer.MAX_VALUE;
+            for (int j = startIndex; j < heaters.length; j++) {
+                if (Math.abs(heaters[j] - house) <= tempMin) {
+                    tempMin = Math.abs(heaters[j] - house);
+                    startIndex = j;
+                } else {
+                    break;
+                }
             }
-        } else {
-            if (houses[houses.length - 1] >= heaters[heaters.length - 1]) {
-                int end = houses[houses.length - 1] - heaters[heaters.length - 1];
-                return Math.max(end, middle / 2);
-            } else {
-                return middle / 2;
-            }
+            maxN = Math.max(maxN, tempMin);
         }
+
+        return maxN;
     }
 }
