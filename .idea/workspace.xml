@@ -79,7 +79,7 @@
           <entry key="Database Element" value="22" />
           <entry key="HTML" value="1" />
           <entry key="IDEA_MODULE" value="4" />
-          <entry key="JAVA" value="218" />
+          <entry key="JAVA" value="223" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="4" />
           <entry key="Python" value="1" />
@@ -98,7 +98,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="69632" />
+          <entry key="JAVA" value="71684" />
           <entry key="PLAIN_TEXT" value="59" />
           <entry key="Properties" value="24" />
           <entry key="SQL" value="39" />
@@ -109,55 +109,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/problems/src/easy/ftwenty/NumberComplement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-              <folding>
-                <element signature="e#802#803#0" expanded="true" />
-                <element signature="e#864#865#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/problems/src/easy/ftwenty/LicenseKeyFormatting.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1127">
-              <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="50" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/problems/src/easy/ftwenty/MaxConsecutiveOnes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="713">
-              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/problems/src/easy/ftwenty/ConstructTheRectangle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-155">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/problems/src/easy/ctwenty/HouseRobber.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/problems/src/easy/dtwenty/ContainsDuplicateII.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -201,14 +152,65 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/FindModeInBST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
+            <state relative-caret-position="-951">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/BaseSeven.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="653">
+              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/RelativeRanks.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="45" column="47" lean-forward="true" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/PerfectNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/DetectCapital.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="503">
+              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/LongestUncommonSubsequenceI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -256,11 +258,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/problems/src/easy/fivetwenty/IntersectionOfTwoArrays.java" />
-        <option value="$PROJECT_DIR$/problems/src/easy/fivetwenty/ValidPerfectSquare.java" />
-        <option value="$PROJECT_DIR$/problems/src/easy/fivetwenty/SumOfTwoIntegers.java" />
-        <option value="$PROJECT_DIR$/problems/src/easy/fivetwenty/FirstUniqueCharInString.java" />
-        <option value="$PROJECT_DIR$/problems/src/easy/fivetwenty/RansomNote.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/fivetwenty/FindTheDifference.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/fivetwenty/NthDigit.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/fivetwenty/BinaryWatch.java" />
@@ -307,6 +304,11 @@
         <option value="$PROJECT_DIR$/problems/src/easy/gtwenty/WSC/SC2.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/gtwenty/KeyboardRow.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/gtwenty/FindModeInBST.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/gtwenty/BaseSeven.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/gtwenty/RelativeRanks.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/gtwenty/PerfectNumber.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/gtwenty/DetectCapital.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/gtwenty/LongestUncommonSubsequenceI.java" />
       </list>
     </option>
   </component>
@@ -386,13 +388,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SC2">
-    <configuration name="AddStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="easy.etwenty.AddStrings" />
+  <component name="RunManager" selected="Application.DetectCapital">
+    <configuration name="BaseSeven" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="easy.gtwenty.BaseSeven" />
       <module name="problems" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="easy.etwenty.*" />
+          <option name="PATTERN" value="easy.gtwenty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -400,12 +402,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindAllAnagramsInAString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="easy.ftwenty.FindAllAnagramsInAString" />
+    <configuration name="DetectCapital" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="easy.gtwenty.DetectCapital" />
       <module name="problems" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="easy.ftwenty.*" />
+          <option name="PATTERN" value="easy.gtwenty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -413,12 +415,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumberComplement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="easy.ftwenty.NumberComplement" />
+    <configuration name="FindModeInBST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="easy.gtwenty.FindModeInBST" />
       <module name="problems" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="easy.ftwenty.*" />
+          <option name="PATTERN" value="easy.gtwenty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -426,12 +428,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RepeatedSubstringPattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="easy.ftwenty.RepeatedSubstringPattern" />
+    <configuration name="PerfectNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="easy.gtwenty.PerfectNumber" />
       <module name="problems" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="easy.ftwenty.*" />
+          <option name="PATTERN" value="easy.gtwenty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -453,19 +455,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.AddStrings" />
-      <item itemvalue="Application.FindAllAnagramsInAString" />
-      <item itemvalue="Application.RepeatedSubstringPattern" />
-      <item itemvalue="Application.NumberComplement" />
       <item itemvalue="Application.SC2" />
+      <item itemvalue="Application.FindModeInBST" />
+      <item itemvalue="Application.BaseSeven" />
+      <item itemvalue="Application.PerfectNumber" />
+      <item itemvalue="Application.DetectCapital" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DetectCapital" />
+        <item itemvalue="Application.PerfectNumber" />
+        <item itemvalue="Application.BaseSeven" />
+        <item itemvalue="Application.FindModeInBST" />
         <item itemvalue="Application.SC2" />
-        <item itemvalue="Application.NumberComplement" />
-        <item itemvalue="Application.RepeatedSubstringPattern" />
-        <item itemvalue="Application.FindAllAnagramsInAString" />
-        <item itemvalue="Application.AddStrings" />
       </list>
     </recent_temporary>
   </component>
@@ -473,7 +475,7 @@
     <frame x="0" y="0" width="1500" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.178" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -481,7 +483,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32924336" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49866667" weight="0.24437627" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49866667" visible="true" weight="0.24437627" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.43456033" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -569,24 +571,6 @@
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/problems/src/easy/gtwenty/FindModeInBST.java</url>
-          <line>47</line>
-          <properties />
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/problems/src/easy/gtwenty/FindModeInBST.java</url>
-          <line>54</line>
-          <properties />
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/problems/src/easy/gtwenty/FindModeInBST.java</url>
-          <line>63</line>
-          <properties />
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -606,41 +590,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/btwenty/BinaryTreeLevelOrderTraversalII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="58" column="39" lean-forward="true" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/ftwenty/NaryTreeLevelOrderTraversal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/ftwenty/NumberOfSegmentsInAString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/ftwenty/PathSumIII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/ftwenty/FindAllAnagramsInAString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2208">
-          <caret line="98" column="7" selection-start-line="98" selection-start-column="7" selection-end-line="98" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/problems/src/easy/ftwenty/ArrangingCoins.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1081">
@@ -888,11 +837,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/FindModeInBST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
+        <state relative-caret-position="-951">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/BaseSeven.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/RelativeRanks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="45" column="47" lean-forward="true" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/PerfectNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/DetectCapital.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/LongestUncommonSubsequenceI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
         </state>
       </provider>
     </entry>

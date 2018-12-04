@@ -1,6 +1,5 @@
 package easy.gtwenty;
 
-import com.sun.source.tree.Tree;
 import tools.TreeNode;
 
 import java.util.*;
@@ -44,8 +43,15 @@ public class FindModeInBST {
 
         traversal(root, hashMap);
 
+        int mode = 0;
         for (Map.Entry<Integer, Integer> entry : hashMap.entrySet()) {
-            if (entry.getValue() != 1) res.add(entry.getKey());
+            if (entry.getValue() > mode)
+                mode = entry.getValue();
+        }
+
+        for (Map.Entry<Integer, Integer> entry : hashMap.entrySet()) {
+            if (entry.getValue() == mode)
+                res.add(entry.getKey());
         }
 
         int[] result = new int[res.size()];
@@ -67,16 +73,5 @@ public class FindModeInBST {
             traversal(root.left, hashMap);
         if (root.right != null)
             traversal(root.right, hashMap);
-    }
-
-    public static void main(String[] args) {
-        TreeNode root = new TreeNode(1);
-        root.left = new TreeNode(2);
-        root.left.right = new TreeNode(2);
-        root.left.left = new TreeNode(5);
-
-        int[] a = findMode(root);
-
-        
     }
 }
