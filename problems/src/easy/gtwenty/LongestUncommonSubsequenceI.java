@@ -27,5 +27,9 @@ package easy.gtwenty;
  */
 
 public class LongestUncommonSubsequenceI {
-    
+
+    private static int findUSLength(String a, String b) {
+        if (a.length() == 0 && b.length() == 0 || a.equals(b)) return -1;
+        return a.length() > b.length() ? a.length() : b.length();
+    }
 }
