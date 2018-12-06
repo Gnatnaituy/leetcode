@@ -80,7 +80,7 @@
           <entry key="Database Element" value="22" />
           <entry key="HTML" value="1" />
           <entry key="IDEA_MODULE" value="4" />
-          <entry key="JAVA" value="224" />
+          <entry key="JAVA" value="227" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="4" />
           <entry key="Python" value="1" />
@@ -99,7 +99,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="73543" />
+          <entry key="JAVA" value="75074" />
           <entry key="PLAIN_TEXT" value="59" />
           <entry key="Properties" value="24" />
           <entry key="SQL" value="39" />
@@ -110,36 +110,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/problems/src/easy/dtwenty/FirstBadVersion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
-              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/NextGreatElementI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1081">
-              <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/KeyboardRow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/FindModeInBST.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -176,7 +146,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/PerfectNumber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
+            <state relative-caret-position="460">
               <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -203,16 +173,47 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/MinimumAbsoluteDifferenceInBST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="811">
-              <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+            <state relative-caret-position="1066">
+              <caret line="54" column="31" lean-forward="true" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1410#1411#0" expanded="true" />
-                <element signature="e#1455#1456#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/KdiffPairsInArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="443">
+              <caret line="39" selection-start-line="39" selection-end-line="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/ConvertBSTtoGreaterTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="43" column="8" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="59" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/ReverseStringII.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -260,9 +261,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/problems/src/easy/fivetwenty/NthDigit.java" />
-        <option value="$PROJECT_DIR$/problems/src/easy/fivetwenty/BinaryWatch.java" />
-        <option value="$PROJECT_DIR$/problems/src/easy/fivetwenty/SumOfLeftLeaves.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/fivetwenty/ConvertANumberToHexadecimal.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/fivetwenty/LongestPalindrome.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/fivetwenty/FizzBuzz.java" />
@@ -307,10 +305,13 @@
         <option value="$PROJECT_DIR$/problems/src/easy/gtwenty/FindModeInBST.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/gtwenty/BaseSeven.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/gtwenty/RelativeRanks.java" />
-        <option value="$PROJECT_DIR$/problems/src/easy/gtwenty/PerfectNumber.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/gtwenty/DetectCapital.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/gtwenty/LongestUncommonSubsequenceI.java" />
         <option value="$PROJECT_DIR$/problems/src/easy/gtwenty/MinimumAbsoluteDifferenceInBST.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/gtwenty/KdiffPairsInArray.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/gtwenty/PerfectNumber.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/gtwenty/ConvertBSTtoGreaterTree.java" />
+        <option value="$PROJECT_DIR$/problems/src/easy/gtwenty/ReverseStringII.java" />
       </list>
     </option>
   </component>
@@ -491,7 +492,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32924336" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49866667" visible="true" weight="0.24437627" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49866667" weight="0.24437627" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.43456033" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -601,27 +602,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/ftwenty/StringCompression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2346">
-          <caret line="102" column="49" selection-start-line="102" selection-start-column="49" selection-end-line="102" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/ftwenty/NumberOfBoomerangs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/ftwenty/FindAllNumberDisappearedInAnArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/problems/src/easy/ftwenty/AssignCookies.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1495">
@@ -837,16 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/PerfectNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/DetectCapital.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
@@ -863,13 +833,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/MinimumAbsoluteDifferenceInBST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="811">
-          <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+        <state relative-caret-position="1066">
+          <caret line="54" column="31" lean-forward="true" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1410#1411#0" expanded="true" />
-            <element signature="e#1455#1456#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/KdiffPairsInArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="39" selection-start-line="39" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/PerfectNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/ConvertBSTtoGreaterTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="43" column="8" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="59" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problems/src/easy/gtwenty/ReverseStringII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
         </state>
       </provider>
     </entry>

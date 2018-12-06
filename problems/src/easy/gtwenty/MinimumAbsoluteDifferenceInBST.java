@@ -54,13 +54,4 @@ public class MinimumAbsoluteDifferenceInBST {
         if (root.left != null) iter(root.left, nodes);
         if (root.right != null) iter(root.right, nodes);
     }
-
-    public static void main(String[] args) {
-        TreeNode root = new TreeNode(1);
-        root.right = new TreeNode(9);
-        root.right.left = new TreeNode(3);
-        root.right.right = new TreeNode(16);
-
-        System.out.println(getMinimumDifferernce(root));
-    }
 }
