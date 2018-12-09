@@ -1,5 +1,6 @@
 package easy.gtwenty;
 
+
 /**
  * 541 Reverse String II
  *
@@ -25,8 +26,7 @@ public class ReverseStringII {
                     char temp = str[start];
                     str[start] = str[end];
                     str[end] = temp;
-                    start++;
-                    end--;
+                    start++; end--;
                 }
             }
         }

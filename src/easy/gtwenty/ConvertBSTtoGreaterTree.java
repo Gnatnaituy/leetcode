@@ -25,14 +25,14 @@ import java.util.Stack;
 
 public class ConvertBSTtoGreaterTree {
 
-    private static int preNum = 0;
+    private int preNum = 0;
 
-    private static TreeNode convertBST(TreeNode root) {
+    private TreeNode convertBST(TreeNode root) {
         unPreOrder(root);
         return root;
     }
 
-    private static void unPreOrder(TreeNode root) {
+    private void unPreOrder(TreeNode root) {
         if (root == null) return;
         unPreOrder(root.right);
         root.val += preNum;
@@ -40,7 +40,7 @@ public class ConvertBSTtoGreaterTree {
         unPreOrder(root.left);
     }
 
-    private static TreeNode nonIterVersion(TreeNode root) {
+    private TreeNode nonIterVersion(TreeNode root) {
         if (root == null) return null;
         Stack<TreeNode> stack = new Stack<>();
         TreeNode node = root;

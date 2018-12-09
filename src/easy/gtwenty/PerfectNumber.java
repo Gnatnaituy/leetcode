@@ -1,7 +1,5 @@
 package easy.gtwenty;
 
-import javax.imageio.plugins.tiff.FaxTIFFTagSet;
-import java.util.ArrayList;
 
 /**
  * 507 Perfect Number

@@ -22,16 +22,23 @@ import tools.TreeNode;
  */
 
 public class DiameterOfBinaryTree {
+    private static int dia = 0;
+
     private static int diameterOfBinaryTree(TreeNode root) {
-        if (root == null)
-            return 0;
-
-        int res = 0;
-
-        if (root.left == null) {
-            res += diameterOfBinaryTree(root.left);
-        }
-
-        return 0;
+        treeLength(root);
+        return dia;
     }
+
+    private static int treeLength(TreeNode root){
+        if(root == null){
+            return 0;
+        }
+        int l_len = treeLength(root.left);
+        int r_len = treeLength(root.right);
+        if(dia < l_len + r_len){
+            dia = l_len + r_len;
+        }
+        return Math.max(l_len,r_len)+1;
+    }
+
 }

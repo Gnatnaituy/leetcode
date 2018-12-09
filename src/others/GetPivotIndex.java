@@ -1,3 +1,5 @@
+package others;
+
 class GetPivotIndex {
 	public static void main(String[] args) {
 		int[] testArray = {1, 7, 3, 6, 5, 6};

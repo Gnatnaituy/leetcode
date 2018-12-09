@@ -10,7 +10,9 @@ public class QuadNode {
 
     public QuadNode() {}
 
-    public QuadNode(boolean _val, boolean _isLeaf, QuadNode _topLeft, QuadNode _topRight, QuadNode _bottomLeft, QuadNode _bottomRight) {
+    public QuadNode(boolean _val, boolean _isLeaf,
+                    QuadNode _topLeft, QuadNode _topRight,
+                    QuadNode _bottomLeft, QuadNode _bottomRight) {
         val = _val;
         isLeaf = _isLeaf;
         topLeft = _topLeft;
