@@ -12,15 +12,14 @@ import java.util.Stack;
  *
  * Example:
  *
- * Input: The root of a Binary Search Tree like this:
- *               5
+ * Input: The root of a Binary Search Tree like this:4
  *             /   \
  *            2     13
  *
  * Output: The root of a Greater Tree like this:
  *              18
- *             /   \
- *           20     13
+ *            /   \
+ *          20     13
  */
 
 public class ConvertBSTtoGreaterTree {
