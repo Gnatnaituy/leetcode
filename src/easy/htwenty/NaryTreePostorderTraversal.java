@@ -23,12 +23,12 @@ public class NaryTreePostorderTraversal {
         stack.push(root);
         while(!stack.isEmpty()){
             NNode curr = stack.peek();
-            if((curr.children.size() == 0)||(pre != null && (curr.children.contains(pre)))){
+            if((curr.children.size() == 0) || (pre != null && (curr.children.contains(pre)))) {
                 res.add(curr.val);
                 pre = curr;
                 stack.pop();
             }else{
-                for(int i = curr.children.size()-1;i>=0;i--){
+                for(int i = curr.children.size()-1; i >= 0; i--){
                     stack.push(curr.children.get(i));
                 }
             }
