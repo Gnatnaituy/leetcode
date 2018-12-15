@@ -1,4 +1,4 @@
-package easy.htwenty;
+package easy.itwenty;
 
 import tools.TreeNode;
 
