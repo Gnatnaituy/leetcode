@@ -33,7 +33,6 @@ import java.util.*;
  */
 
 public class MinimumIndexOfTwoLists {
-
     private String[] findRestaurant(String[] list1, String[] list2) {
         List<String> res = new ArrayList<>();
         List<Integer> indexs = new ArrayList<>();

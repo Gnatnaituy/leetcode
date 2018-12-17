@@ -27,7 +27,7 @@ public class SetMismatch {
     private static int[] findErrorNums(int[] nums) {
         int len = nums.length;
         int sum = len * (len + 1) / 2;
-        Set set = new HashSet();
+        Set<Integer> set = new HashSet<Integer>();
         int i = 0;
         for(; i < len; i++){
             if(set.contains(nums[i]))

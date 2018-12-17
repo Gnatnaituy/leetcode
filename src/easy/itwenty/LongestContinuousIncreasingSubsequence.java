@@ -1,5 +1,6 @@
 package easy.itwenty;
 
+
 /**
  * 674 Longest Continuous Increasing Subsequence
  *
