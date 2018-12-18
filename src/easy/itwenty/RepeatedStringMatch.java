@@ -9,25 +9,15 @@ import java.util.Arrays;
 
 class RepeatedStringMatch {
     private int repeatedStringMatch(String A, String B) {
-        int j = 0, i = 0;
-        boolean bl = true;
-        while (j < B.length()) {
-            if (A.charAt(i % A.length()) == B.charAt(j)) {
-                i++;
-                j++;
-            } else {
-                if (bl == false) 
-                    return -1;
-                i++;
-            }
-            if (i == A.length()) 
-                bl = false;  
+        StringBuilder sb = new StringBuilder();
+        int lenA = A.length();
+        int lenB = B.length();
+        for(int i = 0; i < lenB / lenA + 2; i++){
+            String str = sb.append(A).toString();
+            if(str.indexOf(B) != -1)
+                return i + 1;
         }
-         
-        if (i % A.length() == 0) 
-            return i / A.length();
-        else 
-            return i / A.length() + 1;
+        return -1;
     }
 
     public static void main(String[] args) {
