@@ -28,7 +28,7 @@ package easy.itwenty;
  */
 
 public class ImageSmoother {
-    private int[][] imageSmother(int[][] M) {
+    public int[][] imageSmother(int[][] M) {
         int a = M.length;
         int b = M[0].length;
         int[][] x = new int[a][b];

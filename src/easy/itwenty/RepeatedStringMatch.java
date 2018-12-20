@@ -1,7 +1,5 @@
 package easy.itwenty;
 
-import java.util.Arrays;
-
 /**
  * 686 Reapted String Match
  */
