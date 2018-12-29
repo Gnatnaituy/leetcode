@@ -2,7 +2,7 @@ package easy.atwenty;
 
 public class MaxSubArray {
 
-    private static int maxSubArray(int[] nums) {
+    public int maxSubArray(int[] nums) {
         int maxScore = Integer.MIN_VALUE;
         int now = 0;
 
