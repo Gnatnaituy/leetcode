@@ -45,7 +45,7 @@ import tools.TreeNode;
  */
 
 public class TrimaBST {
-    private TreeNode trimBST(TreeNode root, int L, int R) {
+    public TreeNode trimBST(TreeNode root, int L, int R) {
         return midOrder(root, L, R);
     }
 

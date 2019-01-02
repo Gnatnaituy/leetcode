@@ -24,7 +24,7 @@ import java.util.Queue;
  */
 
 public class AverageOfLevelsInBinarayTree {
-    private List<Double> averageOfLevels(TreeNode root) {
+    public List<Double> averageOfLevels(TreeNode root) {
         List<Double> res = new ArrayList<>();
         Queue<TreeNode> nodes = new ArrayDeque<>();
         nodes.add(root);
