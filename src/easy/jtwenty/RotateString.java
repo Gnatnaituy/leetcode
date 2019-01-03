@@ -29,12 +29,4 @@ public class RotateString {
         
         return false;
     }
-    
-    public static void main(String[] args) {
-        RotateString rotateString = new RotateString();
-        String a = "abcde";
-        String b = "cdeab";
-        boolean c = rotateString.rotateString(a, b);
-        System.out.println(c);
-    }
 }
