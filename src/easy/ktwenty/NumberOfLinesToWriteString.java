@@ -1,4 +1,4 @@
-package easy.jtwenty;
+package easy.ktwenty;
 
 /**
  * 806 Number of Lines To Write String

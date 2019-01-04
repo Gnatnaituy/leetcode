@@ -1,4 +1,4 @@
-package easy.jtwenty;
+package easy.ktwenty;
 
 import java.util.*;
 
@@ -7,9 +7,11 @@ import java.util.*;
  */
 
 public class SubdomainVisitCount {
+    
     public List<String> subdomainVisits(String[] cpdomains) {
         Map<String, Integer> map = new HashMap<>();
         List<String> res = new ArrayList<>();
+        
         for (String domain : cpdomains) {
             String[] parts = domain.split(" ");
             Integer count = Integer.parseInt(parts[0]);
