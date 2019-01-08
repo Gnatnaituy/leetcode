@@ -1,7 +1,6 @@
 package easy.ktwenty;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -24,6 +23,8 @@ public class BuddyStrings {
                 list.add(i);
             }
         }
+        
+        
         //数字不同的位置只能有零个或者两个
         if(list.size() <= 2){
             if(list.size() == 0){
@@ -41,4 +42,9 @@ public class BuddyStrings {
         
         return false;
     }
+    
+    public static void main(String[] args) {
+        System.out.println("AAA");
+    }
 }
+  

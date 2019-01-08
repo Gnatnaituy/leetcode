@@ -23,7 +23,7 @@ package easy.atwenty;
 
 public class MergeSortedArray {
 
-    private void mergeSortedArray(int[] nums1, int m, int[] nums2, int n) {
+    public void mergeSortedArray(int[] nums1, int m, int[] nums2, int n) {
         if (m == 0) {
             if (n >= 0) System.arraycopy(nums2, 0, nums1, 0, n);
         } else {
