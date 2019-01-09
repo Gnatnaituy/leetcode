@@ -1,8 +1,6 @@
 package easy.ktwenty;
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.ArrayDeque; 
 import java.util.Queue;
 
 /**

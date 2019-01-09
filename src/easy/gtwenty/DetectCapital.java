@@ -26,7 +26,7 @@ import easy.dtwenty.WordPattern;
 
 public class DetectCapital {
 
-    private static boolean detectCapitalUse(String word) {
+    public boolean detectCapitalUse(String word) {
         return word.toUpperCase().equals(word) || word.toLowerCase().equals(word) ||
                 (word.charAt(0) >= 'A' && word.charAt(0) <= 'Z'
                         && word.substring(1).toLowerCase().equals(word.substring(1)));

@@ -15,7 +15,7 @@ public class BinaryGap {
             if (N % 2 == 0 && count > 0) {
                 count++;
             } else {
-                max = max > count ? max : count;
+                max = max > count ? max : count; 
                 count = 1;
             }
             N /= 2;
