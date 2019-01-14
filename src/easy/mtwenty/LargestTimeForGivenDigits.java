@@ -1,8 +1,6 @@
 package easy.mtwenty;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -10,61 +8,57 @@ import java.util.List;
  */
 
 public class LargestTimeForGivenDigits {
+    private int maxH = -1;
+    private int maxM = -1;
 
     private String largestTimeFromDigits(int[] A) {
-        StringBuilder res = new StringBuilder();
         boolean[] used = new boolean[4];
-        int[] resDigit = new int[4];
         
-        Arrays.sort(A);
-        if (A[0] > 2 || A[1] > 5) return "";
-        
-        for (int i = 3; i >= 0; i--) {
-            if (A[i] < 3) {
-                resDigit[0] = A[i];
+        for (int i = 0; i < A.length - 1; i++) {
+            for (int j = i + 1; j < A.length; j++) {
                 used[i] = true;
-                break;
-            }
-        }
-        
-        for (int i = 3; i >= 0; i--) {
-            if (resDigit[0] == 2) {
-                if (A[i] < 4 && !used[i]) {
-                    resDigit[1] = A[i];
-                    used[i] = true;
-                    break;
+                used[j] = true;
+                int d1 = 0, d2 = 0;
+                for (int k = 0; k < 4; k++) {
+                    if (!used[k]) {
+                        d1 = A[k];
+                        used[k] = true;
+                        break;
+                    }
                 }
-            } else {
-                if (!used[i])
-                    resDigit[1] = A[i];
-                used[i] = true;
-                break;
+                for (int k = 0; k < 4; k++) {
+                    if (!used[k]) d2 = A[k];
+                }
+    
+                int h1 = A[i] * 10 + A[j];
+                int h2 = A[j] * 10 + A[i];
+                int m1 = d1 * 10 + d2;
+                int m2 = d2 * 10 + d1;
+                
+                change(h1, m1);
+                change(h1, m2);
+                change(h2, m1);
+                change(h2, m2);
+                
+                used = new boolean[4];
             }
         }
         
-        for (int i = 3; i >= 0; i--) {
-            if (A[i] < 6 && !used[i]) {
-                resDigit[2] = A[i];
-                used[i] = true;
-                break;
-            }
+        if (maxH != -1 && maxM != -1)
+            return (maxH < 10 ? "0" + maxH : maxH) + ":" + (maxM < 10 ? "0" + maxM : maxM);
+        else
+            return "";
+    }
+    
+    private void change(int H, int M) {
+        if (H < 24 && M < 60 && H * 60 + M > maxH * 60 + maxM) {
+            maxH = H;
+            maxM = M;
         }
-        
-        for (int i = 0; i < A.length; i++) {
-            if (!used[i])
-                resDigit[3] = A[i];
-        }
-        
-        for (int i = 0; i < 4; i++) {
-            if (i == 2) res.append(":");
-            res.append(resDigit[i]);
-        }
-        
-        return res.toString();
     }
     
     public static void main(String[] args) {
-        int[] digits = {1, 2, 3, 4};
+        int[] digits = {7, 2, 3, 7};
         System.out.println(new LargestTimeForGivenDigits().largestTimeFromDigits(digits));
     }
 }
