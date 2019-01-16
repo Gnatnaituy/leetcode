@@ -1,6 +1,5 @@
 package easy.mtwenty;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
@@ -19,15 +18,14 @@ public class VerifyingAnAlienDictionary {
         }
     
         String[] sorted = words.clone();
-        
         Arrays.sort(sorted, (o1, o2) -> {
             char[] o1A = o1.toCharArray();
             char[] o2A = o2.toCharArray();
             for (int i = 0; i < Math.min(o1A.length, o2A.length); i++) {
                 if (map.get(o1A[i]) > map.get(o2A[i]))
-                    return -1;
+                    return 1;
             }
-            return 1;
+            return -1;
         });
         
         return Arrays.equals(words, sorted);
@@ -35,7 +33,7 @@ public class VerifyingAnAlienDictionary {
     
     public static void main(String[] args) {
         String order = "hlabcdefgijkmnopqrstuvwxyz";
-        String[] words = {"hello", "leetcode"};
+        String[] words = {"iekm","tpnhnbe"};
         boolean a = new VerifyingAnAlienDictionary().isAlienSorted(words, order);
         System.out.println(a);
     }
