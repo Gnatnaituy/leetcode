@@ -10,7 +10,7 @@ public class cMergeKSortedLists {
      * @param ListNode[] lists
      * @return ListNode
      */
-    private ListNode mergeKLists(ListNode[] lists) {
+    public ListNode mergeKLists(ListNode[] lists) {
         if (lists.length == 0) return null;
         
         for (int i = lists.length - 1; i > 0; i--) {

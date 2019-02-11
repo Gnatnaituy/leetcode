@@ -8,18 +8,6 @@ public class aRotateList {
      * 61. Rotate List
      */
     public ListNode rotateRight(ListNode head, int k) {
-        // if (k == 0) {
-        //     return head;
-        // } else {
-        //     ListNode cur = head;
-        //     while (cur.next.next != null) cur = cur.next;
-        //     cur.next.next = head;
-        //     head = cur.next;
-        //     cur.next = null;
-        //     k--;
-        //     return rotateRight(head, k);
-        // }
-
         if (head == null)
             return null;
         ListNode left = head;

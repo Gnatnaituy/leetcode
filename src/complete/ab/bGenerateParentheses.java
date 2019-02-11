@@ -9,7 +9,7 @@ import java.util.List;
 
 public class bGenerateParentheses {
 
-    private List<String> generateParentheses(int n) {
+    public List<String> generateParentheses(int n) {
         List<String> res = new ArrayList<>();
         generate(res, "", 0, 0, n);
     

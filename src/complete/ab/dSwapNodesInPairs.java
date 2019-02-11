@@ -10,7 +10,7 @@ public class dSwapNodesInPairs {
      * @param ListNode head 1->2->3->4->5
      * @return ListNode 2->1->4->3->5
      */
-    private ListNode swapPairs(ListNode head) {
+    public ListNode swapPairs(ListNode head) {
         if (head == null || head.next == null) return head;
         
         ListNode cur = head, tempLeft = cur, tempRight;
