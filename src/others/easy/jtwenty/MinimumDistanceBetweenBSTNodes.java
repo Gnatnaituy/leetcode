@@ -18,15 +18,15 @@ public class MinimumDistanceBetweenBSTNodes {
         // 2019-01-01 18:38 version 1 Misunderstand the title
         // int res = Integer.MAX_VALUE;
         // List<Integer> nodes = new ArrayList<>();
-        // Queue<TreeNode> queue = new ArrayDeque<>();
-        // queue.add(root);
-        // while (!queue.isEmpty()) {
-        //     int size = queue.size();
+        // Queue<TreeNode> queueandbfs = new ArrayDeque<>();
+        // queueandbfs.add(root);
+        // while (!queueandbfs.isEmpty()) {
+        //     int size = queueandbfs.size();
         //     while (size > 0) {
-        //         TreeNode node = queue.poll();
+        //         TreeNode node = queueandbfs.poll();
         //         nodes.add(node.val);
-        //         if (node.left != null) queue.add(node.left);
-        //         if (node.right != null) queue.add(node.right);
+        //         if (node.left != null) queueandbfs.add(node.left);
+        //         if (node.right != null) queueandbfs.add(node.right);
         //         size--;
         //     }
         // }

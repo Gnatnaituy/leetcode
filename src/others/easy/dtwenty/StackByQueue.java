@@ -6,30 +6,30 @@ import java.util.Queue;
 /**
  * 225 Implement Stack using Queue
  *
- *Implement the following operations of a stack using queues.
+ *Implement the following operations of a stackanddfs using queues.
  *
- * push(x) -- Push element x onto stack.
- * pop() -- Removes the element on top of the stack.
+ * push(x) -- Push element x onto stackanddfs.
+ * pop() -- Removes the element on top of the stackanddfs.
  * top() -- Get the top element.
- * empty() -- Return whether the stack is empty.
+ * empty() -- Return whether the stackanddfs is empty.
  * Example:
  *
- * MyStack stack = new MyStack();
+ * MyStack stackanddfs = new MyStack();
  *
- * stack.push(1);
- * stack.push(2);
- * stack.top();   // returns 2
- * stack.pop();   // returns 2
- * stack.empty(); // returns false
+ * stackanddfs.push(1);
+ * stackanddfs.push(2);
+ * stackanddfs.top();   // returns 2
+ * stackanddfs.pop();   // returns 2
+ * stackanddfs.empty(); // returns false
  * Notes:
  *
- * You must use only standard operations of a queue -- which means only push to back,
+ * You must use only standard operations of a queueandbfs -- which means only push to back,
  * peek/pop from front, size, and is empty operations are valid.
- * Depending on your language, queue may not be supported natively.
- * You may simulate a queue by using a list or deque (double-ended queue),
- * as long as you use only standard operations of a queue.
+ * Depending on your language, queueandbfs may not be supported natively.
+ * You may simulate a queueandbfs by using a list or deque (double-ended queueandbfs),
+ * as long as you use only standard operations of a queueandbfs.
  * You may assume that all operations are valid (for example,
- * no pop or top operations will be called on an empty stack).
+ * no pop or top operations will be called on an empty stackanddfs).
  */
 
 public class StackByQueue {
@@ -45,7 +45,7 @@ public class StackByQueue {
         this.size = 0;
     }
 
-    /** Push element x onto stack. */
+    /** Push element x onto stackanddfs. */
     public void push(int x) {
         if (queue1.isEmpty()) {
             queue2.offer(x);
@@ -55,7 +55,7 @@ public class StackByQueue {
         size++;
     }
 
-    /** Removes the element on top of the stack and returns that element. */
+    /** Removes the element on top of the stackanddfs and returns that element. */
     private int pop() {
         if (size == 0) {
             return -1;
@@ -93,7 +93,7 @@ public class StackByQueue {
         return top;
     }
 
-    /** Returns whether the stack is empty. */
+    /** Returns whether the stackanddfs is empty. */
     public boolean empty() {
         return size == 0;
     }

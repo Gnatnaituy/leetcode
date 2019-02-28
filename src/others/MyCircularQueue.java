@@ -7,7 +7,7 @@ class MyCircularQueue {
     private int front = 0;
     private int rear = 0;
 
-    /** Initialize your data structure here. Set the size of the queue to be k. */
+    /** Initialize your data structure here. Set the size of the queueandbfs to be k. */
     public MyCircularQueue(int k) {
         elementData = new int[k];
         capacity = k;
@@ -15,7 +15,7 @@ class MyCircularQueue {
         rear = -1;
     }
     
-    /** Insert an element into the circular queue. Return true if the operation is successful. */
+    /** Insert an element into the circular queueandbfs. Return true if the operation is successful. */
     public boolean enQueue(int value) {
         if (isFull() == true) {
             return false;
@@ -41,7 +41,7 @@ class MyCircularQueue {
         return true;
     }
     
-    /** Get the front item from the queue. */
+    /** Get the front item from the queueandbfs. */
     public int Front() {
         if (!isEmpty()) {
             return elementData[front];
@@ -50,7 +50,7 @@ class MyCircularQueue {
         }
     }
     
-    /** Get the last item from the queue. */
+    /** Get the last item from the queueandbfs. */
     public int Rear() {
         if (!isEmpty()) {
             return elementData[rear];
@@ -60,13 +60,13 @@ class MyCircularQueue {
         
     }
     
-    /** Checks whether the circular queue is empty or not. */
+    /** Checks whether the circular queueandbfs is empty or not. */
     public boolean isEmpty() {
         return front == -1;
         
     }
     
-    /** Checks whether the circular queue is full or not. */
+    /** Checks whether the circular queueandbfs is full or not. */
     public boolean isFull() {
         return ((rear + 1) % capacity) == front;
         

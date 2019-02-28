@@ -5,30 +5,30 @@ import java.util.Stack;
 /**
  * 232 Implement Queue using Stack
  *
- * Implement the following operations of a queue using stacks.
+ * Implement the following operations of a queueandbfs using stacks.
  *
- * push(x) -- Push element x to the back of queue.
- * pop() -- Removes the element from in front of queue.
+ * push(x) -- Push element x to the back of queueandbfs.
+ * pop() -- Removes the element from in front of queueandbfs.
  * peek() -- Get the front element.
- * empty() -- Return whether the queue is empty.
+ * empty() -- Return whether the queueandbfs is empty.
  * Example:
  *
- * MyQueue queue = new MyQueue();
+ * MyQueue queueandbfs = new MyQueue();
  *
- * queue.push(1);
- * queue.push(2);
- * queue.peek();  // returns 1
- * queue.pop();   // returns 1
- * queue.empty(); // returns false
+ * queueandbfs.push(1);
+ * queueandbfs.push(2);
+ * queueandbfs.peek();  // returns 1
+ * queueandbfs.pop();   // returns 1
+ * queueandbfs.empty(); // returns false
  * Notes:
  *
- * You must use only standard operations of a stack -- which means only push to top,
+ * You must use only standard operations of a stackanddfs -- which means only push to top,
  * peek/pop from top, size, and is empty operations are valid.
- * Depending on your language, stack may not be supported natively.
- * You may simulate a stack by using a list or deque (double-ended queue),
- * as long as you use only standard operations of a stack.
+ * Depending on your language, stackanddfs may not be supported natively.
+ * You may simulate a stackanddfs by using a list or deque (double-ended queueandbfs),
+ * as long as you use only standard operations of a stackanddfs.
  * You may assume that all operations are valid (for example,
- * no pop or peek operations will be called on an empty queue).
+ * no pop or peek operations will be called on an empty queueandbfs).
  */
 
 class QueueByStack {
@@ -43,7 +43,7 @@ class QueueByStack {
         this.size = 0;
     }
 
-    /** Push element x to the back of queue. */
+    /** Push element x to the back of queueandbfs. */
     public void push(int x) {
         if (stack1.isEmpty()) {
             stack2.push(x);
@@ -53,7 +53,7 @@ class QueueByStack {
         size++;
     }
 
-    /** Removes the element from in front of queue and returns that element. */
+    /** Removes the element from in front of queueandbfs and returns that element. */
     public int pop() {
         if (size == 0) {
             return -1;
@@ -109,7 +109,7 @@ class QueueByStack {
         return head;
     }
 
-    /** Returns whether the queue is empty. */
+    /** Returns whether the queueandbfs is empty. */
     public boolean empty() {
         return size == 0;
     }
