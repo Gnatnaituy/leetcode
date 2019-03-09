@@ -21,6 +21,7 @@ package others.easy.atwenty;
 
 public class AddBinary {
 
+
     private static String addBinary(String a, String b) {
         StringBuilder result = new StringBuilder();
         int enterOne = 0;
@@ -66,9 +67,42 @@ public class AddBinary {
             return result.reverse().toString();
     }
 
-    public static void main(String[] args) {
-        String a = "100";
-        String b = "110010";
-        System.out.println(addBinary(a, b));
+
+    /**
+     * 2ms 99.23%
+     */
+    private static String addBinary2(String a, String b) {
+        StringBuilder res = new StringBuilder();
+
+        int lenA = a.length() - 1;
+        int lenB = b.length() - 1;
+        int carry = 0;
+
+        while (lenA >= 0 || lenB >= 0) {
+            switch (carry + (lenA >= 0 ? a.charAt(lenA) : '0') + (lenB >= 0 ? b.charAt(lenB) : '0') - 96) {
+                case 0:
+                    res.append(0);
+                    carry = 0;
+                    break;
+                case 1:
+                    res.append(1);
+                    carry = 0;
+                    break;
+                case 2:
+                    res.append(0);
+                    carry = 1;
+                    break;
+                case 3:
+                    res.append(1);
+                    carry = 1;
+                    break;
+            }
+            lenA--;
+            lenB--;
+        }
+
+        if (carry == 1) res.append(1);
+
+        return res.reverse().toString();
     }
 }

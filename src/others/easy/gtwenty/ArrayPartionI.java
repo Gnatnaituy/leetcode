@@ -19,12 +19,38 @@ import java.util.Arrays;
  */
 
 public class ArrayPartionI {
+
     private static int arrayPairsSum(int[] nums) {
         Arrays.sort(nums);
         int res = 0;
+
         for (int i = 0; i < nums.length; i += 2) {
             res += nums[i];
         }
+
         return res;
+    }
+
+    // 可以用桶排序加速 int[20001]
+    public int arrayPairSum(int[] nums){
+        int[] a = new int[20001];
+        int sum = 0;
+
+        for (int num : nums) {
+            a[num + 10000]++;
+        }
+
+        boolean even = false;
+        for(int i = 0; i < a.length; i++){
+            while(a[i] > 0){
+                if(!even){
+                    sum += i - 10000;
+                }
+                even = !even;
+                a[i]--;
+            }
+        }
+
+        return sum;
     }
 }

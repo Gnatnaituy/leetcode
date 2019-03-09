@@ -1,7 +1,10 @@
 package others.easy.btwenty;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * 119 Pascal's Triangle II
@@ -41,13 +44,49 @@ public class PascalsTriangleII {
     }
 
     private static void iterate(List<Integer> indexRow, int time) {
-        if (time < 2)
-            return;
+        if (time < 2) return;
         while (time > 1) {
             for (int i = indexRow.size() - 1; i > 0; i--)
                 indexRow.set(i, indexRow.get(i) + indexRow.get(i - 1));
             indexRow.add(1);
             time--;
         }
+    }
+
+    /**
+     * 0ms
+     */
+    public List<Integer> getRow2(int rowIndex) {
+        List<Integer> res = new ArrayList<>();
+        long nk = 1;
+
+        for(int i = 0; i <= rowIndex; i++){
+            res.add((int)nk);
+            nk = nk * (rowIndex - i) / (i + 1);
+        }
+
+        return res;
+    }
+
+    /**
+     * 1ms
+     */
+    public List<Integer> getRow3(int rowIndex) {
+        List<Integer> res = new ArrayList<>();
+        res.add(1);
+
+        if(rowIndex == 0) return res;
+
+        for(int i = 1; i <= rowIndex; i++){
+            List<Integer> temp = new ArrayList<>();
+            temp.add(1);
+            for(int j = 1; j < i; j++){
+                temp.add(res.get(j-1) + res.get(j));
+            }
+            temp.add(1);
+            res = temp;
+        }
+
+        return res;
     }
 }

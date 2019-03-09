@@ -19,9 +19,13 @@ package others.easy.ftwenty;
 
 public class MaxConsecutiveOnes {
 
-    private static int findMaxConsecutiveOnes(int[] nums) {
+    /**
+     * 大家都一样
+     */
+    private int findMaxConsecutiveOnes(int[] nums) {
         int res= 0;
         int count = 0;
+
         for (int num : nums) {
             if (num == 1) count++;
             else {
@@ -29,6 +33,7 @@ public class MaxConsecutiveOnes {
                 count = 0;
             }
         }
+
         return count > res ? count : res;
     }
 }

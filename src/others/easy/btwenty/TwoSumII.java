@@ -23,9 +23,11 @@ package others.easy.btwenty;
 
 public class TwoSumII {
 
+    /**
+     * 2ms
+     */
     private static int[] twoSum(int[] numbers, int target) {
-        if (numbers.length < 2)
-            return null;
+        if (numbers.length < 2) return null;
 
         for (int i = numbers.length - 1; i >= 0; i--) {
             for (int j = 0; j < i; j++) {
@@ -33,8 +35,26 @@ public class TwoSumII {
                     continue;
                 if (numbers[i] + numbers[j] == target)
                     return new int[] {j + 1, i + 1};
-                else
-                    break;
+                else break;
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * 1ms
+     */
+    public int[] twoSum2(int[] numbers, int target) {
+        int low = 0, high = numbers.length - 1;
+
+        while(low < high) {
+            if (numbers[low] + numbers[high] == target) {
+                return new int[] {low+1, high+1};
+            } else if(numbers[low] + numbers[high] < target) {
+                low++;
+            } else {
+                high--;
             }
         }
 

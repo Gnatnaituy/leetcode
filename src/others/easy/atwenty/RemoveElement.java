@@ -2,7 +2,7 @@ package others.easy.atwenty;
 
 public class RemoveElement {
 
-    private static int removeElement(int[] nums, int val) {
+    private int removeElement(int[] nums, int val) {
         int currentIndex = 0;
         int valCount = 0;
 
@@ -26,11 +26,37 @@ public class RemoveElement {
         return nums.length - valCount;
     }
 
-    public static void main(String[] args) {
-        int[] nums = {1,2,2,3,5,2,2,2};
-        int a = removeElement(nums, 2);
-        for (int i = 0; i < a; i++) {
-            System.out.print(nums[i]);
+    /**
+     * 10ms
+     * 快慢指针法
+     */
+    private int removeElement2(int[] nums, int val) {
+            int fast = 0;
+            int slow = 0;
+
+            for (; fast < nums.length;) {
+                if (nums[fast] == val) {
+                    fast++;
+                } else {
+                    nums[slow++] = nums[fast++];
+                }
+            }
+
+            return slow;
+    }
+
+    /**
+     * 5ms
+     * 快慢指针法更优雅的写法
+     */
+    public int removeElement3(int[] nums, int val) {
+        int index = 0;
+        for (int i = index; i < nums.length; i++) {
+            if (val != nums[i]) {
+                nums[index++] = nums[i];
+            }
         }
+
+        return index;
     }
 }

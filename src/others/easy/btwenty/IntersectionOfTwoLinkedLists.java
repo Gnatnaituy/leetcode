@@ -5,6 +5,7 @@ import tools.ListNode;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.Stack;
 
 /**
  * 160 Intersection of Two Linked Lists
@@ -34,6 +35,9 @@ import java.util.Set;
 
 public class IntersectionOfTwoLinkedLists {
 
+    /**
+     * 10ms 12.48%
+     */
     private ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         if (headA == null || headB == null)
             return null;
@@ -50,5 +54,49 @@ public class IntersectionOfTwoLinkedLists {
                 headB = headB.next;
         }
         return null;
+    }
+
+    /**
+     * 5ms 14.76%
+     */
+    public static ListNode getIntersectionNode2(ListNode headA, ListNode headB) {
+        if (headA == null || headB == null) return null;
+
+        Stack<ListNode> stackA = new Stack<>();
+        Stack<ListNode> stackB = new Stack<>();
+        ListNode res = null;
+
+        while (headA != null) {
+            stackA.push(headA);
+            headA = headA.next;
+        }
+
+        while (headB != null) {
+            stackB.push(headB);
+            headB = headB.next;
+        }
+
+        while (!stackA.isEmpty() && !stackB.isEmpty() && stackA.peek() == stackB.peek()) {
+            res = stackA.pop();
+            stackB.pop();
+        }
+
+        return res;
+    }
+
+    /**
+     * 1ms
+     */
+    public ListNode getIntersectionNode3(ListNode headA, ListNode headB) {
+        if (headA == null || headB == null) return null;
+
+        ListNode pA = headA, pB = headB;
+
+        while(pA != pB){
+            pA = pA == null ? headB : pA.next;
+            pB = pB == null ? headA: pB.next;
+        }
+
+        return pA;
     }
 }
