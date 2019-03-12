@@ -1,8 +1,6 @@
 package others.easy.etwenty;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * 349 Intersection of Two Arrays
@@ -26,6 +24,9 @@ import java.util.List;
 
 public class IntersectionOfTwoArrays {
 
+    /**
+     * 5ms 80.76%
+     */
     private static int[] intersection(int[] nums1, int[] nums2) {
         Arrays.sort(nums1);
         Arrays.sort(nums2);
@@ -47,5 +48,73 @@ public class IntersectionOfTwoArrays {
             intResult[k] = result.get(k);
 
         return intResult;
+    }
+
+    /**
+     * 4ms 89.86%
+     */
+    public static int[] intersection2(int[] nums1, int[] nums2) {
+        HashSet<Integer> hashSet = new HashSet<>();
+        HashSet<Integer> resSet = new HashSet<>();
+
+        for (int num : nums1) hashSet.add(num);
+        for (int num : nums2) {
+            if (hashSet.contains(num)) {
+                resSet.add(num);
+            }
+        }
+
+        int[] res = new int[resSet.size()];
+
+        Iterator<Integer> iterator = resSet.iterator();
+        for (int i = 0; i < res.length; i++) {
+            res[i] = iterator.next();
+        }
+
+        return res;
+    }
+
+    /**
+     * 1ms
+     */
+    public int[] intersection3(int[] nums1, int[] nums2) {
+        if (nums1.length == 0 || nums2.length == 0) return new int[0];
+
+        int max = Integer.MIN_VALUE;
+        for (int i1 : nums1) {
+            if (i1 > max) {
+                max = i1;
+            }
+        }
+
+        for (int i1 : nums2) {
+            if (i1 > max) {
+                max = i1;
+            }
+        }
+
+        int count = 0;
+        int[] book = new int[max + 1];
+        for (int i1 : nums1) {
+            if (book[i1] == 0)
+                book[i1]++;
+        }
+
+        for (int i1 : nums2) {
+            if (book[i1] == 1) {
+                book[i1]++;
+                count++;
+            }
+        }
+
+        int[] testan = new int[count];
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0,j=0; i < book.length; i++) {
+            if (book[i] > 1) {
+                testan[j++] = i;
+            }
+        }
+
+        return  testan;
     }
 }

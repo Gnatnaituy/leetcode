@@ -33,9 +33,13 @@ import java.util.*;
  */
 
 public class MinimumIndexOfTwoLists {
+
+    /**
+     * 85ms 16.40%
+     */
     private String[] findRestaurant(String[] list1, String[] list2) {
         List<String> res = new ArrayList<>();
-        List<Integer> indexs = new ArrayList<>();
+        List<Integer> indexes = new ArrayList<>();
         HashMap<Integer, String> hashMap1 = new HashMap<>();
         HashMap<String, Integer> hashMap2 = new HashMap<>();
         HashMap<String, Integer> hashMap11 = new HashMap<>();
@@ -46,12 +50,12 @@ public class MinimumIndexOfTwoLists {
         for (int i = 0; i < list1.length; i++) {
             if (hashMap2.containsKey(hashMap1.get(i))) {
                 res.add(hashMap1.get(i));
-                indexs.add(i + hashMap2.get(hashMap1.get(i)));
+                indexes.add(i + hashMap2.get(hashMap1.get(i)));
             }
         }
 
-        indexs.sort((o1, o2) -> o1 < o2 ? 1 : 0);
-        int minIndex = indexs.get(0);
+        indexes.sort((o1, o2) -> o1 < o2 ? 1 : 0);
+        int minIndex = indexes.get(0);
 
         List<String> aaa = new ArrayList<>();
         for (String re : res) {
@@ -65,5 +69,61 @@ public class MinimumIndexOfTwoLists {
         }
 
         return finalRes;
+    }
+
+    /**
+     * 30ms 69.43%
+     */
+    private static String[] findRestaurant2(String[] list1, String[] list2) {
+        int min = Integer.MAX_VALUE;
+        HashMap<String, Integer> mapOfList1 = new HashMap<>();
+        List<String> restaurants = new ArrayList<>();
+
+        for (int i = 0; i < list1.length; i++) {
+            mapOfList1.put(list1[i], i);
+        }
+
+        for (int i = 0; i < list2.length; i++) {
+            if (mapOfList1.containsKey(list2[i])) {
+                int distance = i + mapOfList1.get(list2[i]);
+                if (distance > min) continue;
+                if (distance < min) {
+                    min = distance;
+                    restaurants = new ArrayList<>();
+                }
+                restaurants.add(list2[i]);
+            }
+        }
+
+        String[] res = new String[restaurants.size()];
+        for (int i = 0; i < res.length; i++) res[i] = restaurants.get(i);
+
+        return res;
+    }
+
+    /**
+     * 16ms
+     */
+    public String[] findRestaurant3(String[] list1, String[] list2) {
+        Map<String, Integer> map = new HashMap<>();
+        List<String> list = new LinkedList<>();
+        int min = list1.length + list2.length;
+        for (int i = 0; i < list1.length; i++){
+            map.put(list1[i], i);
+        }
+        for (int j = 0; j < list2.length && j <= min; j++){
+            if (map.containsKey(list2[j])){
+                int sum = j + map.get(list2[j]);
+                if (sum < min){
+                    // 发现索引和更小的元素
+                    min = sum;
+                    list.clear();
+                    list.add(list2[j]);
+                } else if (sum == min){
+                    list.add(list2[j]);
+                }
+            }
+        }
+        return list.toArray(new String[0]);
     }
 }

@@ -62,6 +62,7 @@ class BestTimeToSaleAndBuyStock {
                 max = Math.max(price - min, max);
             }
         }
+
         return max;
     }
 
