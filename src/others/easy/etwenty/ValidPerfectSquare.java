@@ -32,4 +32,21 @@ public class ValidPerfectSquare {
         }
         return false;
     }
+
+    /**
+     * 0ms
+     */
+    public boolean isPerfectSquare2(int num) {
+        long l = 0, r = num;
+        while(l <= r) {
+            long m = l + (r - l) / 2;
+            if (m * m == num)
+                return true;
+            if (m * m > num)
+                r = m - 1;
+            else
+                l = m + 1;
+        }
+        return false;
+    }
 }

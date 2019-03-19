@@ -7,7 +7,14 @@ public class SqrtOfX {
         return (int) Math.sqrt(x);
     }
 
-    public static void main(String[] args) {
-        System.out.print(mySqrt(1));
+    private static int mySqrt2(int x) {
+        if (x == 0) return 0;
+        long sqrt = x;
+
+        while (sqrt * sqrt > x) {
+            sqrt = (sqrt + x / sqrt) / 2;
+        }
+
+        return (int) sqrt;
     }
 }

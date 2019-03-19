@@ -9,6 +9,7 @@ public class BinarySearch {
         int start = 0;
         int end = nums.length - 1;
         int middle = nums.length / 2;
+
         while (start <= end) {
             if (nums[middle] == target) 
                 return middle;
