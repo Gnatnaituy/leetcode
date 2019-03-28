@@ -45,10 +45,10 @@ public class ExitRepetition {
         return false;
     }
 
+    /**
+     * 解法3 6ms
+     */
     public boolean containsDuplicate3(int[] nums) {
-        /**
-         * 解法3 6ms
-         */
         Arrays.sort(nums);
         for (int i = 1; i < nums.length; i++) {
             if (nums[i] == nums[i - 1])

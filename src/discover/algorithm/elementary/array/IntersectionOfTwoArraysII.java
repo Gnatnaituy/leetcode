@@ -2,16 +2,16 @@ package discover.algorithm.elementary.array;
 
 import java.util.*;
 
+
+/**
+ * 给定两个数组，编写一个函数来计算它们的交集
+ */
 public class IntersectionOfTwoArraysII {
 
     /**
-     * 给定两个数组，编写一个函数来计算它们的交集
+     * 7ms 57.26%
      */
     public int[] intersect(int[] nums1, int[] nums2) {
-        /*
-        2个月之前的版本
-        7ms 57.60%
-         */
         Arrays.sort(nums1);
         Arrays.sort(nums2);
         List<Integer> result = new ArrayList<>();

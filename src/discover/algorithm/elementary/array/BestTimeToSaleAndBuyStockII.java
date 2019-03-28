@@ -56,11 +56,10 @@ class BestTimeToSaleAndBuyStock {
         int min = Integer.MAX_VALUE;
 
         for (int price : prices) {
-            if (price < min) {
+            if (price < min)
                 min = price;
-            } else {
+            else
                 max = Math.max(price - min, max);
-            }
         }
 
         return max;
