@@ -1,5 +1,9 @@
 package others;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+
 public class OneTwoEight {
 
     public static void main(String[] args) {
@@ -35,5 +39,69 @@ public class OneTwoEight {
         }
 
         return res;
+    }
+
+    public int missingElement(int[] nums, int k) {
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] != nums[i - 1] + 1) {
+                k -= nums[i] - nums[i - 1] - 1;
+            }
+            if (k <= 0) {
+                return nums[i] - nums[i + k - 1];
+            }
+        }
+
+        return nums[nums.length - 1] + k;
+    }
+
+    public String smallestEquivalentString(String A, String B, String S) {
+        List<HashSet<Character>> set = new ArrayList<>();
+        StringBuilder res = new StringBuilder();
+
+        for (int i = 0; i < A.length(); i++) {
+            boolean contains = false;
+            for (HashSet<Character> hashSet : set) {
+                if (hashSet.contains(A.charAt(i)) || hashSet.contains(B.charAt(i))) {
+                    contains = true;
+                    set.remove(hashSet);
+                    hashSet.add(A.charAt(i));
+                    hashSet.add(B.charAt(i));
+                    set.add(hashSet);
+                }
+            }
+            if (!contains) {
+                HashSet<Character> newSet = new HashSet<>();
+                newSet.add(A.charAt(i));
+                newSet.add(B.charAt(i));
+                set.add(newSet);
+            }
+        }
+
+        for (char s : S.toCharArray()) {
+            boolean contains = false;
+            for (HashSet<Character> set1 : set) {
+                if (set1.contains(s)) {
+                    contains = true;
+                    res.append(minChar(set1));
+                    break;
+                }
+            }
+            if (!contains) {
+                res.append(s);
+            }
+        }
+
+        return res.toString();
+    }
+
+    private char minChar(HashSet<Character> set) {
+        char c = 'z';
+
+        for (char c1 : set) {
+            if (c1 < c)
+                c = c1;
+        }
+
+        return c;
     }
 }
