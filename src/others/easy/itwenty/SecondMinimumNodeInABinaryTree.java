@@ -1,6 +1,6 @@
 package others.easy.itwenty;
 
-import tools.TreeNode;
+import others.tools.TreeNode;
 
 /**
  * 671 Second Minimum Node in a Binary Tree

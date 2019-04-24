@@ -1,7 +1,7 @@
 package others.easy.btwenty;
 
 
-import tools.TreeNode;
+import others.tools.TreeNode;
 
 /**
  * 104 Maximum Depth of Binary Tree

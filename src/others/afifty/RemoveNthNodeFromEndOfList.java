@@ -1,6 +1,6 @@
 package others.afifty;
 
-import tools.ListNode;
+import others.tools.ListNode;
 
 /**
  * 19. Remove Nth Node from End of List

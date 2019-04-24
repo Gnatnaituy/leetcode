@@ -1,5 +1,6 @@
 package others.easy.itwenty;
-import tools.TreeNode;
+
+import others.tools.TreeNode;
 
 /**
  * 700 Search in a BST

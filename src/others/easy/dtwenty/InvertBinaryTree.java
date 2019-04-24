@@ -1,7 +1,7 @@
 package others.easy.dtwenty;
 
 
-import tools.TreeNode;
+import others.tools.TreeNode;
 
 /**
  * 226 invert Binary Tree

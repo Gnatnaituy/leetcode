@@ -1,6 +1,6 @@
 package others.easy.itwenty;
 
-import tools.TreeNode;
+import others.tools.TreeNode;
 
 /**
  * 687  Longest Univalue Path

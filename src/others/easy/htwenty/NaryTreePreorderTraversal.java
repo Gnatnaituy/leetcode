@@ -1,8 +1,10 @@
 package others.easy.htwenty;
 
-import tools.NNode;
+import others.tools.NNode;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
 
 /**
  * 589 N-ary Tree Preorder Traversal

@@ -1,6 +1,6 @@
 package others.easy.etwenty;
 
-import tools.TreeNode;
+import others.tools.TreeNode;
 
 /**
  * 404 Sum of Left Leaves

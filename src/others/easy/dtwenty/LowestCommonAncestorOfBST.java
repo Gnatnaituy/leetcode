@@ -1,6 +1,6 @@
 package others.easy.dtwenty;
 
-import tools.TreeNode;
+import others.tools.TreeNode;
 
 /**
  * 235 Lowest Common Ancestor Of Binary Search Tree

@@ -1,9 +1,9 @@
 package others.easy.btwenty;
 
 
-import tools.TreeNode;
+import others.tools.TreeNode;
 
-import static tools.StringToTreeNode.stringToTreeNode;
+import static others.tools.StringToTreeNode.stringToTreeNode;
 
 /**
  * 110 Balanced Binary Tree

@@ -1,6 +1,6 @@
 package others.easy.ltwenty;
 
-import tools.ListNode;
+import others.tools.ListNode;
 
 /**
  * 876 Middle of the Linked List

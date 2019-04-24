@@ -1,7 +1,7 @@
 package others.easy.btwenty;
 
 
-import tools.TreeNode;
+import others.tools.TreeNode;
 
 import java.util.Arrays;
 

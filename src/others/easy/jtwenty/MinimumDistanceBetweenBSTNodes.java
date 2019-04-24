@@ -1,6 +1,6 @@
 package others.easy.jtwenty;
 
-import tools.TreeNode;
+import others.tools.TreeNode;
 
 /**
  * 783 Minimum Distance Between BST Nodes

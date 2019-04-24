@@ -1,6 +1,6 @@
 package others.easy.ctwenty;
 
-import tools.ListNode;
+import others.tools.ListNode;
 
 /**
  * 203 Remove Linked List Elements

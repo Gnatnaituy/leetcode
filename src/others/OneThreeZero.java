@@ -1,6 +1,6 @@
 package others;
 
-import tools.ListNode;
+import others.tools.ListNode;
 
 import java.util.ArrayList;
 import java.util.List;

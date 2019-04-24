@@ -1,6 +1,6 @@
 package others.easy.htwenty;
 
-import tools.TreeNode;
+import others.tools.TreeNode;
 
 /**
  * 572 Subtree of Another Tree

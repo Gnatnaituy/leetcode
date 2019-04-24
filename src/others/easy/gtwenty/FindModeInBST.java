@@ -1,8 +1,11 @@
 package others.easy.gtwenty;
 
-import tools.TreeNode;
+import others.tools.TreeNode;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 501 Find Mode in Binary Search Tree

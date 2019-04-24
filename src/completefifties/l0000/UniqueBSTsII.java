@@ -1,6 +1,6 @@
 package completefifties.l0000;
 
-import tools.TreeNode;
+import others.tools.TreeNode;
 
 import java.util.LinkedList;
 import java.util.List;

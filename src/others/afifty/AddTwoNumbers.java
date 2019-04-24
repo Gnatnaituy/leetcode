@@ -1,6 +1,6 @@
 package others.afifty;
 
-import tools.ListNode;
+import others.tools.ListNode;
 
 /**
  * 2 Add Two Numbers

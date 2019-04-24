@@ -1,6 +1,6 @@
 package completefifties.l0000;
 
-import tools.ListNode;
+import others.tools.ListNode;
 
 public class RotateList {
 

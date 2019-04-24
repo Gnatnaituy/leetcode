@@ -1,6 +1,6 @@
 package others.easy.gtwenty;
 
-import tools.NNode;
+import others.tools.NNode;
 
 import java.util.LinkedList;
 import java.util.Queue;

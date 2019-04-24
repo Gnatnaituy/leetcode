@@ -1,6 +1,6 @@
 package others.easy.dtwenty;
 
-import tools.ListNode;
+import others.tools.ListNode;
 
 /**
  * 234 Palindrome Linked List

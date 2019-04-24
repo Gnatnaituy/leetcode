@@ -1,6 +1,6 @@
 package others.easy.atwenty;
 
-import tools.ListNode;
+import others.tools.ListNode;
 
 /**
  * 83 Remove Duplicates from Sorted List

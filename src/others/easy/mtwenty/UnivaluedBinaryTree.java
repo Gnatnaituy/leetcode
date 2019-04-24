@@ -1,6 +1,6 @@
 package others.easy.mtwenty;
 
-import tools.TreeNode;
+import others.tools.TreeNode;
 
 /**
  * 965 Univalued Binary Tree

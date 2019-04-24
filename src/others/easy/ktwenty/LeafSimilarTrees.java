@@ -1,9 +1,9 @@
 package others.easy.ktwenty;
 
+import others.tools.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import tools.TreeNode;
 
 /**
  * 872 Leaf-Similar Trees

@@ -1,6 +1,6 @@
 package others.easy.htwenty;
 
-import tools.TreeNode;
+import others.tools.TreeNode;
 
 /**
  * 617 Merge Two Binary Trees

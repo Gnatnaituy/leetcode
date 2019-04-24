@@ -1,6 +1,6 @@
 package others.easy.btwenty;
 
-import tools.TreeNode;
+import others.tools.TreeNode;
 
 /**
  * 100 Same Tree

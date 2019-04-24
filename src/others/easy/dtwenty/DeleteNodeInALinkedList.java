@@ -1,6 +1,6 @@
 package others.easy.dtwenty;
 
-import tools.ListNode;
+import others.tools.ListNode;
 
 /**
  * 237 Delete QuadNode in a Linked List

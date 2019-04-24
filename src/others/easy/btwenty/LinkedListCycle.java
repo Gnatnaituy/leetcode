@@ -1,6 +1,6 @@
 package others.easy.btwenty;
 
-import tools.ListNode;
+import others.tools.ListNode;
 
 import java.util.HashSet;
 import java.util.Set;

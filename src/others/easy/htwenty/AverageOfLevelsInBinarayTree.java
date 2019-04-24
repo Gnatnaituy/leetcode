@@ -1,6 +1,6 @@
 package others.easy.htwenty;
 
-import tools.TreeNode;
+import others.tools.TreeNode;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

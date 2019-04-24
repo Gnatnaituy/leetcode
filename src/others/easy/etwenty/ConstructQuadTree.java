@@ -1,6 +1,6 @@
 package others.easy.etwenty;
 
-import tools.QuadNode;
+import others.tools.QuadNode;
 
 /**
  * 427 Construct Quad Tree

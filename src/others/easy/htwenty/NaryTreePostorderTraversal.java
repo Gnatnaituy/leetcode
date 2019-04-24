@@ -1,6 +1,6 @@
 package others.easy.htwenty;
 
-import tools.NNode;
+import others.tools.NNode;
 
 import java.util.ArrayList;
 import java.util.List;
