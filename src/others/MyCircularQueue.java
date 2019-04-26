@@ -4,8 +4,8 @@ class MyCircularQueue {
 
     private int[] elementData;
     private int capacity;
-    private int front = 0;
-    private int rear = 0;
+    private int front;
+    private int rear;
 
     /** Initialize your data structure here. Set the size of the queueandbfs to be k. */
     public MyCircularQueue(int k) {
@@ -17,10 +17,10 @@ class MyCircularQueue {
     
     /** Insert an element into the circular queueandbfs. Return true if the operation is successful. */
     public boolean enQueue(int value) {
-        if (isFull() == true) {
+        if (isFull()) {
             return false;
         }
-        if (isEmpty() == true) {
+        if (isEmpty()) {
             front = 0;
         }
         rear = (rear + 1) % capacity;
@@ -29,7 +29,7 @@ class MyCircularQueue {
     }
 
     public boolean deQueue() {
-        if (isEmpty() == true) {
+        if (isEmpty()) {
             return false;
         }
         if (front == rear) {
@@ -67,13 +67,13 @@ class MyCircularQueue {
     }
     
     /** Checks whether the circular queueandbfs is full or not. */
-    public boolean isFull() {
+    private boolean isFull() {
         return ((rear + 1) % capacity) == front;
         
     }
 }
 
-/**
+/*
  * Your MyCircularQueue object will be instantiated and called as such:
  * MyCircularQueue obj = new MyCircularQueue(k);
  * boolean param_1 = obj.enQueue(value);
