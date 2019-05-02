@@ -7,7 +7,7 @@ public class Combinations {
     /**
      * 超出时间限制
      */
-    private List<List<Integer>> combine(int n, int k) {
+    public List<List<Integer>> combine(int n, int k) {
         List<List<Integer>> res = new LinkedList<>();
         Set<Set<Integer>> set = new HashSet<>();
         Set<Set<Integer>> newSet;
@@ -40,7 +40,7 @@ public class Combinations {
     }
 
     /**
-     * 16ms 72.18%
+     *
      */
     public List<List<Integer>> combine2(int n, int k) {
         if (k > n || k < 0) {
@@ -54,44 +54,12 @@ public class Combinations {
             return res;
         }
 
-        // The combinations that include n
         List<List<Integer>> res = combine(n - 1, k - 1);
-        for (List<Integer> a : res) {
+        for (List<Integer> a : res)
             a.add(n);
-        }
 
-        // The combination that didn't include n
         res.addAll(combine(n - 1, k));
 
         return res;
-    }
-
-    public List<List<Integer>> combine3(int n, int k) {
-        List<List<Integer>> res = new ArrayList<>();
-        if (k <= 0 || k > n)
-            return res;
-        backtrack(res, new ArrayList<>(), n, k, 1);
-        return res;
-    }
-
-    /**
-     * 这里i <= n 换成 i <= (n-(k-cur.size())) + 1 避免不必要的搜索
-     * 例如:  n=4, k=3时
-     * *       1         2     i <= (4 - (3 - 0)) + 1 = 2
-     * *     / |        /
-     * *    2  3       3       i <= (4 - (3 - 1)) + 1 = 3
-     * *   / \  \     /
-     * *  3  4   4   4         i <= (4 - (3 - 2)) + 1 = 4
-     */
-    private void backtrack(List<List<Integer>> res, List<Integer> cur, int n, int k, int start) {
-        if (cur.size() == k) {
-            res.add(new ArrayList<>(cur));
-            return;
-        }
-        for (int i = start; i <= (n - (k - cur.size())) + 1; i++) {
-            cur.add(i);
-            backtrack(res, cur, n, k, i + 1);
-            cur.remove(cur.size() - 1);
-        }
     }
 }

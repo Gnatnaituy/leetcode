@@ -19,14 +19,17 @@ public class SearchInRotatedSortedArray {
     
     private int search(int[] nums, int low, int high, int target) {
         if (low > high) return -1;
+
         int mid = (low + high) / 2;
+
         if (nums[mid] == target) return mid;
 
         if (nums[mid] < nums[high])
             return (nums[mid] < target && target <= nums[high]) ?  // 是否为有序部分
                     search(nums, mid + 1, high, target) :
                     search(nums, low, mid - 1, target);
-        else return (nums[low] <= target && target < nums[mid]) ?
+        else
+            return (nums[low] <= target && target < nums[mid]) ?
                     search(nums, low, mid - 1, target) :
                     search(nums, mid + 1, high, target);
     }
