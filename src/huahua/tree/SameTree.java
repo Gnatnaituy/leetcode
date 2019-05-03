@@ -1,4 +1,4 @@
-package huahua.tree.easy;
+package huahua.tree;
 
 import others.tools.TreeNode;
 
