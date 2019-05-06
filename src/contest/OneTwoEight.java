@@ -1,4 +1,4 @@
-package others;
+package contest;
 
 import java.util.ArrayList;
 import java.util.HashSet;

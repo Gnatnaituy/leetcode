@@ -1,4 +1,4 @@
-package others;
+package contest;
 
 import others.tools.ListNode;
 

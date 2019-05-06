@@ -21,7 +21,7 @@ public class BinaryTreeInorderTraversal {
     }
 
     private void helper(TreeNode root, List<Integer> res) {
-        if(root != null){
+        if (root != null) {
             helper(root.left, res);
             res.add(root.val);
             helper(root.right, res);

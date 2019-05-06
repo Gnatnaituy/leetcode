@@ -22,16 +22,17 @@ public class SearchInRotatedSortedArray {
 
         int mid = (low + high) / 2;
 
-        if (nums[mid] == target) return mid;
-
-        if (nums[mid] < nums[high])
-            return (nums[mid] < target && target <= nums[high]) ?  // 是否为有序部分
+        if (nums[mid] == target) {
+            return mid;
+        } else if (nums[mid] < nums[high]) {  // mid到high为有序部分
+            return (nums[mid] < target && target <= nums[high]) ?  // 是否在有序部分
                     search(nums, mid + 1, high, target) :
                     search(nums, low, mid - 1, target);
-        else
+        } else {  // low到mid为有序部分
             return (nums[low] <= target && target < nums[mid]) ?
                     search(nums, low, mid - 1, target) :
                     search(nums, mid + 1, high, target);
+        }
     }
 
     /**

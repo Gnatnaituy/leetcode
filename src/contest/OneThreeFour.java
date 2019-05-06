@@ -1,8 +1,8 @@
-package others;
+package contest;
 
 import java.util.Arrays;
 
-public class OneThreeFive {
+public class OneThreeFour {
 
     public int[] numMovesStones(int a, int b, int c) {
         int[] poses = new int[]{a, b, c};
