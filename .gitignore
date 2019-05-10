@@ -28,3 +28,5 @@ bin/
 .git/
 out/
 .settings/
+
+.DS_Store
