@@ -1,65 +1,64 @@
 package completefifties.l0000;
 
 public class SudokuSolver {
-    
+
     /**
-     * 37. Sudoku Solver
+     * 2ms 98.81%
+     * 34.1MB 94.98%
      */
-    private void solveSudoku(char[][] board) {
-        // 记录某行，某位数字是否已经被摆放
+    public void solveSudoku(char[][] board) {
+        // 第一个下标表示坐标，第二个下标表示数字
         boolean[][] row = new boolean[9][10];
-        // 记录某列，某位数字是否已经被摆放
         boolean[][] col = new boolean[9][10];
-        // 记录某 3x3 宫格内，某位数字是否已经被摆放
         boolean[][] block = new boolean[9][10];
-    
-        for (int i = 0; i < 9; i++) {
-            for (int j = 0; j < 9; j++) {
-                if (board[i][j] != '.') {
-                    int num = board[i][j] - '0';
-                    row[i][num] = true;
-                    col[j][num] = true;
-                    // blockIndex = i / 3 * 3 + j / 3，取整
-                    block[i / 3 * 3 + j / 3][num] = true;
+
+        for (int rowIndex = 0; rowIndex < 9; rowIndex++) {
+            for (int colIndex = 0; colIndex < 9; colIndex++) {
+                if (board[rowIndex][colIndex] != '.') {
+                    int num = board[rowIndex][colIndex] - '0';
+                    row[rowIndex][num] = true;
+                    col[colIndex][num] = true;
+                    block[rowIndex / 3 * 3 + colIndex / 3][num] = true;
                 }
             }
         }
-        
+
         dfs(board, row, col, block, 0, 0);
     }
-    
-    private boolean dfs(char[][] board, boolean[][] row, boolean[][] col, boolean[][] block, int i, int j) {
-        // 找寻空位置
-        while (board[i][j] != '.') {
-            if (++j >= 9) {
-                i++;
-                j = 0;
+
+    private boolean dfs(char[][] board, boolean[][] row, boolean[][] col, boolean[][] block,
+                        int rowIndex, int colIndex) {
+        while (board[rowIndex][colIndex] != '.') {
+            if (++colIndex == 9) {
+                rowIndex++;
+                colIndex = 0;
             }
-            if (i >= 9) {
+
+            if (rowIndex == 9) {
                 return true;
             }
         }
-        
+
         for (int num = 1; num <= 9; num++) {
-            int blockIndex = i / 3 * 3 + j / 3;
-            if (!row[i][num] && !col[j][num] && !block[blockIndex][num]) {
-                // 递归
-                board[i][j] = (char) ('0' + num);
-                row[i][num] = true;
-                col[j][num] = true;
+            int blockIndex = rowIndex / 3 * 3 + colIndex / 3;
+
+            if (!row[rowIndex][num] && !col[colIndex][num] && !block[blockIndex][num]) {
+                board[rowIndex][colIndex] = (char) (num + '0');
+                row[rowIndex][num] = true;
+                col[colIndex][num] = true;
                 block[blockIndex][num] = true;
-                if (dfs(board, row, col, block, i, j)) {
+
+                if (dfs(board, row, col, block, rowIndex, colIndex)) {
                     return true;
-                } else {
-                    // 回溯
-                    row[i][num] = false;
-                    col[j][num] = false;
-                    block[blockIndex][num] = false;
-                    board[i][j] = '.';
                 }
+
+                board[rowIndex][colIndex] = '.';
+                row[rowIndex][num] = false;
+                col[colIndex][num] = false;
+                block[blockIndex][num] = false;
             }
         }
-        
+
         return false;
     }
 }

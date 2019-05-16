@@ -3,32 +3,32 @@ package others.easy.btwenty;
 
 /**
  * 122 Best Time to Buy and Sell Stock II
- *
+ * <p>
  * Say you have an array for which the ith element is the price of a given stock on day i.
- *
+ * <p>
  * Design an algorithm to find the maximum profit. You may complete as many transactions as you like
  * (i.e., buy one and sell one share of the stock multiple times).
- *
+ * <p>
  * Note: You may not engage in multiple transactions at the same time
  * (i.e., you must sell the stock before you buy again).
- *
+ * <p>
  * Example 1:
- *
+ * <p>
  * Input: [7,1,5,3,6,4]
  * Output: 7
  * Explanation: Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-1 = 4.
- *              Then buy on day 4 (price = 3) and sell on day 5 (price = 6), profit = 6-3 = 3.
- *
+ * Then buy on day 4 (price = 3) and sell on day 5 (price = 6), profit = 6-3 = 3.
+ * <p>
  * Example 2:
- *
+ * <p>
  * Input: [1,2,3,4,5]
  * Output: 4
  * Explanation: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-1 = 4.
- *              Note that you cannot buy on day 1, buy on day 2 and sell them later, as you are
- *              engaging multiple transactions at the same time. You must sell before buying again.
- *
+ * Note that you cannot buy on day 1, buy on day 2 and sell them later, as you are
+ * engaging multiple transactions at the same time. You must sell before buying again.
+ * <p>
  * Example 3:
- *
+ * <p>
  * Input: [7,6,4,3,1]
  * Output: 0
  * Explanation: In this case, no transaction is done, i.e. max profit = 0.
@@ -36,19 +36,19 @@ package others.easy.btwenty;
 
 public class BestTimetoBuyandSellStockII {
 
-    private static int maxProfit(int[] prices) {
-        if(prices == null || prices.length == 0)
+    public int maxProfit(int[] prices) {
+        if (prices == null || prices.length < 2) {
             return 0;
-        if(prices.length == 1)
-            return 0;
-        int sum=0;
+        }
+
+        int sum = 0;
         int i = 0;
         int j = 0;
-        while(i < prices.length && j < prices.length) {
-            while(j < prices.length - 1 && prices[j] <= prices[j + 1])
+        while (i < prices.length && j < prices.length) {
+            while (j < prices.length - 1 && prices[j] <= prices[j + 1])
                 j++;
 
-            if(j == prices.length - 1) {
+            if (j == prices.length - 1) {
                 // Reach the last element of prices, stop
                 sum += prices[j] - prices[i];
                 break;
@@ -60,5 +60,21 @@ public class BestTimetoBuyandSellStockII {
             j++;
         }
         return sum;
+    }
+
+    /**
+     * 1ms 81.16%
+     * 36.1MB 87.51%
+     */
+    public int maxProfit2(int[] prices) {
+        int profit = 0;
+
+        for (int i = 1; i < prices.length; i++) {
+            if (prices[i] > prices[i - 1]) {
+                profit += (prices[i] - prices[i - 1]);
+            }
+        }
+
+        return profit;
     }
 }

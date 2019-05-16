@@ -44,30 +44,30 @@ public class PermutationsII {
     public List<List<Integer>> permuteUnique2(int[] nums) {
         Arrays.sort(nums);
         List<List<Integer>> result = new ArrayList<>();
-        boolean[] isVisit = new boolean[nums.length];
+        boolean[] visited = new boolean[nums.length];
 
-        dfs(result, new ArrayList<>(), isVisit, nums);
+        dfs(result, new ArrayList<>(), visited, nums);
 
         return result;
     }
 
-    private void dfs(List<List<Integer>> result, List<Integer> cur, boolean[] isVisit, int[] nums) {
+    private void dfs(List<List<Integer>> result, List<Integer> cur, boolean[] visited, int[] nums) {
         if (cur.size() == nums.length) {
             result.add(new ArrayList<>(cur));
             return;
         }
 
         for (int i = 0; i < nums.length; i++) {
-            if (isVisit[i]) {
+            if (visited[i] || (i > 0 && nums[i] == nums[i - 1] && !visited[i - 1])) {
                 continue;
             }
-            if (i > 0 && nums[i] == nums[i - 1] && !isVisit[i - 1]) {
-                continue;
-            }
-            isVisit[i] = true;
+
+            visited[i] = true;
             cur.add(nums[i]);
-            dfs(result, cur, isVisit, nums);
-            isVisit[i] = false;
+
+            dfs(result, cur, visited, nums);
+
+            visited[i] = false;
             cur.remove(cur.size() - 1);
         }
     }

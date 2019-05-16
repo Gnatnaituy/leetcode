@@ -11,7 +11,9 @@ public class IsSubsequence {
 
         for (char c : s.toCharArray()) {
             index = t.indexOf(c, index + 1);
-            if (index == -1) return false;
+            if (index == -1) {
+                return false;
+            }
         }
 
         return true;
