@@ -62,4 +62,34 @@ public class MaximumLengthOfPairChain {
 
         return sum;
     }
+
+    /**
+     * 44ms 63.68%
+     * 43.8MB 84.10%
+     */
+    public int findLongestChain4(int[][] pairs) {
+        if (pairs == null || pairs.length == 0) return 0;
+        if (pairs.length == 1) return 1;
+
+        Arrays.sort(pairs, Comparator.comparingInt(o -> o[1]));
+
+        int res = 1;
+        int cur = 1;
+        int big = pairs[0][1];
+//        while (cur < pairs.length) {
+//            if (pairs[cur][0] > big) {
+//                big = pairs[cur][1];
+//                res++;
+//            }
+//            cur++;
+//        }
+        for (int i = 1; i < pairs.length; i++) {
+            if (pairs[i][0] > big) {
+                big = pairs[i][1];
+                res++;
+            }
+        }
+
+        return res;
+    }
 }

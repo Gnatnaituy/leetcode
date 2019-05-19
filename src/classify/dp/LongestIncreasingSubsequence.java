@@ -1,5 +1,7 @@
 package classify.dp;
 
+import java.util.Arrays;
+
 public class LongestIncreasingSubsequence {
 
     /**
@@ -63,5 +65,52 @@ public class LongestIncreasingSubsequence {
         }
 
         return res;
+    }
+
+    /**
+     * 16ms 21.00%
+     * 36.2MB 57.84%
+     */
+    public int lengthOfLIS3(int[] nums) {
+        if (nums == null || nums.length == 0) return 0;
+        if (nums.length == 1) return 1;
+
+        int res = 1;
+        int[] dp = new int[nums.length];
+        Arrays.fill(dp, 1);
+
+        for (int i = 1; i < nums.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (nums[i] > nums[j]) {
+                    dp[i] = Math.max(dp[i], dp[j] + 1);
+                }
+                res = Math.max(dp[i], res);
+            }
+        }
+
+        return res;
+    }
+
+    /**
+     * 2ms
+     */
+    public int lengthOfLIS4(int[] nums) {
+        int[] tails = new int[nums.length];
+        int size = 0;
+
+        for (int x : nums) {
+            int i = 0, j = size;
+            while (i != j) {
+                int m = (i + j) / 2;
+                if (tails[m] < x)
+                    i = m + 1;
+                else
+                    j = m;
+            }
+            tails[i] = x;
+            if (i == size) ++size;
+        }
+
+        return size;
     }
 }

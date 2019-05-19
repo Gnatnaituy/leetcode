@@ -10,18 +10,25 @@ public class CourseSchedule {
      */
     public boolean canFinish(int numCourses, int[][] prerequisites) {
         ArrayList[] net = new ArrayList[numCourses];
-        for (int i = 0; i < numCourses; i++)
-            net[i] = new ArrayList<Integer>();
 
-        for (int[] prerequisite : prerequisites)
+        for (int i = 0; i < numCourses; i++) {
+            net[i] = new ArrayList<>();
+        }
+
+        for (int[] prerequisite : prerequisites) {
             net[prerequisite[0]].add(prerequisite[1]);
+        }
 
         boolean[] checked = new boolean[numCourses];
         boolean[] visited = new boolean[numCourses];
         for (int i = 0; i < numCourses; i++) {
-            if (checked[i]) continue;
+            if (checked[i]) {
+                continue;
+            }
             visited[i] = true;
-            if (findCircle(net, checked, visited, i)) return false;
+            if (findCircle(net, checked, visited, i)) {
+                return false;
+            }
             visited[i] = false;
         }
 
@@ -34,8 +41,11 @@ public class CourseSchedule {
             int cur = (int) net[st].get(i);
             if (visited[cur]) return true;
             if (checked[cur]) continue;
+            
             visited[cur] = true;
-            if (findCircle(net, checked, visited, cur)) return true;
+            if (findCircle(net, checked, visited, cur)) {
+                return true;
+            }
             checked[cur] = true;
             visited[cur] = false;
         }

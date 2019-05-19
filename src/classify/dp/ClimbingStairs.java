@@ -1,6 +1,6 @@
 package classify.dp;
 
-public class ClimbingStairs {
+public class    ClimbingStairs {
 
     /**
      * Brute Force

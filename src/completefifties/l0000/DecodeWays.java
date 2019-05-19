@@ -40,4 +40,32 @@ public class DecodeWays {
 
         return dp[s.length()];
     }
+
+    /**
+     * 1ms
+     */
+    public int numDecodings3(String s) {
+        if (s == null || s.length() == 0) {
+            return 0;
+        }
+
+        int[] dp = new int[s.length() + 1];
+
+        dp[0] = 1;
+        dp[1] = s.charAt(0) == '0' ? 0 : 1;
+        for (int i = 1; i < s.length(); i++) {
+            int pre = s.charAt(i - 1) - '0';
+            int now = s.charAt(i) - '0';
+
+            if (now > 0) {
+                dp[i + 1] = dp[i];
+            }
+
+            if ((10 * pre + now) >= 10 && (10 * pre + now) <= 26) {
+                dp[i + 1] += dp[i - 1];
+            }
+        }
+
+        return dp[s.length()];
+    }
 }

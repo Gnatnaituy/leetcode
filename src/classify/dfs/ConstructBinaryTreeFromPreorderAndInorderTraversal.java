@@ -13,8 +13,9 @@ public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
      * 41.7MB 6.57%
      */
     public TreeNode buildTree(int[] preorder, int[] inorder) {
-        if (preorder == null || inorder == null || preorder.length == 0 || inorder.length == 0)
+        if (preorder == null || inorder == null || preorder.length == 0 || inorder.length == 0) {
             return null;
+        }
 
         Map<Integer, Integer> indexes = new HashMap<>();
         for (int i = 0; i < inorder.length; i++) {
@@ -26,7 +27,9 @@ public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
     }
 
     private TreeNode helper(int[] preorder, int pstart, int pend, Map<Integer, Integer> indexes) {
-        if (pstart > pend || pStart >= preorder.length) return null;
+        if (pstart > pend || pStart >= preorder.length) {
+            return null;
+        }
         
         int index = indexes.get(preorder[pStart]);
         TreeNode root = new TreeNode(preorder[pStart]);
