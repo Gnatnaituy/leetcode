@@ -44,8 +44,10 @@ public class MakingALargeIsland {
      * 11ms
      */
     public int largestIsland2(int[][] grid) {
-        Map<Integer, Integer> map = new HashMap<>(); //Key: colorIsland, Val: size of island painted of that colorIsland
-        map.put(0, 0); //We won't colorIsland island 0, hence make its size 0, we will use this value later
+        //Key: colorIsland, Val: size of island painted of that colorIsland
+        Map<Integer, Integer> map = new HashMap<>();
+        //We won't colorIsland island 0, hence make its size 0, we will use this value later
+        map.put(0, 0);
         int len = grid.length;
         int colorIndex = 2; //0 and 1 is already used in grid, hence we start colorIndex from 2
         for (int i = 0; i < len; i++) {

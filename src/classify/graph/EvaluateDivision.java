@@ -13,14 +13,17 @@ public class EvaluateDivision {
 
         for (int i = 0; i < equations.size(); i++) {
             List<String> equation = equations.get(i);
+
             if (!pairs.containsKey(equation.get(0))) {
                 pairs.put(equation.get(0), new ArrayList<>());
                 valuePairs.put(equation.get(0), new ArrayList<>());
             }
+
             if (!pairs.containsKey(equation.get(1))) {
                 pairs.put(equation.get(1), new ArrayList<>());
                 valuePairs.put(equation.get(1), new ArrayList<>());
             }
+
             pairs.get(equation.get(0)).add(equation.get(1));
             pairs.get(equation.get(1)).add(equation.get(0));
             valuePairs.get(equation.get(0)).add(values[i]);

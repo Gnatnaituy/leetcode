@@ -36,18 +36,22 @@ public class CourseSchedule {
     }
 
     //true means find a circle
-    private boolean findCircle(ArrayList[] net, boolean[] checked, boolean[] visited, int st) {
-        for (int i = 0; i < net[st].size(); i++) {
-            int cur = (int) net[st].get(i);
-            if (visited[cur]) return true;
-            if (checked[cur]) continue;
-            
+    private boolean findCircle(ArrayList[] net, boolean[] checked, boolean[] visited, int index) {
+        for (int i = 0; i < net[index].size(); i++) {
+            int cur = (int) net[index].get(i);
+            if (checked[cur]) {
+                continue;
+            }
+            if (visited[cur]) {
+                return true;
+            }
+
             visited[cur] = true;
             if (findCircle(net, checked, visited, cur)) {
                 return true;
             }
-            checked[cur] = true;
             visited[cur] = false;
+            checked[cur] = true;
         }
 
         return false;
