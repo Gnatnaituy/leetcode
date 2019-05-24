@@ -1,4 +1,4 @@
-package classify.array;
+package classify.stackqueue;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -74,7 +74,7 @@ public class LongestConsecutiveSequence {
         if(nums.length == 0) {
             return 0;
         }
-        
+
         Arrays.sort(nums);
         int longest = 1;
         int curr = 1;

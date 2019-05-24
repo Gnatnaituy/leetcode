@@ -14,8 +14,8 @@ public class CombinationSumII {
         List<List<Integer>> res = new ArrayList<>();
 
         Arrays.sort(candidates);
-        backtrace(candidates, target, res, new ArrayList<>(), 0);
-
+//        backtrace(candidates, target, res, new ArrayList<>(), 0);
+        dfs(res, new ArrayList<>(), target, candidates, 0);
         return res;
     }
 

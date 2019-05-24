@@ -20,11 +20,15 @@ public class CombinationSumIV {
     }
 
     private void backtrace(Map<Integer, Integer> map, int[] nums, int target) {
-        if (target < 0) return;
+        if (target < 0) {
+            return;
+        }
+
         if (target == 0) {
             res++;
             return;
         }
+
         if (map.containsKey(target)) {
             res += map.get(target);
             return;
@@ -40,6 +44,8 @@ public class CombinationSumIV {
 
     /**
      * 动态规划
+     * 0ms 100.00%
+     * 33.2MB 66.17%
      */
     public int combinationSum42(int[] nums, int target) {
         dp = new int[target + 1];
@@ -50,7 +56,9 @@ public class CombinationSumIV {
     }
 
     private int dfs(int[] nums, int target) {
-        if (dp[target] != -1) return dp[target];
+        if (dp[target] != -1) {
+            return dp[target];
+        }
 
         int res = 0;
         for (int num : nums) {
@@ -61,5 +69,33 @@ public class CombinationSumIV {
         dp[target] = res;
 
         return res;
+    }
+
+
+    /**
+     * Time Limit Exceeded
+     */
+    public int combinationSum43(int[] nums, int target) {
+        if (nums == null || nums.length == 0 || target < 1) {
+            return 0;
+        }
+
+        Arrays.sort(nums);
+        backtrack(nums, target);
+
+        return res;
+    }
+
+    private void backtrack(int[] nums, int target) {
+        if (target == 0) {
+            res++;
+            return;
+        }
+
+        for (int i = 0; i < nums.length && nums[i] <= target; i++) {
+            target -= nums[i];
+            backtrack(nums, target);
+            target += nums[i];
+        }
     }
 }

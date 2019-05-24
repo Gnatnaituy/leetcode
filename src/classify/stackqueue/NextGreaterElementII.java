@@ -1,4 +1,4 @@
-package classify.array;
+package classify.stackqueue;
 
 import java.util.Arrays;
 import java.util.Stack;
