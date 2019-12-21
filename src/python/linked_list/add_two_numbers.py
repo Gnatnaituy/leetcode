@@ -1,5 +1,4 @@
-from python.tools.list_node import ListNode
-
+from tools.list_node import ListNode
 
 class Solution:
 
@@ -45,7 +44,7 @@ class Solution:
             num = val1 + val2 + carry
             carry = 0
             if num // 10 > 0:
-                carry = 1;
+                carry = 1
                 num = num % 10
             l3.next = ListNode(num)
             l3 = l3.next

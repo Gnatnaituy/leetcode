@@ -1,4 +1,4 @@
-from python.tools.list_node import ListNode
+from src.python.tools.list_node import ListNode
 
 
 def mergeKLists(self, lists: list[ListNode]) -> ListNode:

@@ -22,3 +22,17 @@ def swapPairs(self, head: ListNode) -> ListNode:
         cur = cur.next.next
 
     return head.next
+
+
+def swapPairs2(self, head: ListNode) -> ListNode:
+    """
+    24ms
+    """
+    if not head or not head.next:
+        return head
+        
+    tmp = head.next
+    head.next = self.swapPairs(head.next.next)
+    tmp.next = head
+
+    return tmp
