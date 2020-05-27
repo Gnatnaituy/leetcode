@@ -1,7 +1,7 @@
 package java.contest;
 
 
-import java.others.tools.TreeNode;
+import java.tools.TreeNode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -55,7 +55,9 @@ public class Contest135 {
     }
 
     private TreeNode constructTree(TreeNode origin, LinkedList<Integer> res) {
-        if (origin == null) return null;
+        if (origin == null) {
+            return null;
+        }
 
         TreeNode root = new TreeNode(0);
 

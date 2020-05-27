@@ -1,6 +1,6 @@
 package java.contest;
 
-import java.others.tools.TreeNode;
+import java.tools.TreeNode;
 
 import java.util.LinkedList;
 

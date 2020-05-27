@@ -1,6 +1,6 @@
 package java.classify.dfs;
 
-import java.others.tools.TreeNode;
+import java.tools.TreeNode;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -30,7 +30,7 @@ public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
         if (pstart > pend || pStart >= preorder.length) {
             return null;
         }
-        
+
         int index = indexes.get(preorder[pStart]);
         TreeNode root = new TreeNode(preorder[pStart]);
         pStart++;

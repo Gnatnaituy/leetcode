@@ -1,7 +1,7 @@
 package java.others.discover.datastructure.hashtable;
 
 
-import java.others.tools.TreeNode;
+import java.tools.TreeNode;
 
 import java.util.ArrayList;
 import java.util.HashMap;

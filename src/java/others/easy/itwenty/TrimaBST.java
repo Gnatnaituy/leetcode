@@ -1,6 +1,6 @@
 package java.others.easy.itwenty;
 
-import java.others.tools.TreeNode;
+import java.tools.TreeNode;
 
 /**
  * 669 Trim a Binary Search Tree

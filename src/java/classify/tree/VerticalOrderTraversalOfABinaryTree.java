@@ -1,6 +1,6 @@
 package java.classify.tree;
 
-import java.others.tools.TreeNode;
+import java.tools.TreeNode;
 
 import java.util.*;
 
@@ -23,7 +23,7 @@ public class VerticalOrderTraversalOfABinaryTree {
                 }
             }
         }
-        
+
         return list;
     }
 

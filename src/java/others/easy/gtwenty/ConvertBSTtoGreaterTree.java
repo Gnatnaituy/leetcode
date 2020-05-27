@@ -1,6 +1,6 @@
 package java.others.easy.gtwenty;
 
-import java.others.tools.TreeNode;
+import java.tools.TreeNode;
 
 import java.util.Stack;
 

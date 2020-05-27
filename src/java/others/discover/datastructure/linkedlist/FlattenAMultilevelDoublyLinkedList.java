@@ -1,6 +1,6 @@
 package java.others.discover.datastructure.linkedlist;
 
-import java.others.tools.MultipleDoublyListNode;
+import java.tools.MultipleDoublyListNode;
 
 import java.util.Stack;
 

@@ -1,6 +1,6 @@
 package java.others.easy.ktwenty;
 
-import java.others.tools.TreeNode;
+import java.tools.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,11 +24,11 @@ public class LeafSimilarTrees {
     private void leafValues(TreeNode root, List<Integer> res) {
         if (root == null) return;
 
-        if (root.left == null && root.right == null) 
+        if (root.left == null && root.right == null)
             res.add(root.val);
         else {
             if (root.left != null) leafValues(root.left, res);
             if (root.right != null) leafValues(root.right, res);
-        }     
+        }
     }
 }

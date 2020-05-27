@@ -1,6 +1,6 @@
 package java.others.easy.etwenty;
 
-import java.others.tools.TreeNode;
+import java.tools.TreeNode;
 
 /**
  * 404 Sum of Left Leaves

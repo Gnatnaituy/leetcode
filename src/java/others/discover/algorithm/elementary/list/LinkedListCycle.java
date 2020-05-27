@@ -1,7 +1,7 @@
 package java.others.discover.algorithm.elementary.list;
 
 
-import java.others.tools.ListNode;
+import java.tools.ListNode;
 
 import java.util.HashSet;
 import java.util.Set;

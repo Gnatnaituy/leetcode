@@ -1,8 +1,8 @@
 package java.others.easy.btwenty;
 
 
-import java.others.tools.StringToTreeNode;
-import java.others.tools.TreeNode;
+import java.tools.StringToTreeNode;
+import java.tools.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

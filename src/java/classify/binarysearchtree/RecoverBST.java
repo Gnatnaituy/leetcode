@@ -1,6 +1,6 @@
 package java.classify.binarysearchtree;
 
-import java.others.tools.TreeNode;
+import java.tools.TreeNode;
 
 public class RecoverBST {
     private TreeNode firstElement = null;

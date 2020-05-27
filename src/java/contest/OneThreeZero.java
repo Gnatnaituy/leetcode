@@ -1,6 +1,6 @@
 package java.contest;
 
-import java.others.tools.ListNode;
+import java.tools.ListNode;
 
 import java.util.ArrayList;
 import java.util.List;

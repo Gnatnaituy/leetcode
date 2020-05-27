@@ -1,6 +1,6 @@
 package java.classify.tree;
 
-import java.others.tools.TreeNode;
+import java.tools.TreeNode;
 
 
 public class LowestCommonAncesterOfABinaryTree {

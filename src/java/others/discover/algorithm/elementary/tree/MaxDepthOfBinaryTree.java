@@ -1,6 +1,6 @@
 package java.others.discover.algorithm.elementary.tree;
 
-import java.others.tools.TreeNode;
+import java.tools.TreeNode;
 
 /**
  * 给定一个二叉树，找出其最大深度。

@@ -1,9 +1,9 @@
 package java.completefifties.l0000;
 
-import java.others.tools.ListNode;
+import java.tools.ListNode;
 
 public class SwapNodesInPairs {
-    
+
     /**
      * 24. Swap Nodes in Pairs
      *
@@ -12,22 +12,22 @@ public class SwapNodesInPairs {
      */
     public ListNode swapPairs(ListNode head) {
         if (head == null || head.next == null) return head;
-        
+
         ListNode cur = head, tempLeft = cur, tempRight;
         head = head.next;
-        
+
         while (cur != null && cur.next != null) {
             tempRight = cur.next.next;
-    
+
             tempLeft.next = cur.next;
             cur.next.next = cur;
-            
+
             cur.next = tempRight;
-    
+
             tempLeft = cur;
             cur = cur.next;
         }
-        
+
         return head;
     }
 }

@@ -1,6 +1,6 @@
 package java.others.easy.dtwenty;
 
-import java.others.tools.ListNode;
+import java.tools.ListNode;
 
 /**
  * 234 Palindrome Linked List

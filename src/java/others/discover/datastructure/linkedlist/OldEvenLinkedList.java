@@ -1,6 +1,6 @@
 package java.others.discover.datastructure.linkedlist;
 
-import java.others.tools.ListNode;
+import java.tools.ListNode;
 
 public class OldEvenLinkedList {
 

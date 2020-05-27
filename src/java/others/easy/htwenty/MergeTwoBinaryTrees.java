@@ -1,6 +1,6 @@
 package java.others.easy.htwenty;
 
-import java.others.tools.TreeNode;
+import java.tools.TreeNode;
 
 /**
  * 617 Merge Two Binary Trees

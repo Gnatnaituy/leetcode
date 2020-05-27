@@ -1,6 +1,6 @@
 package java.others.easy.itwenty;
 
-import java.others.tools.TreeNode;
+import java.tools.TreeNode;
 
 /**
  * 671 Second Minimum Node in a Binary Tree

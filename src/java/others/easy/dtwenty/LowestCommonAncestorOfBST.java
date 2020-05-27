@@ -1,6 +1,6 @@
 package java.others.easy.dtwenty;
 
-import java.others.tools.TreeNode;
+import java.tools.TreeNode;
 
 /**
  * 235 Lowest Common Ancestor Of Binary Search Tree

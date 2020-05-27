@@ -1,6 +1,6 @@
 package java.others.easy.atwenty;
 
-import java.others.tools.ListNode;
+import java.tools.ListNode;
 
 /**
  * 83 Remove Duplicates from Sorted List

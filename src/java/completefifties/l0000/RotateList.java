@@ -1,6 +1,6 @@
 package java.completefifties.l0000;
 
-import java.others.tools.ListNode;
+import java.tools.ListNode;
 
 public class RotateList {
 
@@ -23,12 +23,12 @@ public class RotateList {
         idx = 0;
         while (idx != k) {
             if (right == null)
-                right = head;            
+                right = head;
             idx++;
-            right = right.next;            
+            right = right.next;
         }
         if (right == null)
-            right = head;        
+            right = head;
         while (right.next != null) {
             right = right.next;
             left = left.next;

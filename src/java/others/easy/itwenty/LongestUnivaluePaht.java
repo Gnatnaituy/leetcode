@@ -1,6 +1,6 @@
 package java.others.easy.itwenty;
 
-import java.others.tools.TreeNode;
+import java.tools.TreeNode;
 
 /**
  * 687  Longest Univalue Path

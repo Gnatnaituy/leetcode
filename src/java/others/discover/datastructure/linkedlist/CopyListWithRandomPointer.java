@@ -1,7 +1,7 @@
 package java.others.discover.datastructure.linkedlist;
 
 
-import java.others.tools.RandomNode;
+import java.tools.RandomNode;
 
 public class CopyListWithRandomPointer {
 
@@ -32,7 +32,7 @@ public class CopyListWithRandomPointer {
             if(next != null) l.next = next.next;
             l = next;
         }
-        
+
         return newHead;
     }
 }

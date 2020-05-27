@@ -1,6 +1,6 @@
 package java.completefifties.l0000;
 
-import java.others.tools.ListNode;
+import java.tools.ListNode;
 
 public class PartionList {
 

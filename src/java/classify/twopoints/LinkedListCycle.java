@@ -1,6 +1,6 @@
 package java.classify.twopoints;
 
-import java.others.tools.ListNode;
+import java.tools.ListNode;
 
 public class LinkedListCycle {
 

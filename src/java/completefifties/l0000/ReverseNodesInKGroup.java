@@ -1,9 +1,9 @@
 package java.completefifties.l0000;
 
-import java.others.tools.ListNode;
+import java.tools.ListNode;
 
 public class ReverseNodesInKGroup {
-    
+
     /**
      * 25. Reverse Nodes in k-Group
      *
@@ -18,13 +18,13 @@ public class ReverseNodesInKGroup {
         ListNode check = head; // why check can't be declared before cur???
         int canProceed = 0;
         int count = 0;
-        
+
         // check if the list can be reversed
         while (canProceed < k && check != null) {
             check = check.next;
             canProceed++;
         }
-        
+
         // The list can be reversed
         if (canProceed == k) {
             while (count < k && cur != null) {

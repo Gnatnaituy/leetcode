@@ -1,6 +1,6 @@
 package java.others.easy.itwenty;
 
-import java.others.tools.TreeNode;
+import java.tools.TreeNode;
 
 /**
  * 700 Search in a BST

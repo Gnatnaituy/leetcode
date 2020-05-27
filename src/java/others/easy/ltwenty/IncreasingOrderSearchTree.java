@@ -1,6 +1,6 @@
 package java.others.easy.ltwenty;
 
-import java.others.tools.TreeNode;
+import java.tools.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,10 +20,10 @@ public class IncreasingOrderSearchTree {
             cur.right = new TreeNode(vals.get(i));
             cur = cur.right;
         }
-        
+
         return res;
     }
-    
+
     private void inOrder(TreeNode root, List<Integer> vals) {
         if (root != null) {
             inOrder(root.left, vals);

@@ -1,6 +1,6 @@
 package java.classify.graph;
 
-import java.others.tools.GraphNode;
+import java.tools.GraphNode;
 
 import java.util.ArrayList;
 import java.util.HashMap;

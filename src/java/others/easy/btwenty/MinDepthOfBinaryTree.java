@@ -1,7 +1,7 @@
 package java.others.easy.btwenty;
 
 
-import java.others.tools.TreeNode;
+import java.tools.TreeNode;
 
 /**
  * 111 Minimum Depth of Binary Tree

@@ -1,6 +1,6 @@
 package java.classify.tree;
 
-import java.others.tools.TreeNode;
+import java.tools.TreeNode;
 
 public class LongestUnivaluePath {
     private int res = 0;
@@ -21,7 +21,7 @@ public class LongestUnivaluePath {
         int left = node.left != null && node.left.val == node.val ? l + 1 : 0;
         int right = node.right != null && node.right.val == node.val ? r + 1 : 0;
         res = Math.max(res, left + right);
-        
+
         return Math.max(left, right);
     }
 }

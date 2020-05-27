@@ -1,4 +1,4 @@
-package java.others.tools;
+package java.tools;
 
 public class QuadNode {
     public boolean val;

@@ -1,7 +1,7 @@
 package java.others.easy.dtwenty;
 
 
-import java.others.tools.TreeNode;
+import java.tools.TreeNode;
 
 /**
  * 226 invert Binary Tree

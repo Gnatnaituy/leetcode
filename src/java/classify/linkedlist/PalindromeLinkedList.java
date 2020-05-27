@@ -1,6 +1,6 @@
 package java.classify.linkedlist;
 
-import java.others.tools.ListNode;
+import java.tools.ListNode;
 
 import java.util.ArrayList;
 

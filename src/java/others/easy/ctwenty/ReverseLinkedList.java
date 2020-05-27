@@ -1,6 +1,6 @@
 package java.others.easy.ctwenty;
 
-import java.others.tools.ListNode;
+import java.tools.ListNode;
 
 /**
  * 206 Reverse Linked List

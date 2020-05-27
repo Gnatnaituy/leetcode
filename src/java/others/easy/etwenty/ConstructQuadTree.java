@@ -1,6 +1,6 @@
 package java.others.easy.etwenty;
 
-import java.others.tools.QuadNode;
+import java.tools.QuadNode;
 
 /**
  * 427 Construct Quad Tree

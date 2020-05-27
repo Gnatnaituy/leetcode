@@ -1,6 +1,6 @@
 package java.classify.tree;
 
-import java.others.tools.NNode;
+import java.tools.NNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

@@ -1,4 +1,4 @@
-package java.others.tools;
+package java.tools;
 
 public class RandomNode {
     public int val;

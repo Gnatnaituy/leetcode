@@ -8,11 +8,11 @@ public class Demo {
         Scanner scanner = new Scanner(System.in);
         System.out.println("please input a numbers: ");
         int num = scanner.nextInt();
-        int para1 = Integer.valueOf(args[0]);
-        int para2 = Integer.valueOf(args[1]);
+        int param1 = Integer.parseInt(args[0]);
+        int param2 = Integer.parseInt(args[1]);
         scanner.close();
 
-        PersonException demo = new PersonException(para1, para2);
+        PersonException demo = new PersonException(param1, param2);
 
         try {
             demo.handleNumber(num);
@@ -21,7 +21,7 @@ public class Demo {
         }
 
         try {
-            demo.handleParameter(para1, para2);
+            demo.handleParameter(param1, param2);
         } catch (Exception e) {
             e.printStackTrace();
         }

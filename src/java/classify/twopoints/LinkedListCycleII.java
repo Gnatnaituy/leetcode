@@ -1,6 +1,6 @@
 package java.classify.twopoints;
 
-import java.others.tools.ListNode;
+import java.tools.ListNode;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,6 +1,6 @@
 package java.others.easy.btwenty;
 
-import java.others.tools.TreeNode;
+import java.tools.TreeNode;
 
 /**
  * 100 Same Tree

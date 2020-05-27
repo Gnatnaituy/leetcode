@@ -1,6 +1,6 @@
 package java.others.easy.jtwenty;
 
-import java.others.tools.TreeNode;
+import java.tools.TreeNode;
 
 /**
  * 783 Minimum Distance Between BST Nodes
@@ -14,7 +14,7 @@ public class MinimumDistanceBetweenBSTNodes {
         inOrder(root);
         return res;
 
-        
+
         // 2019-01-01 18:38 version 1 Misunderstand the title
         // int res = Integer.MAX_VALUE;
         // List<Integer> nodes = new ArrayList<>();

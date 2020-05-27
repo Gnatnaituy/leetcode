@@ -1,9 +1,9 @@
 package java.others.easy.btwenty;
 
 
-import java.others.tools.TreeNode;
+import java.tools.TreeNode;
 
-import static java.others.tools.StringToTreeNode.stringToTreeNode;
+import static java.tools.StringToTreeNode.stringToTreeNode;
 
 /**
  * 110 Balanced Binary Tree
