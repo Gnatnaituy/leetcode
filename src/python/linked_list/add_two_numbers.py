@@ -1,7 +1,9 @@
-from tools.list_node import ListNode
+from ..tools.list_node import ListNode
+
 
 class Solution:
 
+    @staticmethod
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         """
         172ms 25.44%
@@ -30,7 +32,8 @@ class Solution:
 
         return l4.next
 
-    def addTwoNumbers2(self, l1: ListNode, l2: ListNode) -> ListNode:
+    @staticmethod
+    def addTwoNumbers2(l1: ListNode, l2: ListNode) -> ListNode:
         """
         152ms 34.54%
         13MB 97.61%
