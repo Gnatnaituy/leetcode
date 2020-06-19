@@ -1,4 +1,4 @@
-from src.python.tools.list_node import ListNode
+from src.python.tools.node import ListNode
 
 
 def mergeTwoList(self, l1: ListNode, l2: ListNode) -> ListNode:

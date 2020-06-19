@@ -1,4 +1,4 @@
-from python.tools.list_node import ListNode
+from python.tools.node import ListNode
 
 
 def deleteDuplicates(self, head: ListNode) -> ListNode:
