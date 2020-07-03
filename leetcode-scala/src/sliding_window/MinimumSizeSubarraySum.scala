@@ -15,7 +15,7 @@ object MinimumSizeSubarraySum {
     for (right <- nums.indices) {
       sum += nums(right)
       while (sum >= s) {
-        len = if (len == 0) right - left + 1 else Math.min(len, right - left + 1)
+        len = if (len == 0) right - left + 1 else math.min(len, right - left + 1)
         sum -= nums(left)
         left += 1
       }
@@ -24,7 +24,7 @@ object MinimumSizeSubarraySum {
     len
   }
 
-  def main(args: Array[String]): Unit = {
+  def main(): Unit = {
     print(minSubArrayLen(5, Array(1, 2, 3 ,4, 5)))
   }
 }
