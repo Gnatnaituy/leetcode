@@ -21,7 +21,7 @@ object LengthOfLongestSubString {
         }
     }
 
-    def main(): Unit = {
+    def main(args: Array[String]): Unit = {
         print(lengthOfLongestSubstring("qwertyasdawecafdarqw"))
     }
 }

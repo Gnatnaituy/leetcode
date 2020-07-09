@@ -24,7 +24,7 @@ object MinimumSizeSubarraySum {
     len
   }
 
-  def main(): Unit = {
+  def main(args: Array[String]): Unit = {
     print(minSubArrayLen(5, Array(1, 2, 3 ,4, 5)))
   }
 }
