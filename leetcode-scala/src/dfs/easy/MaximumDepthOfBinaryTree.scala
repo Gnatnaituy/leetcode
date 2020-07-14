@@ -1,4 +1,4 @@
-package dfs
+package dfs.easy
 
 import tools.TreeNode
 
