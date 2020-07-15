@@ -6,9 +6,9 @@ import tools.TreeNode
  * @Project leetcode
  * @Author Ravooo
  * @Since 2020/7/15 20:42
- * @Description BuildBinaryTreeFromPreorderAndInorderTraversal
+ * @Description ConstructBinaryTreeFromPreorderAndInorderTraversal
  */
-object BuildBinaryTreeFromPreorderAndInorderTraversal {
+object ConstructBinaryTreeFromPreorderAndInorderTraversal {
 
     /**
      * 752 ms   85.71%
