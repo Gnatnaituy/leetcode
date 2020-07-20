@@ -8,7 +8,7 @@ import scala.collection.mutable
  * @Since 2020/7/20 00:07
  * @Description PopulatingNextRightPointersInEachNodeII
  */
-object PopulatingNextRightPointersInEachNodeII {\
+object PopulatingNextRightPointersInEachNodeII {
 
     class Node(var _value: Int) {
         var value: Int = _value
