@@ -36,6 +36,8 @@ object CloneGraph {
     }
 
     /**
+     * 632ms    100.00%
+     * 54.3MB   100.00%
      * BFS
      * @param graph
      * @return
@@ -50,10 +52,12 @@ object CloneGraph {
 
         while (queue.nonEmpty) {
             val node = queue.dequeue()
-            node.neighbors.filter(!visited.contains(_)).map(neighbor => {
-                visited(neighbor) = new Node(neighbor.value)
-                queue.enqueue(neighbor)
-                visited(node).neighbors :+= visited(neighbor)
+            node.neighbors.map(o => {
+                if (!visited.contains(o)) {
+                    visited(o) = new Node(o.value)
+                    queue.enqueue(o)
+                }
+                visited(node).neighbors :+= visited(o)
             })
         }
 
@@ -69,6 +73,6 @@ object CloneGraph {
         node2.neighbors = List(node1, node3)
         node3.neighbors = List(node2, node4)
         node4.neighbors = List(node1, node3)
-        cloneGraph(node1)
+        cloneGraphBFS(node1)
     }
 }
