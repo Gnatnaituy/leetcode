@@ -22,6 +22,29 @@ public class ValidPalindromeII {
         return true;
     }
 
+    /**
+     * 4ms 64.03%
+     * 38.7MB 23.73%
+     */
+    public boolean validPalindrome2(String s) {
+        char[] validChars = new char[s.length()];
+        int length = 0;
+        for (char c : s.toCharArray()) {
+            if (Character.isAlphabetic(c) || Character.isDigit(c)) {
+                validChars[length++] = Character.toLowerCase(c);
+            }
+        }
+
+        int start = 0, end = length - 1;
+        while (start < end) {
+            if (validChars[start++] != validChars[end--]) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
     private boolean isPalindrome(String s, int left, int right) {
         while (left < right) {
             if (s.charAt(left++) != s.charAt(right--))
