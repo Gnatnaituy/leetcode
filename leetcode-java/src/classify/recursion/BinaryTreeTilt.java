@@ -35,13 +35,15 @@ public class BinaryTreeTilt {
      * 官方题解
      */
     int tilt=0;
+
     public int findTilt2(TreeNode root) {
         traverse(root);
 
         return tilt;
     }
+
     public int traverse(TreeNode root) {
-        if (root==null ){
+        if (root==null ) {
             return 0;
         }
         int left = traverse(root.left);
