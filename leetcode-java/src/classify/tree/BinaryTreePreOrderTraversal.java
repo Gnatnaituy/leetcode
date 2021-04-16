@@ -1,4 +1,4 @@
-package tree;
+package classify.tree;
 
 import tools.TreeNode;
 
