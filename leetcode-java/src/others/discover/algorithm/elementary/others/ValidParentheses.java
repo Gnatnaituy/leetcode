@@ -68,7 +68,7 @@ public class ValidParentheses {
             case ")":
                 if (r == 0)
                     return false;
-                if (stack[r - 1] != "(")
+                if (!stack[r - 1].equals("("))
                     return false;
                 else
                     r--;
@@ -76,7 +76,7 @@ public class ValidParentheses {
             case "]":
                 if (r == 0)
                     return false;
-                if (stack[r - 1] != "[")
+                if (!stack[r - 1].equals("["))
                     return false;
                 else
                     r--;
@@ -84,16 +84,13 @@ public class ValidParentheses {
             case "}":
                 if (r == 0)
                     return false;
-                if (stack[r - 1] != "{")
+                if (!stack[r - 1].equals("{"))
                     return false;
                 else
                     r--;
                 break;
             }
         }
-        if (r == 0)
-            return true;
-        else
-            return false;
+        return r == 0;
     }
 }
