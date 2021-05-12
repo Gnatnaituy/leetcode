@@ -4,7 +4,7 @@ import tools.TreeNode;
 
 import java.util.Arrays;
 
-public class OneTwoSeven {
+public class Contest127 {
 
     public int largestSumAfterKNegations(int[] A, int K) {
         Arrays.sort(A);

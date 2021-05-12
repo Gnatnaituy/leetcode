@@ -30,7 +30,6 @@ public class Contest136 {
             for (int j = 0; j < i; j++) {
                 if (set.contains(new int[]{i + 1, j + 1}) || set.contains(new int[]{j + 1 ,i + 1}))
                     type++;
-
             }
             res[i] = type;
         }

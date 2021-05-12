@@ -22,8 +22,7 @@ public class NQueens {
         return res;
     }
 
-    private void dfs(int n, boolean[] rowV, boolean[] colV, boolean[] negV, boolean[] posV,
-                    int row, List<String> list) {
+    private void dfs(int n, boolean[] rowV, boolean[] colV, boolean[] negV, boolean[] posV, int row, List<String> list) {
         if (row == n) {
             res.add(new LinkedList<>(list));
             return;

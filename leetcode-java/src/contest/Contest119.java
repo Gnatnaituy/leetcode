@@ -2,7 +2,7 @@ package contest;
 
 import java.util.Arrays;
 
-public class OneOneNine {
+public class Contest119 {
     
     public int[][] kClosest(int[][] points, int K) {
         int[] distances = new int[points.length];

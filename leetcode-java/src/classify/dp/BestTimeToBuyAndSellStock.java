@@ -20,6 +20,12 @@ public class BestTimeToBuyAndSellStock {
         return max;
     }
 
+    /**
+     * 3ms      60.09%
+     * 51.4MB   57.07%
+     * @param prices
+     * @return
+     */
     public int maxProfit2(int[] prices) {
         if (prices.length < 2) return 0;
 

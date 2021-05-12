@@ -2,7 +2,7 @@ package contest;
 
 import java.util.*;
 
-public class OneThreeOne {
+public class Contest131 {
     static class TreeNode {
         public int val;
         public TreeNode left;

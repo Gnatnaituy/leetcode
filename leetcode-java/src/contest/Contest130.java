@@ -5,7 +5,7 @@ import tools.ListNode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class OneThreeZero {
+public class Contest130 {
 
     public List<Boolean> prefixDivBy5(int[] A) {
         int last = 0;

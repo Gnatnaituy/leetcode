@@ -4,7 +4,7 @@ import tools.TreeNode;
 
 import java.util.LinkedList;
 
-public class OneTwoFour {
+public class Contest124 {
 
     public boolean isCousins(TreeNode root, int x, int y) {
         if (root.val == x || root.val == y) return false;
@@ -57,13 +57,13 @@ public class OneTwoFour {
     }
 
     public static void main(String[] args) {
-        OneTwoFour oneTwoFour = new OneTwoFour();
+        Contest124 contest124 = new Contest124();
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);
         root.left.left = new TreeNode(4);
         root.right.right = new TreeNode(5);
 
-        System.out.println(oneTwoFour.isCousins(root, 4, 5));
+        System.out.println(contest124.isCousins(root, 4, 5));
     }
 }

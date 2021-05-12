@@ -2,7 +2,7 @@ package contest;
 
 import java.util.Arrays;
 
-public class OneThreeFour {
+public class Contest134 {
 
     public int[] numMovesStones(int a, int b, int c) {
         int[] poses = new int[]{a, b, c};
