@@ -5,7 +5,7 @@ public class BlueBridgeCup {
     private static boolean[] visited = new boolean[10];
 
     public static void main(String[] args) {
-//        dfs(0);
+        dfs(0);
 
         System.out.println(dp(30));
     }
