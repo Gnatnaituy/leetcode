@@ -22,4 +22,29 @@ public class PalindromicSubstrings {
 
         return res;
     }
+
+    /**
+     * 8ms      51.42%
+     * 38.3MB   45.08%
+     *
+     * @param s
+     * @return
+     */
+    public int countSubstrings2(String s) {
+        int len = s.length();
+        char[] chars = s.toCharArray();
+        int res = 0;
+        boolean[][] dp = new boolean[len][len];
+
+        for (int right = 0; right < len; right++) {
+            for (int left = right; left >= 0; left--) {
+                dp[left][right] = chars[left] == chars[right] && (right - left < 3 || dp[left + 1][right - 1]);
+                if (dp[left][right]) {
+                    res++;
+                }
+            }
+        }
+
+        return res;
+    }
 }
