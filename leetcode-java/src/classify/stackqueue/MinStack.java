@@ -1,6 +1,5 @@
 package classify.stackqueue;
 
-import java.util.Iterator;
 import java.util.Stack;
 
 /**
@@ -30,6 +29,7 @@ public class MinStack {
 
     public void pop() {
         int value = stack.pop();
+        // 只在最小值被取出的时候更新最小值
         if (value == min) {
             min = Integer.MAX_VALUE;
             for (Integer integer : stack) {
