@@ -32,6 +32,15 @@ public class ParseArray {
                 .toArray(int[][]::new);
     }
 
+    public static int[][] parse2IntegerArray(String s) {
+        s = s.substring(2, s.length() - 2);
+        String[] pairs = s.split("],\\[");
+        return Arrays.stream(pairs)
+                .map(o -> o.split(","))
+                .map(o -> Arrays.stream(o).map(Integer::parseInt).mapToInt(z -> z).toArray())
+                .toArray(int[][]::new);
+    }
+
     public static void main(String[] args) {
        int[][] a = parse2CharArray("[[\"8\",\"3\",\".\",\".\",\"7\",\".\",\".\",\".\",\".\"]" +
                 ",[\"6\",\".\",\".\",\"1\",\"9\",\"5\",\".\",\".\",\".\"]" +
