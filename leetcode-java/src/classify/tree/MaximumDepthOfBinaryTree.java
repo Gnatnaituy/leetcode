@@ -49,4 +49,13 @@ public class MaximumDepthOfBinaryTree {
         int rightDepth = search(node.right, depth);
         return Math.max(leftDepth, rightDepth);
     }
+
+    /**
+     * 递归法
+     * 所有人用的都是递归法
+     */
+    public int maxDepth3(TreeNode root) {
+        if (root == null) return 0;
+        else return 1 + Math.max(maxDepth3(root.right), maxDepth3(root.left));
+    }
 }
