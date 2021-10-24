@@ -28,10 +28,10 @@ public class ClimblingStairs {
         for (int i = 1; i < n; i++) {
             tmp = pre;
             pre = aft;
-            aft = tmp + aft;
+            aft = (tmp + aft) % 1000000007;
         }
 
-        return pre + aft;
+        return (pre + aft) % 1000000007;
     }
 
     /**
