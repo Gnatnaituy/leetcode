@@ -64,4 +64,52 @@ public class BinaryTreeLevelOrderTraversal {
         levelHelper(res, root.left, height + 1);
         levelHelper(res, root.right, height + 1);
     }
+
+    /**
+     * 3ms      16.37%
+     * 383.MB   92.49%
+     * @param root
+     * @return
+     */
+    public int[] levelOrder3(TreeNode root) {
+        List<Integer> res = new LinkedList<>();
+        if (root == null) return new int[]{};
+
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            TreeNode node = queue.poll();
+            res.add(node.val);
+            if (node.left != null) queue.add(node.left);
+            if (node.right != null) queue.add(node.right);
+        }
+
+        return res.stream().mapToInt(o -> o).toArray();
+    }
+
+    /**
+     * 1ms      98.66%
+     * 38.6MB   47.25%
+     * @param root
+     * @return
+     */
+    public int[] levelOrder4(TreeNode root) {
+        List<Integer> vals = new LinkedList<>();
+        if (root == null) return new int[]{};
+
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            TreeNode node = queue.poll();
+            vals.add(node.val);
+            if (node.left != null) queue.add(node.left);
+            if (node.right != null) queue.add(node.right);
+        }
+
+        int[] res = new int[vals.size()];
+        int index = 0;
+        for (int val : vals) res[index++] = val;
+
+        return res;
+    }
 }
