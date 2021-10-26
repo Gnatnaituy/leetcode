@@ -6,6 +6,8 @@ import java.util.Set;
 /**
  * @author yutiantang
  * @create 2021/3/28 3:47 PM
+ * 剑指 Offer 48. 最长不含重复字符的子字符串
+ * https://leetcode-cn.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/
  */
 public class LongestSubstringWithoutRepeatingCharacters {
 
@@ -44,6 +46,8 @@ public class LongestSubstringWithoutRepeatingCharacters {
 
     /**
      * 2ms大佬的解法
+     * 2ms      99.89%
+     * 38.3MB   75.28%
      * @param s
      * @return
      */
@@ -65,5 +69,36 @@ public class LongestSubstringWithoutRepeatingCharacters {
         }
 
         return res;
+    }
+
+    /**
+     * 2ms      99.89%
+     * 38.1MB   94.55%
+     * 快慢指针 空格真坑人 还以为全是小写字母
+     * @param s
+     * @return
+     */
+    public static int lengthOfLongestSubstring3(String s) {
+        boolean[] exiChar = new boolean[256];
+        char[] chars = s.toCharArray();
+        int slow = 0, fast = 0, max = 0;
+        for (char c : chars) {
+            if (exiChar[c]) {
+                while (slow < fast && chars[slow] != c) {
+                    exiChar[chars[slow]] = false;
+                    slow++;
+                }
+                slow++;
+            }
+            fast++;
+            exiChar[c] = true;
+            max = Math.max(max, fast - slow);
+        }
+
+        return max;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(lengthOfLongestSubstring3("aabaab!bb"));
     }
 }
