@@ -1,8 +1,6 @@
-package classify.twopoints;
+package classify.twopointers;
 
 import tools.ListNode;
-
-import java.util.List;
 
 /**
  * @author yutiantang

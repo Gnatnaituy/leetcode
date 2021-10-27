@@ -1,4 +1,4 @@
-package classify.twopoints;
+package classify.twopointers;
 
 import java.util.ArrayList;
 import java.util.Arrays;

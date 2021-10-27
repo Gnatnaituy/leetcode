@@ -1,4 +1,4 @@
-package classify.twopoints;
+package classify.twopointers;
 
 public class MergeSortedArray {
 
