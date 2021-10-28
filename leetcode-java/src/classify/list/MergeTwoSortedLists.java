@@ -45,6 +45,13 @@ public class MergeTwoSortedLists {
         return l1;
     }
 
+    /**
+     * 0ms      100.00%
+     * 38.4MB   69.92%
+     * @param l1
+     * @param l2
+     * @return
+     */
     public ListNode mergeTwoLists3(ListNode l1, ListNode l2) {
         /*
         9ms
@@ -55,12 +62,11 @@ public class MergeTwoSortedLists {
             if (l1.val < l2.val) {
                 curr.next = l1;
                 l1 = l1.next;
-                curr = curr.next;
             } else {
                 curr.next = l2;
                 l2 = l2.next;
-                curr = curr.next;
             }
+            curr = curr.next;
         }
         if (l1 == null) {
             curr.next = l2;

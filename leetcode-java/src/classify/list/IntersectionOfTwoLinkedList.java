@@ -2,8 +2,19 @@ package classify.list;
 
 import tools.ListNode;
 
+/**
+ * 剑指 Offer 52. 两个链表的第一个公共节点
+ * https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/
+ */
 public class IntersectionOfTwoLinkedList {
 
+    /**
+     * 1ms      100.00%
+     * 41.2MB   53.42%
+     * @param headA
+     * @param headB
+     * @return
+     */
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         int lenA = length(headA);
         int lenB = length(headB);
