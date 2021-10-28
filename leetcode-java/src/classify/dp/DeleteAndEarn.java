@@ -52,4 +52,28 @@ public class DeleteAndEarn {
         return Math.max(takeSumMax, skipSumMax);
     }
 
+    /**
+     * 2ms      49.55%
+     * 37.9MB   86.16%
+     * @param nums
+     * @return
+     */
+    public static int deleteAndEarn2(int[] nums) {
+        int[] scores = new int[10001];
+        int max = 0;
+        for (int num : nums) {
+            scores[num] += num;
+            max = Math.max(max, num);
+        }
+
+        for (int i = 2; i <= max; i++) {
+            scores[i] = Math.max(scores[i - 1], scores[i] + scores[i - 2]);
+        }
+
+        return scores[max];
+    }
+
+    public static void main(String[] args) {
+        deleteAndEarn2(new int[]{3,4,2});
+    }
 }
