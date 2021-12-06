@@ -1,4 +1,4 @@
-package classify.binarysearchtree;
+package classify.btree;
 
 import tools.TreeNode;
 
