@@ -35,6 +35,7 @@ public class LinkedListCycleII {
             fast = fast.next.next;
             slow = slow.next;
 
+            // slow 和 fast 不一定在环的起点相遇
             if (fast == slow) {
                 ListNode slow2 = head;
                 while (slow2 != slow) {
