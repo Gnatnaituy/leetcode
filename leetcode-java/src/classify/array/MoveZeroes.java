@@ -1,21 +1,12 @@
 package classify.array;
 
-public class MoveZero {
+public class MoveZeroes {
 
     /**
-     * 给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序
-     * 输入: [0,1,0,3,12]
-     * 输出: [1,3,12,0,0]
-     *
-     * 1. 必须在原数组上操作，不能拷贝额外的数组
-     * 2. 尽量减少操作次数
-     *
-     * @param nums int[]
+     * 34ms     9.59%
+     * 39.9MB   8.12%
      */
     public void moveZeroes(final int[] nums) {
-        /*
-        33ms 18.27%
-         */
         for (int i = 0; i < nums.length - 1; i++) {
             if (nums[i] == 0) {
                 int j = i + 1;
@@ -33,10 +24,12 @@ public class MoveZero {
         }
     }
 
+    /**
+     * 1ms      100.00%
+     * 39.6MB   51.39%
+     * @param nums
+     */
     public void moveZeroes2(final int[] nums) {
-        /*
-        2ms
-         */
         int j = 0;
         for (int i = 0; i < nums.length;i++) {
             if (nums[i] != 0) {
@@ -48,10 +41,12 @@ public class MoveZero {
         }
     }
 
+    /**
+     * 2ms      59.82%
+     * 39.8MB   26.81%
+     * @param nums
+     */
     public void moveZeroes3(int[] nums) {
-        /*
-        1ms
-         */
         int zeroNum = 0;//用来计算0的个数
         for (int i = 0; i < nums.length; i++) {
             if(nums[i] == 0) {//如果nums[i]=0,zeroNum个数加一
