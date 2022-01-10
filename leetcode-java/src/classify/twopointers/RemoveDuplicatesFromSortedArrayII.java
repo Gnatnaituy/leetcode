@@ -39,4 +39,22 @@ public class RemoveDuplicatesFromSortedArrayII {
 
         return slow + 1;
     }
+
+    /**
+     * 0ms      100.00%
+     * 39.8MB   47.59%
+     * @param nums
+     * @return
+     */
+    public int removeDuplicates2(int[] nums) {
+        int slow = 0, fast = 1;
+        while (fast < nums.length) {
+            if (nums[fast] != nums[slow]) {
+                nums[++slow] = nums[fast];
+            }
+            fast++;
+        }
+
+        return ++slow;
+    }
 }
