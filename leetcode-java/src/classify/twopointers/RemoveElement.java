@@ -1,4 +1,4 @@
-package others.easy.atwenty;
+package classify.twopointers;
 
 public class RemoveElement {
 
