@@ -1,4 +1,4 @@
-package others.completefifties.l0900;
+package classify.twopointers;
 
 import java.util.Arrays;
 
@@ -17,35 +17,38 @@ public class SquaresOfASortedArray {
     }
 
     /**
-     * 8ms
+     * 1ms      100.00%
+     * 39.9MB   86.57%
+     * @param nums
+     * @return
      */
-    public int[] sortedSquares2(int[] A) {
-        int N = A.length;
+    public int[] sortedSquares2(int[] nums) {
+        int N = nums.length;
         int j = 0;
-        while (j <= N - 1 && A[j] < 0)
+        while (j <= N - 1 && nums[j] < 0)
             j++;
         int i = j - 1;
 
-        int[] ans = new int[N];
+        int[] res = new int[N];
         int t = 0;
         while (i >= 0 && j <= N - 1) {
-            if (A[i] * A[i] < A[j] * A[j]) {
-                ans[t++] = A[i] * A[i];
+            if (nums[i] * nums[i] < nums[j] * nums[j]) {
+                res[t++] = nums[i] * nums[i];
                 i--;
             } else {
-                ans[t++] = A[j] * A[j];
+                res[t++] = nums[j] * nums[j];
                 j++;
             }
         }
         while (i >= 0) {
-            ans[t++] = A[i] * A[i];
+            res[t++] = nums[i] * nums[i];
             i--;
         }
         while (j <= N - 1) {
-            ans[t++] = A[j] * A[j];
+            res[t++] = nums[j] * nums[j];
             j++;
         }
 
-        return ans;
+        return res;
     }
 }
