@@ -1,4 +1,4 @@
-package classify.array;
+package classify.slidingwindow;
 
 
 /**
