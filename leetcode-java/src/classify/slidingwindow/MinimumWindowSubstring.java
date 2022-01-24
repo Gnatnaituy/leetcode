@@ -1,46 +1,55 @@
 package classify.slidingwindow;
 
 
-import java.util.HashMap;
-
 public class MinimumWindowSubstring {
 
-    public String minWindow(String s, String t) {
-        if (s == null || s.length() < t.length() || s.length() == 0)
-            return "";
+    /**
+     * 18ms    35.6%
+     * 38.7MB  64.11%
+     * @param s
+     * @param t
+     * @return
+     */
+    public static String minWindow(String s, String t) {
+        if (s.length() < t.length()) return "";
 
-        HashMap<Character, Integer> map = new HashMap<>();
-        t.chars().forEach(e -> map.put((char) e, map.getOrDefault(e, 0) + 1));
+        int[] target = new int[58], count = new int[58];
+        t.chars().forEach(c -> target[c - 65]++);
 
-        int left = 0;
-        int minLeft = 0;
-        int minLen = Integer.MAX_VALUE;
-        int count = 0;
-
-        for (int right = 0; right < s.length(); right++) {
-            if (map.containsKey(s.charAt(right))) {
-                map.put(s.charAt(right), map.get(s.charAt(right)) - 1);
-                if (map.get(s.charAt(right)) >= 0) {
-                    count++;
+        int left = 0, right = 0, len, minLen = Integer.MAX_VALUE;
+        String minWindow = s;
+        while (right <= s.length() && left < s.length()) {
+            len = right - left + (right == s.length() ? 0 : 1);
+            if (len < t.length() || notCover(count, target)) {
+                if (right == s.length()) {
+                    break;
                 }
-
-                while (count == t.length()) {
-                    if (right - left + 1 < minLen) {
-                        minLeft = left;
-                        minLen = right - left + 1;
-                    }
-                    if (map.containsKey(s.charAt(left))) {
-                        map.put(s.charAt(left), map.get(s.charAt(left)) + 1);
-                        if (map.get(s.charAt(left)) > 0)
-                            count--;
-                    }
-                    left++;
+                count[s.charAt(right) - 65]++;
+                right++;
+            } else {
+                if (len < minLen) {
+                    minLen = len;
+                    minWindow = s.substring(left, right);
                 }
+                count[s.charAt(left) - 65]--;
+                left++;
             }
         }
 
-        if (minLen > s.length()) return "";
+        return minLen == Integer.MAX_VALUE ? "" : minWindow;
+    }
 
-        return s.substring(minLeft, minLeft + minLen);
+    public static boolean notCover(int[] count, int[] target) {
+        for (int i = 0; i < 58; i++) {
+            if (count[i] < target[i]) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(minWindow("AbCC", "AbCC"));
     }
 }

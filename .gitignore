@@ -32,3 +32,4 @@ out/
 .vscode/
 leetcode.iml
 leetcode-scala.iml
+/leetcode-java/target/*
