@@ -1,10 +1,10 @@
-package classify.array;
+package classify.matrix;
 
 /**
  * @Author tiantang
  * @Date 2021/11/23
  */
-public class SpiralMatrix {
+public class SpiralMatrixII {
 
     /**
      * 0ms      100.00%
