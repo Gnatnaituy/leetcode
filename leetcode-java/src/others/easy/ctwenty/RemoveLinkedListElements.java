@@ -18,7 +18,7 @@ public class RemoveLinkedListElements {
     /**
      * 6ms 65.18%
      */
-    private static ListNode removeElements(ListNode head, int val) {
+    public ListNode removeElements(ListNode head, int val) {
         if (head == null) return null;
 
         head.next = removeElements(head.next, val);
@@ -29,7 +29,7 @@ public class RemoveLinkedListElements {
     /**
      * 6ms 65.18%
      */
-    private static ListNode removeElements2(ListNode head, int val) {
+    public ListNode removeElements2(ListNode head, int val) {
         if (head == null) return null;
 
         ListNode cur = head;
@@ -40,5 +40,26 @@ public class RemoveLinkedListElements {
         }
 
         return head.val == val ? head.next : head;
+    }
+
+    /**
+     * 0ms      100.00%
+     * @param head
+     * @param val
+     * @return
+     */
+    public ListNode removeElements3(ListNode head, int val) {
+        ListNode dummy = new ListNode(), slow = dummy, fast = head;
+        dummy.next = head;
+        while (fast != null) {
+            if (fast.val != val) {
+                slow.next = fast;
+                slow = slow.next;
+            }
+            fast = fast.next;
+        }
+        slow.next = null;
+
+        return dummy.next;
     }
 }
