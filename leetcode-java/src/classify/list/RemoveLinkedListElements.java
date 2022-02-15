@@ -1,4 +1,4 @@
-package others.easy.ctwenty;
+package classify.list;
 
 import tools.ListNode;
 
@@ -16,6 +16,7 @@ import tools.ListNode;
 public class RemoveLinkedListElements {
 
     /**
+     * 递归
      * 6ms 65.18%
      */
     public ListNode removeElements(ListNode head, int val) {
@@ -27,22 +28,26 @@ public class RemoveLinkedListElements {
     }
 
     /**
+     * 不添加虚拟节点方式
      * 6ms 65.18%
      */
     public ListNode removeElements2(ListNode head, int val) {
         if (head == null) return null;
 
         ListNode cur = head;
-
         while (cur.next != null) {
-            if (cur.next.val == val) cur.next = cur.next.next;
-            else cur = cur.next;
+            if (cur.next.val == val) {
+                cur.next = cur.next.next;
+            } else {
+                cur = cur.next;
+            }
         }
 
         return head.val == val ? head.next : head;
     }
 
     /**
+     * 添加虚拟节点方式
      * 0ms      100.00%
      * @param head
      * @param val
