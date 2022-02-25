@@ -23,4 +23,26 @@ public class ReverseLinkedList {
 
         return res;
     }
+
+    /**
+     * 0ms      100.00%
+     * 41.4M    5.60%
+     * @param head
+     * @return
+     */
+    public ListNode reverseList2(ListNode head) {
+        if (head == null) return null;
+        if (head.next == null) return head;
+
+        ListNode next = head.next, temp;
+        head.next = null;
+        while (next != null) {
+            temp = next.next;
+            next.next = head;
+            head = next;
+            next = temp;
+        }
+
+        return head;
+    }
 }
