@@ -2,6 +2,10 @@ package classify.list;
 
 import tools.ListNode;
 
+import java.util.HashSet;
+import java.util.Set;
+import java.util.Stack;
+
 /**
  * 剑指 Offer 52. 两个链表的第一个公共节点
  * https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/
@@ -45,5 +49,71 @@ public class IntersectionOfTwoLinkedList {
         }
 
         return length;
+    }
+
+    /**
+     * 10ms 12.48%
+     */
+    private ListNode getIntersectionNode2(ListNode headA, ListNode headB) {
+        if (headA == null || headB == null)
+            return null;
+
+        Set<ListNode> nodes = new HashSet<>();
+        while (headA != null) {
+            nodes.add(headA);
+            headA = headA.next;
+        }
+        while (headB != null) {
+            if (nodes.contains(headB))
+                return headB;
+            else
+                headB = headB.next;
+        }
+        return null;
+    }
+
+    /**
+     * 5ms 14.76%
+     */
+    public static ListNode getIntersectionNode3(ListNode headA, ListNode headB) {
+        if (headA == null || headB == null) return null;
+
+        Stack<ListNode> stackA = new Stack<>();
+        Stack<ListNode> stackB = new Stack<>();
+        ListNode res = null;
+
+        while (headA != null) {
+            stackA.push(headA);
+            headA = headA.next;
+        }
+
+        while (headB != null) {
+            stackB.push(headB);
+            headB = headB.next;
+        }
+
+        while (!stackA.isEmpty() && !stackB.isEmpty() && stackA.peek() == stackB.peek()) {
+            res = stackA.pop();
+            stackB.pop();
+        }
+
+        return res;
+    }
+
+    /**
+     * 1ms      99.52%
+     * 44MB     27.65%
+     */
+    public ListNode getIntersectionNode4(ListNode headA, ListNode headB) {
+        if (headA == null || headB == null) return null;
+
+        ListNode pA = headA, pB = headB;
+
+        while(pA != pB){
+            pA = pA == null ? headB : pA.next;
+            pB = pB == null ? headA : pB.next;
+        }
+
+        return pA;
     }
 }
