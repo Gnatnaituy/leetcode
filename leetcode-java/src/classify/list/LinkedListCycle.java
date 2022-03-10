@@ -15,7 +15,8 @@ import java.util.Set;
 public class LinkedListCycle {
 
     /**
-     * 7ms 17.96%
+     * 5ms      8.75%
+     * 42.4MB   36.48%
      * 三个月前
      */
     public boolean hasCycle(ListNode head) {
@@ -35,21 +36,22 @@ public class LinkedListCycle {
 
 
     /**
-     * 0ms
+     * 0ms      100.00%
+     * 42.9MB   5.05%
      * 快慢指针法
      */
     public boolean hasCycle2(ListNode head) {
-        if(head == null || head.next == null) return false;
-
-        ListNode fast = head.next.next;
+        ListNode fast = head;
         ListNode slow = head;
 
         while (true) {
-            if      (fast == null || fast.next == null)  return false;
-            else if (fast == slow || fast.next == slow)  return true;
-            else {
-                fast = fast.next.next;
-                slow = slow.next;
+            if (fast == null || fast.next == null) {
+                return false;
+            }
+            fast = fast.next.next;
+            slow = slow.next;
+            if (fast == slow) {
+                return true;
             }
         }
     }
