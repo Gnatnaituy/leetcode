@@ -31,8 +31,6 @@ public class GroupAnagrams {
     /**
      * 9ms      30.83%
      * 43.8MB   69.89%
-     * @param strs
-     * @return
      */
     public List<List<String>> groupAnagrams2(String[] strs) {
         return new ArrayList<>(Arrays.stream(strs)
@@ -44,6 +42,4 @@ public class GroupAnagrams {
                         }))
                 .values());
     }
-
-
 }

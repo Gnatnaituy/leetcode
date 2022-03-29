@@ -51,9 +51,6 @@ public class ValidAnagram {
     /**
      * 4ms      37.58%
      * 41.3MB   51.41%
-     * @param s
-     * @param t
-     * @return
      */
     public boolean isAnagram3(String s, String t) {
         if (s.length() != t.length()) {
