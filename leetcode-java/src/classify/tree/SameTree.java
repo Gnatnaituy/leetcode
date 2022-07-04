@@ -44,4 +44,21 @@ public class SameTree {
 
         return true;
     }
+
+    private boolean isSameTree3(TreeNode p, TreeNode q) {
+        if (p == null && q == null)
+            return true;
+        else if (p == null || q == null)
+            return false;
+        else if (p.left == null && p.right == null && q.left == null && q.right == null && p.val == q.val)
+            return true;
+        else if (p.right == null && q.right == null && p.left != null && q.left != null && p.val == q.val)
+            return isSameTree3(p.left, q.left);
+        else if (p.left == null && q.left == null && p.right != null && q.right != null && p.val == q.val)
+            return isSameTree3(p.right, q.right);
+        else if (p.left != null && q.left != null && p.right != null && q.right != null && p.val == q.val)
+            return isSameTree3(p.left, q.left) && isSameTree3(p.right, q.right);
+        else
+            return false;
+    }
 }
