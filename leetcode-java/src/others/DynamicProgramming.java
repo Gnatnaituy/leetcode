@@ -23,7 +23,7 @@ public class DynamicProgramming {
      * 解法二: 备忘录
      * 用一个HashMap保存n个台阶的走法, 避免重复计算
      */
-    private static HashMap<Integer, Integer> map;
+    private static HashMap<Integer, Integer> map = new HashMap<>();
 
     private static int clumbStairsWithMemorandum(int n, HashMap<Integer, Integer> map) {
         if (n < 1) return 0;

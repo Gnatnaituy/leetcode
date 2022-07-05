@@ -23,7 +23,6 @@ public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
         }
 
         return helper(preorder, 0, preorder.length - 1, indexes);
-
     }
 
     private TreeNode helper(int[] preorder, int pstart, int pend, Map<Integer, Integer> indexes) {
