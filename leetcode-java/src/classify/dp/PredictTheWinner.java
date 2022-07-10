@@ -25,7 +25,7 @@ public class PredictTheWinner {
      * 0ms 100.00%
      * 33MB 100.00%
      */
-    public boolean PredictTheWinner(int[] nums) {
+    public boolean predictTheWinner2(int[] nums) {
         if (nums == null) { return true; }
         int len = nums.length;
         if ((len & 1) == 0) { return true; }

@@ -54,7 +54,7 @@ public class IntersectionOfTwoLinkedList {
     /**
      * 10ms 12.48%
      */
-    private ListNode getIntersectionNode2(ListNode headA, ListNode headB) {
+    public ListNode getIntersectionNode2(ListNode headA, ListNode headB) {
         if (headA == null || headB == null)
             return null;
 
