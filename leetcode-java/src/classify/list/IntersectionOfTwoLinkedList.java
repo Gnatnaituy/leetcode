@@ -13,8 +13,9 @@ import java.util.Stack;
 public class IntersectionOfTwoLinkedList {
 
     /**
-     * 1ms      100.00%
-     * 41.2MB   53.42%
+     * 1ms 100.00%
+     * 41.2MB 53.42%
+     * 
      * @param headA
      * @param headB
      * @return
@@ -76,7 +77,8 @@ public class IntersectionOfTwoLinkedList {
      * 5ms 14.76%
      */
     public static ListNode getIntersectionNode3(ListNode headA, ListNode headB) {
-        if (headA == null || headB == null) return null;
+        if (headA == null || headB == null)
+            return null;
 
         Stack<ListNode> stackA = new Stack<>();
         Stack<ListNode> stackB = new Stack<>();
@@ -101,15 +103,16 @@ public class IntersectionOfTwoLinkedList {
     }
 
     /**
-     * 1ms      99.52%
-     * 44MB     27.65%
+     * 1ms 99.52%
+     * 44MB 27.65%
      */
     public ListNode getIntersectionNode4(ListNode headA, ListNode headB) {
-        if (headA == null || headB == null) return null;
+        if (headA == null || headB == null) {
+            return null;
+        }
 
         ListNode pA = headA, pB = headB;
-
-        while(pA != pB){
+        while (pA != pB) {
             pA = pA == null ? headB : pA.next;
             pB = pB == null ? headA : pB.next;
         }
