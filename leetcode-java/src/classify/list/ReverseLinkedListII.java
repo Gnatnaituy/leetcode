@@ -1,4 +1,4 @@
-package others.completefifties.l0000;
+package classify.list;
 
 import tools.ListNode;
 
@@ -29,5 +29,30 @@ public class ReverseLinkedListII {
         }
 
         return m > 1 ? head : mNode.next;
+    }
+
+    /**
+     * 0ms      100.00%
+     * 39MB     65.20%
+     */
+    public ListNode reverseBetween2(ListNode head, int left, int right) {
+        ListNode dummy = new ListNode();
+        dummy.next = head;
+        ListNode cur = dummy, pre = cur, swap;
+        int step = 0;
+        while (step < left) {
+            pre = cur;
+            cur = cur.next;
+            step++;
+        }
+        while (step < right) {
+            swap = cur.next;
+            cur.next = swap.next;
+            swap.next = pre.next;
+            pre.next = swap;
+            step++;
+        }
+
+        return dummy.next;
     }
 }
