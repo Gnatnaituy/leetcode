@@ -9,27 +9,29 @@ import tools.ListNode;
 public class RemoveNthNodeFromEndOfList {
 
     /**
-     * 0ms      100.00%
-     * 36.2MB   90.16%
-     * @param head
-     * @param n
-     * @return
+     * 0ms 100.00%
+     * 34.1MB 100.00%
      */
     public ListNode removeNthFromEnd(ListNode head, int n) {
-        ListNode preHead = new ListNode(0);
-        preHead.next = head;
         ListNode fast = head;
-        ListNode slow = preHead;
-        while (n-- > 0) {
+        ListNode slow = head;
+
+        while (n > 0) {
             fast = fast.next;
+            n--;
         }
 
-        while (fast != null) {
+        if (fast == null) {
+            return head.next;
+        }
+
+        while (fast.next != null) {
             fast = fast.next;
             slow = slow.next;
         }
+
         slow.next = slow.next.next;
 
-        return preHead.next;
+        return head;
     }
 }
