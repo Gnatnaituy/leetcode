@@ -1,6 +1,9 @@
 package classify.list;
 
+import javax.swing.ListModel;
+
 import tools.ListNode;
+import tools.StringToListNode;
 
 public class PalindromeLinkedList {
 
@@ -9,11 +12,8 @@ public class PalindromeLinkedList {
      * 你能否用 O(n) 时间复杂度和 O(1) 空间复杂度解决此题？
      */
     public boolean isPalindrome(ListNode head) {
-        /*
-        3ms 46.71%
-        三个月前写的
-         */
-        if (head == null || head.next == null) return true;
+        if (head == null || head.next == null)
+            return true;
 
         // 拷贝原始链表
         ListNode origin = new ListNode(head.val);
@@ -46,19 +46,9 @@ public class PalindromeLinkedList {
         return true;
     }
 
-
     /**
-     * 方案1：
-     * 拷贝原始的列表
-     * 反转原始列表
-     * 然后从头到尾遍历两个链表，每个元素都相同就是回文，否则不是
-     * <p>
-     * 方案2：
-     * 先遍历一遍，记录总个数
-     * 然后反转前半段
-     * 最后比较前遍历前半段和后半段
-     *
-     * @author tiger.xiong
+     * 3ms 98.69%
+     * 57.7MB 39.12%
      */
     public boolean isPalindrome2(ListNode head) {
         if (head == null || head.next == null) {
@@ -90,6 +80,41 @@ public class PalindromeLinkedList {
                 return false;
             }
         }
+
+        return true;
+    }
+
+    /**
+     * 3ms      98.69%
+     * 57.9MB   28.76%
+     */
+    public boolean isPalindrome3(ListNode head) {
+        ListNode slow = head, fast = head.next;
+        ListNode slowL = null, slowR = fast, tmpR;
+
+        while (fast != null && fast.next != null) {
+            tmpR = slowR;
+            fast = fast.next.next;
+            slowR = slowR.next;
+            slow.next = slowL;
+            slowL = slow;
+            slow = tmpR;
+        }
+
+        if (fast != null) {
+            slow.next = slowL;
+        } else {
+            slow = slowL;
+        }
+
+        while (slowR != null) {
+            if (slowR.val != slow.val) {
+                return false;
+            }
+            slowR = slowR.next;
+            slow = slow.next;
+        }
+
         return true;
     }
 }
