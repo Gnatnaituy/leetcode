@@ -1,9 +1,6 @@
 package classify.list;
 
-import javax.swing.ListModel;
-
 import tools.ListNode;
-import tools.StringToListNode;
 
 public class PalindromeLinkedList {
 

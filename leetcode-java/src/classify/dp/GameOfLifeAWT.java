@@ -195,7 +195,7 @@ public class GameOfLifeAWT extends JFrame implements ActionListener {
 
     // called by the Timer and the JButtons
 
-    private CellsGrid getCellSafe(int r0, int c0) {
+    public CellsGrid getCellSafe(int r0, int c0) {
         int r = r0 % Cells.length; // Cells.length is effectively nbRow
         if (r < 0) r += Cells.length; // deal with how % works for negatives
         int c = c0 % Cells[0].length; // Cells[0].length is effectively nbCol

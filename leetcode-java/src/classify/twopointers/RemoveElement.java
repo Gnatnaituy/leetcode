@@ -2,7 +2,7 @@ package classify.twopointers;
 
 public class RemoveElement {
 
-    private int removeElement(int[] nums, int val) {
+    public int removeElement(int[] nums, int val) {
         int currentIndex = 0;
         int valCount = 0;
 
@@ -30,7 +30,7 @@ public class RemoveElement {
      * 10ms
      * 快慢指针法
      */
-    private int removeElement2(int[] nums, int val) {
+    public int removeElement2(int[] nums, int val) {
             int fast = 0;
             int slow = 0;
 
