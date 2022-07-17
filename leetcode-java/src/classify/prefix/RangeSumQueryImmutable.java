@@ -1,6 +1,6 @@
-package classify.dp;
+package classify.prefix;
 
-public class RangeSumQuery {
+public class RangeSumQueryImmutable {
 
     private int[] privateNums;
 
@@ -8,7 +8,7 @@ public class RangeSumQuery {
      * 8ms      35.65%
      * 44.2MB   50.22%
      */
-    public RangeSumQuery(int[] nums) {
+    public RangeSumQueryImmutable(int[] nums) {
         this.privateNums = new int[nums.length];
 
         if (nums.length > 0) {
