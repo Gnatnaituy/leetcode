@@ -1,11 +1,12 @@
 package classify.dp;
 
 public class RangeSumQuery {
+
     private int[] privateNums;
 
     /**
-     * 55ms 69.78%
-     * 42.6MB 46.71%
+     * 8ms      35.65%
+     * 44.2MB   50.22%
      */
     public RangeSumQuery(int[] nums) {
         this.privateNums = new int[nums.length];
@@ -21,8 +22,8 @@ public class RangeSumQuery {
         }
     }
 
-    public int sumRange(int i, int j) {
-        if (i == 0) return privateNums[j];
-        return privateNums[j] - privateNums[i - 1];
+    public int sumRange(int left, int right) {
+        if (left == 0) return privateNums[right];
+        return privateNums[right] - privateNums[left - 1];
     }
 }
