@@ -26,7 +26,7 @@ public class Contest128 {
         return res;
     }
 
-    private static int numPairsDivisibleBy60(int[] time) {
+    public static int numPairsDivisibleBy60(int[] time) {
         int res = 0;
 
         if (time.length < 2) return res;
