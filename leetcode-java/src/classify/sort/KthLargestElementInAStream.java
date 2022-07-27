@@ -8,7 +8,7 @@ public class KthLargestElementInAStream {
     private final int k;
 
     /**
-     * 65ms     63.72%
+     * 11ms     97.78%
      * 45.9MB   82.71%
      */
     public KthLargestElementInAStream(int k, int[] a) {
