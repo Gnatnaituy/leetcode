@@ -1,25 +1,17 @@
-package classify.tree;
+package classify.binary_search_tree.medium;
 
 
 import tools.TreeNode;
 
 import java.util.Stack;
 
-/**
- * 给定一个二叉树，判断其是否是一个有效的二叉搜索树。
- *
- * 假设一个二叉搜索树具有如下特征：
- * 节点的左子树只包含小于当前节点的数。
- * 节点的右子树只包含大于当前节点的数。
- * 所有左子树和右子树自身必须也是二叉搜索树。
- */
 public class ValidateBinarySearchTree {
     private double last = -Double.MAX_VALUE;
 
     /**
-     * 1ms 87.93%
-     * 24.9MB 48.95%
-     * 绝望就是 给了你代码 你也看不懂...
+     * Inorder Traversal
+     * 0ms      100.00%
+     * 40.9MB   70.27%
      */
     public boolean isValidBST(TreeNode root) {
         if (root == null) return true;
@@ -35,9 +27,9 @@ public class ValidateBinarySearchTree {
     }
 
     /**
-     * 6ms 15.53%
-     * 28.4m 17.72%
      * 搜索二叉树的中序遍历为升序
+     * 2ms      19.68%
+     * 40.8MB   85.16%
      */
     public boolean isValidBST2(TreeNode root) {
         if (root == null) return true;
@@ -58,5 +50,21 @@ public class ValidateBinarySearchTree {
         inOrder(root.left, stack);
         stack.add(root.val);
         inOrder(root.right, stack);
+    }
+
+    /**
+     * 0ms      100.00%
+     * 40.8MB   73.98%
+     */
+    public boolean isValidBST3(TreeNode root) {
+        return isValidBST(root, Long.MIN_VALUE, Long.MAX_VALUE);
+    }
+
+    private boolean isValidBST(TreeNode root, Long minVal, Long maxVal) {
+        if (root == null) return true;
+        if (root.val >= maxVal || root.val <= minVal) return false;
+
+        return isValidBST(root.left, minVal, (long) root.val) 
+            && isValidBST(root.right, (long) root.val, maxVal);
     }
 }
