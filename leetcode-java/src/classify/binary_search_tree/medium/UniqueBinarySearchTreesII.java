@@ -1,17 +1,19 @@
-package others.completefifties.l0000;
+package classify.binary_search_tree.medium;
 
 import tools.TreeNode;
 
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-public class UniqueBSTsII {
+public class UniqueBinarySearchTreesII {
 
     /**
-     * 7ms 19.70%
+     * 1ms      97.30%
+     * 42MB     49.70%
      */
-    private List<TreeNode> generateTrees(int n) {
-        if (n == 0) return new LinkedList<>();
+    public List<TreeNode> generateTrees(int n) {
+        if (n == 0) return Collections.emptyList();
 
         return generateTree(1, n);
     }

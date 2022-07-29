@@ -1,4 +1,4 @@
-package classify.binary_search_tree;
+package classify.binary_search_tree.easy;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,10 +40,10 @@ public class IncreasingOrderSearchTree {
      * 0ms      100.00%
      * 39.2MB   30.52%
      */
-    private TreeNode curNode;
+    private TreeNode previous;
     public TreeNode increasingBST2(TreeNode root) {
         TreeNode dummy = new TreeNode(0);
-        curNode = dummy;
+        previous = dummy;
         inorder(root);
 
         return dummy.right;
@@ -56,9 +56,9 @@ public class IncreasingOrderSearchTree {
 
         inorder(node.left);
 
-        curNode.right = node;
+        previous.right = node;
         node.left = null;
-        curNode = curNode.right;
+        previous = previous.right;
 
         inorder(node.right);
     }

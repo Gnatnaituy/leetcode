@@ -1,4 +1,4 @@
-package classify.binary_search_tree;
+package classify.binary_search_tree.easy;
 
 import java.util.ArrayList;
 import java.util.List;
