@@ -1,4 +1,4 @@
-package classify.btree;
+package classify.binary_search_tree;
 
 import tools.TreeNode;
 
@@ -6,15 +6,13 @@ import java.util.TreeSet;
 
 public class MinimumAbsoluteDifferenceInBST {
     private int min = Integer.MAX_VALUE;
-    private Integer previous = null;
-
-    private TreeSet<Integer> set = new TreeSet<>();
 
     /**
-     * 1ms 97.47%
-     * 40.3MB 53.85%
-     * InOrder Traversal
+     * Inorder Traversal
+     * 0ms      100.00%
+     * 41.3MB   31.46%
      */
+    private Integer previous = null;
     public int getMinimumDifference(TreeNode root) {
         if (root == null) return min;
 
@@ -27,11 +25,11 @@ public class MinimumAbsoluteDifferenceInBST {
     }
 
     /**
-     * 12ms 9.93%
-     * 46.3MB 5.59%
-     * PreOrder Traversal
-     * Suit for non-BST
+     * Preorder Traversal, Suit for non-BST
+     * 12ms     9.93%
+     * 46.3MB   5.59%
      */
+    private TreeSet<Integer> set = new TreeSet<>();
     public int getMinimumDifference2(TreeNode root) {
         if (root == null) return min;
 
