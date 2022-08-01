@@ -1,19 +1,13 @@
-package classify.recursion;
+package classify.binary_search_tree.medium;
 
 import tools.TreeNode;
 
-/**
- * @author yutiantang
- * @create 2021/4/9 21:48
- */
 public class ConvertBSTtoGreaterTree {
 
     /**
+     * 官方题解 反向中序遍历
      * 1ms      85.94%
      * 38.8MB   47.98%
-     * 官方题解 反向中序遍历
-     * @param root
-     * @return
      */
     private int sum = 0;
     public TreeNode convertBST(TreeNode root) {
@@ -28,25 +22,18 @@ public class ConvertBSTtoGreaterTree {
     }
 
     /**
+     * 反向中序遍历 消除全局变量
      * 1ms      85.94%
      * 38.2MB   99.30%
-     * 反向中序遍历 消除全局变量
-     * @param root
-     * @return
      */
     public TreeNode convertBST2(TreeNode root) {
         dfs(root, 0);
-
         return root;
     }
 
     private int dfs(TreeNode root, int prevVal) {
-        if (root == null) {
-            return prevVal;
-        }
-
+        if (root == null) return prevVal;
         root.val += dfs(root.right, prevVal);
-
         return dfs(root.left, root.val);
     }
 
