@@ -1,4 +1,4 @@
-package classify.btree;
+package classify.binary_search_tree.medium;
 
 import tools.TreeNode;
 
@@ -7,8 +7,8 @@ public class KthSmallestElementInABST {
     private int step;
 
     /**
-     * 0ms 100.00%
-     * 38.7MB 44.39%
+     * 0ms      100.00%
+     * 41MB     81.89%
      */
     public int kthSmallest(TreeNode root, int k) {
         step = k;
