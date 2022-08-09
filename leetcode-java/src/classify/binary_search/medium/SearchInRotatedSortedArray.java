@@ -1,10 +1,10 @@
-package classify.binarysearch;
+package classify.binary_search.medium;
 
 public class SearchInRotatedSortedArray {
 
     /**
-     * 0ms 100.00%
-     * 38MB 92.52%
+     * 0ms      100.00%
+     * 38MB     92.52%
      *
      * Find pivot index first
      * Then use binary search to find target in subarray
@@ -28,7 +28,6 @@ public class SearchInRotatedSortedArray {
         right = target <= nums[nums.length - 1] ? nums.length : pivot - 1;
         while (left <= right) {
             middle = left + (right - left) / 2;
-
             if (nums[middle] == target) return middle;
             else if (nums[middle] > target) right = middle - 1;
             else left = middle + 1;
@@ -39,18 +38,17 @@ public class SearchInRotatedSortedArray {
 
     /**
      * Recursive
-     * 0ms 100.00%
-     * 37MB 95.46%
+     * 0ms      100.00%
+     * 37MB     95.46%
      */
-    private int search2(int[] nums, int target) {
+    public int search2(int[] nums, int target) {
         return search(nums, 0, nums.length - 1, target);
     }
 
     private int search(int[] nums, int low, int high, int target) {
         if (low > high) return -1;
 
-        int mid = (low + high) / 2;
-
+        int mid = low + (high - low) / 2;
         if (nums[mid] == target) {
             return mid;
         } else if (nums[mid] < nums[high]) {  // mid到high为有序部分

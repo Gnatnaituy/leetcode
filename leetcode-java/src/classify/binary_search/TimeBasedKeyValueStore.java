@@ -1,4 +1,4 @@
-package classify.binarysearch;
+package classify.binary_search;
 
 import java.util.HashMap;
 import java.util.Map;
