@@ -1,10 +1,11 @@
-package classify.binary_search;
+package classify.binary_search.medium;
 
 public class FindPeakElement {
 
     /**
-     * 0ms 100.00%
-     * 39.3MB 12.35%
+     * 不断排除无效区间
+     * 0ms      100.00%
+     * 39.3MB   12.35%
      */
     public int findPeakElement(int[] nums) {
         int left = 0, right = nums.length - 1;
