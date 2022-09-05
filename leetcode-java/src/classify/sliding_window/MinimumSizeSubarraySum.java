@@ -1,4 +1,4 @@
-package classify.slidingwindow;
+package classify.sliding_window;
 
 
 /**

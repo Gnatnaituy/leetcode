@@ -1,23 +1,16 @@
-package classify.twopointers;
+package classify.sliding_window;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
-/**
- * @author yutiantang
- * @create 2021/3/28 3:47 PM
- * 剑指 Offer 48. 最长不含重复字符的子字符串
- * https://leetcode-cn.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/
- */
 public class LongestSubstringWithoutRepeatingCharacters {
 
     /**
      * 9ms      40.47%
      * 39.3MB   5.34%
-     *
-     * @param s
-     * @return
      */
     public int lengthOfLongestSubstring(String s) {
         if (s == null || s.length() == 0) {
@@ -52,9 +45,6 @@ public class LongestSubstringWithoutRepeatingCharacters {
      * 如果字母只有一个,则是0到字母的距离
      * 2ms      99.89%
      * 38.3MB   75.28%
-     *
-     * @param s
-     * @return
      */
     public int lengthOfLongestSubstring2(String s) {
         int[] previous = new int[128];
@@ -75,10 +65,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
     /**
      * 2ms      99.89%
      * 38.1MB   94.55%
-     * 快慢指针 空格真坑人 还以为全是小写字母
-     *
-     * @param s
-     * @return
+     * 滑动窗口+快慢指针 空格真坑人 还以为全是小写字母
      */
     public static int lengthOfLongestSubstring3(String s) {
         boolean[] exiChar = new boolean[256];
@@ -100,7 +87,25 @@ public class LongestSubstringWithoutRepeatingCharacters {
         return max;
     }
 
-    public static void main(String[] args) {
-        System.out.println(lengthOfLongestSubstring3("aabaab!bb"));
+    /**
+     * 6ms      40.85%
+     * 41.5MB   57.25%
+     * 双指针 + 哈希表解法（滑动窗口） 宫水三叶
+     */
+    public int lengthOfLongestSubstring4(String s) {
+        Map<Character, Integer> map = new HashMap<>();
+        int res = 0;
+        for (int i = 0, j = 0; j < s.length(); j++) {
+            char c = s.charAt(j);
+            map.put(c, map.getOrDefault(c, 0) + 1);
+            while (map.get(c) > 1) {
+                char l = s.charAt(i);
+                map.put(l, map.get(l) - 1);
+                i++;
+            }
+            res = Math.max(res, j - i + 1);
+        }
+
+        return res;
     }
 }
