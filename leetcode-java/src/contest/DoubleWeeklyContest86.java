@@ -74,6 +74,8 @@ public class DoubleWeeklyContest86 {
             Arrays.sort(count, (o1, o2) -> o1[1] - o2[1]);
               
         }
+
+        return 0;
     }
 
     public static void main(String[] args) {
