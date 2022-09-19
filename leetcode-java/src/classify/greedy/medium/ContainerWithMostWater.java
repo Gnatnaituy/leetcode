@@ -1,4 +1,4 @@
-package classify.twopointers;
+package classify.greedy.medium;
 
 /**
  * @author yutiantang
@@ -9,8 +9,7 @@ public class ContainerWithMostWater {
     /**
      * 6ms  21.25%
      * 52MB 13.36%
-     * @param height
-     * @return
+     * 可容纳水的高度由两板中的 短板 决定
      */
     public int maxArea(int[] height) {
         int left = 0, right = height.length - 1, max = 0;
@@ -27,11 +26,9 @@ public class ContainerWithMostWater {
     }
 
     /**
-     * 优化， 减少max的计算次数
      * 2ms      99.39%
      * 51.8MB   24.03%
-     * @param height
-     * @return
+     * 优化， 减少max的计算次数
      */
     public int maxArea2(int[] height) {
         int left = 0, right = height.length - 1, max = 0;
@@ -51,5 +48,20 @@ public class ContainerWithMostWater {
         }
 
         return max;
+    }
+
+    /**
+     * 3ms      92.18%
+     * 51.6MB   32.98%
+     */
+    public int maxArea3(int[] height) {
+        int i = 0, j = height.length - 1, res = 0;
+        while (i < j) {
+            res = height[i] < height[j] ? 
+                Math.max(res, (j - i) * height[i++]): 
+                Math.max(res, (j - i) * height[j--]); 
+        }
+
+        return res;
     }
 }
