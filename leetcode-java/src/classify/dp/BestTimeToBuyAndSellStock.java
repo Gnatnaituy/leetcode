@@ -23,20 +23,35 @@ public class BestTimeToBuyAndSellStock {
     /**
      * 3ms      60.09%
      * 51.4MB   57.07%
-     * @param prices
-     * @return
+     * T:O(n) S:O(1) 动态规划
      */
     public int maxProfit2(int[] prices) {
-        if (prices.length < 2) return 0;
-
-        int buy = prices[0];
-        int sell = 0;
-
+        int maxProfit = 0, minPrice = prices[0];
         for (int i = 1; i < prices.length; i++) {
-            buy = Math.min(buy, prices[i]);
-            sell = Math.max(sell, prices[i] - buy);
+            minPrice = Math.min(minPrice, prices[i]);
+            maxProfit = Math.max(maxProfit, prices[i] - minPrice);
         }
 
-        return sell;
+        return maxProfit;
+    }
+
+    /**
+     * 1ms      100.00%
+     * 57.4MB   67.56%
+     * T:O(n) S:O(1) 贪心算法
+     */
+    public int maxProfit3(int[] prices) {
+        int maxProfit = 0, minPrice = prices[0];
+        for (int price : prices) {
+            if (price < minPrice) {
+                minPrice = price;
+                continue;
+            }
+            if (price - minPrice > maxProfit) {
+                maxProfit = price - minPrice;
+            }
+        }
+
+        return maxProfit;
     }
 }
