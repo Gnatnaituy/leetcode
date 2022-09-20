@@ -23,7 +23,7 @@ public class BestTimeToBuyAndSellStock {
     /**
      * 3ms      60.09%
      * 51.4MB   57.07%
-     * T:O(n) S:O(1) 动态规划
+     * T:O(n)   S:O(1)  DP
      */
     public int maxProfit2(int[] prices) {
         int maxProfit = 0, minPrice = prices[0];
@@ -38,7 +38,7 @@ public class BestTimeToBuyAndSellStock {
     /**
      * 1ms      100.00%
      * 57.4MB   67.56%
-     * T:O(n) S:O(1) 贪心算法
+     * T:O(n)   S:O(1)  Greedy
      */
     public int maxProfit3(int[] prices) {
         int maxProfit = 0, minPrice = prices[0];
