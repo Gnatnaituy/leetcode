@@ -7,48 +7,48 @@ public class DoubleWeeklyContest87 {
     /**
      * 通过
      */
-    public int countDaysTogether(String arriveAlice, String leaveAlice, String arriveBob, String leaveBob) {
-        int[] monthDays = new int[]{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-        int aam = Integer.parseInt(arriveAlice, 0, 2, 10);
-        int aad = Integer.parseInt(arriveAlice, 3, 5, 10);
-        int lam = Integer.parseInt(leaveAlice, 0, 2, 10);
-        int lad = Integer.parseInt(leaveAlice, 3, 5, 10);
-        int abm = Integer.parseInt(arriveBob, 0, 2, 10);
-        int abd = Integer.parseInt(arriveBob, 3, 5, 10);
-        int lbm = Integer.parseInt(leaveBob, 0, 2, 10);
-        int lbd = Integer.parseInt(leaveBob, 3, 5, 10);
+    // public int countDaysTogether(String arriveAlice, String leaveAlice, String arriveBob, String leaveBob) {
+    //     int[] monthDays = new int[]{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    //     int aam = Integer.parseInt(arriveAlice, 0, 2, 10);
+    //     int aad = Integer.parseInt(arriveAlice, 3, 5, 10);
+    //     int lam = Integer.parseInt(leaveAlice, 0, 2, 10);
+    //     int lad = Integer.parseInt(leaveAlice, 3, 5, 10);
+    //     int abm = Integer.parseInt(arriveBob, 0, 2, 10);
+    //     int abd = Integer.parseInt(arriveBob, 3, 5, 10);
+    //     int lbm = Integer.parseInt(leaveBob, 0, 2, 10);
+    //     int lbd = Integer.parseInt(leaveBob, 3, 5, 10);
         
-        int sm, sd, lm, ld;
-        if (aam > abm) {
-            sm = aam;
-            sd = aad;
-        } else {
-            sm = abm;
-            sd = aam == abm ? Math.max(aad, abd) : abd;
-        }
-        if (lam > lbm) {
-            lm = lbm;
-            ld = lbd;
-        } else {
-            lm = lam;
-            ld = lam == lbm ? Math.min(lad, lbd) : lad;
-        }
+    //     int sm, sd, lm, ld;
+    //     if (aam > abm) {
+    //         sm = aam;
+    //         sd = aad;
+    //     } else {
+    //         sm = abm;
+    //         sd = aam == abm ? Math.max(aad, abd) : abd;
+    //     }
+    //     if (lam > lbm) {
+    //         lm = lbm;
+    //         ld = lbd;
+    //     } else {
+    //         lm = lam;
+    //         ld = lam == lbm ? Math.min(lad, lbd) : lad;
+    //     }
 
-        if (sm > lm) {
-            return 0;
-        } else if (sm == lm) {
-            return Math.max(0, ld - sd + 1);
-        } else {
-            int res = 0;
-            res += monthDays[sm - 1] - sd + 1;
-            res += ld;
-            for (int i = sm + 1; i < lm; i++) {
-                res += monthDays[i - 1];
-            }
+    //     if (sm > lm) {
+    //         return 0;
+    //     } else if (sm == lm) {
+    //         return Math.max(0, ld - sd + 1);
+    //     } else {
+    //         int res = 0;
+    //         res += monthDays[sm - 1] - sd + 1;
+    //         res += ld;
+    //         for (int i = sm + 1; i < lm; i++) {
+    //             res += monthDays[i - 1];
+    //         }
 
-            return res;
-        }
-    }
+    //         return res;
+    //     }
+    // }
 
     /**
      * 通过
