@@ -48,15 +48,4 @@ public class SerializeAndDeserializeBST {
         root.left = construct(lower, val, stack);
         return root;
     }
-
-    public static void main(String[] args) {
-        SerializeAndDeserializeBST bst = new SerializeAndDeserializeBST();
-
-        TreeNode node = new TreeNode(2);
-        node.left = new TreeNode(1);
-        node.right = new TreeNode(3);
-        String ser = bst.serialize(node);
-        TreeNode des = bst.deserialize(ser);
-
-    }
 }
