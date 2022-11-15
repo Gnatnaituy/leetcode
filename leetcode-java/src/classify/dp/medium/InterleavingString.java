@@ -75,13 +75,4 @@ public class InterleavingString {
 
         return dp[len1][len2];
     }
-
-    public static void main(String[] args) {
-        String s1 = "abababababababababababababababababababababababababababababababababababababababababababababababababbb";
-        String s2 = "babababababababababababababababababababababababababababababababababababababababababababababababaaaba";
-        String s3 = "abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababbb";
-
-        InterleavingString a = new InterleavingString();
-        System.out.println(a.isInterleave(s1, s2, s3));
-    }
 }
