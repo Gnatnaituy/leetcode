@@ -1,13 +1,13 @@
-package others.completefifties.l0100;
+package classify.dp.medium;
 
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class WorldBreak {
+public class WordBreak {
 
     /**
-     * 可以得出正解, 但超出时间限制
+     * 超出时间限制
      */
     public static boolean wordBreak(String s, List<String> wordDict) {
         Set<String> wordSet = new HashSet<>(wordDict);
@@ -37,15 +37,17 @@ public class WorldBreak {
     }
 
     /**
-     * 17ms, 51.87%
+     * O(n^2)   8ms      35.77%
+     * O(n)     41.7MB   34.51%  
+     * 可以类比于背包问题
+     * memo[i] 表示 s 中以 i - 1 结尾的字符串是否可被 wordDict 拆分 
      */
     public boolean wordBreak2(String s, List<String> wordDict) {
-        // 可以类比于背包问题
-        int n = s.length();
-        // memo[i] 表示 s 中以 i - 1 结尾的字符串是否可被 wordDict 拆分
-        boolean[] memo = new boolean[n + 1];
+        int strLen = s.length();
+        boolean[] memo = new boolean[strLen + 1];
         memo[0] = true;
-        for (int i = 1; i <= n; i++) {
+
+        for (int i = 1; i <= strLen; i++) {
             for (int j = 0; j < i; j++) {
                 if (memo[j] && wordDict.contains(s.substring(j, i))) {
                     memo[i] = true;
@@ -54,31 +56,31 @@ public class WorldBreak {
             }
         }
 
-        return memo[n];
+        return memo[strLen];
     }
 
     /**
-     * 2ms
+     * O(n^2)   1ms     99.62%
+     * O(n)     39.5MB  95.88MB
+     * 优化可拆分点查找范围
+     * 上一个可拆分点一定在最长单词覆盖的范围内 
      */
     public boolean wordBreak3(String s, List<String> wordDict) {
-        int n = s.length(), max_len = 0;
-        for (String str : wordDict) {
-            max_len = str.length() > max_len ? str.length() : max_len;
-        }
-        boolean[] v = new boolean[n + 1];
+        int strLen = s.length();
+        boolean[] memo = new boolean[strLen + 1];
+        int maxWordLen = wordDict.stream().mapToInt(o -> o.length()).max().getAsInt();
         Set<String> wordSet = new HashSet<>(wordDict);
-        v[0] = true;
-        for (int i = 1; i <= n; i++) {
-            int j = max_len >= i ? 0 : i - max_len;
-            for (; j < i; j++) {
-                if (v[j] && wordSet.contains(s.substring(j, i))) {
-                    v[i] = true;
+        memo[0] = true;
+
+        for (int i = 1; i <= strLen; i++) {
+            for (int j = Math.max(0, i - maxWordLen); j < i; j++) {
+                if (memo[j] && wordSet.contains(s.substring(j, i))) {
+                    memo[i] = true;
                     break;
                 }
             }
         }
 
-        return v[n];
+        return memo[strLen];
     }
-
 }
